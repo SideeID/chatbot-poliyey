@@ -1,0 +1,37 @@
+import { DarkModeToggle } from "@/components/dark-mode-toggle";
+import { Chat } from "@/components/chat";
+import Image from 'next/image';
+
+export default function Home() {
+  return (
+    <main className='relative container flex min-h-screen flex-col'>
+      <div className=' p-4 flex h-14 items-center justify-between supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur'>
+        <Image
+          src='/logoPoltek.webp'
+          alt='JEMPOL'
+          width={125}
+          height={125}
+          loading='lazy'
+        />
+        {/* <span className='font-bold'>
+          Jaringan Edukasi dan Informasi Layanan Mandiri POLIJE
+        </span> */}
+        <DarkModeToggle />
+      </div>
+      <div className='flex flex-1 py-4'>
+        <div className='w-full'>
+          <Chat />
+        </div>
+      </div>
+      <footer className='py-4 border-t text-center text-sm bg-background copyright'>
+        <a
+          href='https://github.com/SideeID'
+          target='_blank'
+          className='hover:underline'
+        >
+          &copy; 2024 Side ID. All rights reserved.
+        </a>
+      </footer>
+    </main>
+  );
+}
