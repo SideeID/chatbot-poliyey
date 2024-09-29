@@ -10,12 +10,12 @@ export async function embedAndStoreDocs(
   // @ts-ignore docs type error
   docs: Document<Record<string, any>>[]
 ) {
-  /*create and store the embeddings in the vectorStore*/
+  // membuat dan menyimpan embedding di dalam vectorStore
   try {
     const embeddings = new GoogleGenerativeAIEmbeddings();
     const index = client.Index(env.PINECONE_INDEX_NAME);
 
-    //embed the PDF documents
+    // menyematkan dokumen PDF
     await PineconeStore.fromDocuments(docs, embeddings, {
       pineconeIndex: index,
       textKey: 'text',
@@ -26,7 +26,7 @@ export async function embedAndStoreDocs(
   }
 }
 
-// Returns vector-store handle to be used a retrievers on langchains
+// mendapatkan vectorStore dari index yang sudah ada
 export async function getVectorStore(client: Pinecone) {
   try {
     const embeddings = new GoogleGenerativeAIEmbeddings();
