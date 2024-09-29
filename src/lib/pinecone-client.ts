@@ -4,7 +4,6 @@ import { delay } from './utils';
 
 let pineconeClientInstance: Pinecone | null = null;
 
-// Create pineconeIndex if it doesn't exist
 async function createIndex(client: Pinecone, indexName: string) {
   try {
     await client.createIndex({
@@ -30,7 +29,6 @@ async function createIndex(client: Pinecone, indexName: string) {
   }
 }
 
-// Initialize index and ready to be accessed.
 async function initPineconeClient() {
   try {
     const pineconeClient = new Pinecone({
@@ -40,9 +38,11 @@ async function initPineconeClient() {
 
     const existingIndexes = await pineconeClient.listIndexes();
 
-    // Check if indexes property exists and is an array
+    // Periksa apakah properti indeks ada dan merupakan sebuah array
     if (existingIndexes && Array.isArray(existingIndexes.indexes)) {
-      if (!existingIndexes.indexes.map(index => index.name).includes(indexName)) {
+      if (
+        !existingIndexes.indexes.map((index) => index.name).includes(indexName)
+      ) {
         await createIndex(pineconeClient, indexName);
       } else {
         console.log('Index already exists');
