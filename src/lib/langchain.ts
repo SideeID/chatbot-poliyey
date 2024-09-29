@@ -16,7 +16,6 @@ type callChainArgs = {
 
 export async function callChain({ question, chatHistory }: callChainArgs) {
   try {
-    // Open AI recommendation
     const sanitizedQuestion = question.trim().replaceAll("\n", " ");
     const pineconeClient = await getPineconeClient();
     const vectorStore = await getVectorStore(pineconeClient);
