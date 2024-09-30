@@ -1,5 +1,4 @@
 import { env } from './config';
-// import { OpenAIEmbeddings } from 'langchain/embeddings/openai';
 import { GoogleGenerativeAIEmbeddings } from '@langchain/google-genai';
 import { TaskType } from '@google/generative-ai';
 import { PineconeStore } from '@langchain/pinecone';
@@ -15,7 +14,7 @@ export async function embedAndStoreDocs(
     const embeddings = new GoogleGenerativeAIEmbeddings();
     const index = client.Index(env.PINECONE_INDEX_NAME);
 
-    // menyematkan dokumen PDF
+    // menyematkan dokumen ke dalam vectorStore
     await PineconeStore.fromDocuments(docs, embeddings, {
       pineconeIndex: index,
       textKey: 'text',
