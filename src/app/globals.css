@@ -74,3 +74,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+ol {
+  list-style-type: decimal;
+}
+p {
+  white-space: pre-line;
+}
