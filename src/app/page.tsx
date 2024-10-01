@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className='relative container flex min-h-screen flex-col'>
+    <main className='relative xl:container flex min-h-screen flex-col'>
       <div className='p-4 flex h-14 items-center justify-between supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full bg-background/95 backdrop-blur'>
         <Image
           src='/logoPoltek.webp'
