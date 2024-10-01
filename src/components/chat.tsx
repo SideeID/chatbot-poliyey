@@ -7,7 +7,6 @@ import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Spinner } from './ui/spinner';
 import { useEffect, useRef } from 'react';
-import Image from 'next/image';
 
 export function Chat() {
   const containerRef = useRef<HTMLDivElement | null>(null);
