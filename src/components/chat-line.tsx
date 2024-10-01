@@ -39,9 +39,28 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
             {role === 'assistant' ? 'JEMPOL' : 'Anda'}
           </CardTitle>
         </CardHeader>
-        <CardContent className='text-sm break-words whitespace-normal overflow-auto'>
+        <CardContent className='text-sm break-words whitespace-pre-wrap overflow-auto'>
           <Balancer>
-            <ReactMarkdown remarkPlugins={[remarkGfm]} linkTarget='_blank'>
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              linkTarget='_blank'
+              components={{
+                code({ node, inline, className, children, ...props }) {
+                  return inline ? (
+                    <code className={className} {...props}>
+                      {children}
+                    </code>
+                  ) : (
+                    <span className={className} {...props}>
+                      {children}
+                    </span>
+                  );
+                },
+                pre({ children }) {
+                  return <span>{children}</span>; // mengganti pre dengan span
+                },
+              }}
+            >
               {content}
             </ReactMarkdown>
           </Balancer>
