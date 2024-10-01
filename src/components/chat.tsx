@@ -1,12 +1,13 @@
-"use client";
+'use client';
 
 import { scrollToBottom, initialMessages } from '@/lib/utils';
-import { ChatLine } from "./chat-line";
-import { useChat, Message } from "ai-stream-experimental/react";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
-import { Spinner } from "./ui/spinner";
-import { useEffect, useRef } from "react";
+import { ChatLine } from './chat-line';
+import { useChat, Message } from 'ai-stream-experimental/react';
+import { Input } from './ui/input';
+import { Button } from './ui/button';
+import { Spinner } from './ui/spinner';
+import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export function Chat() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -20,28 +21,53 @@ export function Chat() {
   }, [messages]);
 
   return (
-    <div className='rounded-2xl border h-[75vh] flex flex-col justify-between'>
+    <div className='rounded-2xl h-[75vh] flex flex-col justify-between'>
       <div className='p-6 overflow-auto break-words' ref={containerRef}>
         {messages.map(({ id, role, content }: Message, index) => (
-          <ChatLine
-            key={id}
-            role={role}
-            content={content}
-          />
+          <ChatLine key={id} role={role} content={content} />
         ))}
       </div>
 
       <form onSubmit={handleSubmit} className='p-4 flex clear-both'>
-        <Input
-          value={input}
-          placeholder={'Ajukan pertanyaan anda ...'}
-          onChange={handleInputChange}
-          className='mr-2 flex-1'
-        />
-
-        <Button type='submit' className='w-24'>
-          {isLoading ? <Spinner /> : 'Tanya'}
-        </Button>
+        <div className='relative flex w-full'>
+          <Input
+            value={input}
+            placeholder={'Ajukan pertanyaan anda ...'}
+            onChange={handleInputChange}
+            className='flex-1 pr-24'
+          />
+          <Button
+            type='submit'
+            className='absolute right-0 top-0 h-full w-20 flex items-center justify-center'
+          >
+            {isLoading ? (
+              <Spinner />
+            ) : (
+              <svg
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M9.51002 4.23001L18.07 8.51001C21.91 10.43 21.91 13.57 18.07 15.49L9.51002 19.77C3.75002 22.65 1.40002 20.29 4.28002 14.54L5.15002 12.81C5.37002 12.37 5.37002 11.64 5.15002 11.2L4.28002 9.46001C1.40002 3.71001 3.76002 1.35001 9.51002 4.23001Z'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M5.44 12H10.84'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+              </svg>
+            )}
+          </Button>
+        </div>
       </form>
     </div>
   );
