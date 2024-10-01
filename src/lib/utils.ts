@@ -34,10 +34,10 @@ export const formatChatHistory = (chatHistory: [string, string][]) => {
 };
 
 export function formattedText(inputText: string) {
-  return inputText
-    .replace(/\n+/g, ' ') // Mengganti beberapa baris baru yang berurutan dengan satu spasi
-    .replace(/(\w) - (\w)/g, '$1$2') // Menggabungkan kata-kata yang diberi tanda hubung menjadi satu
-    .replace(/\s+/g, ' '); // Mengganti beberapa spasi berurutan dengan satu spasi
+  return (
+    inputText
+      .replace(/\n\s*\n/g, '\n')
+  );
 }
 
 // Default UI Message
@@ -45,21 +45,15 @@ export const initialMessages: StreamMessage[] = [
   {
     role: 'assistant',
     id: '0',
-    content: `
-      Selamat datang di layanan otomatis PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember! 🎓✨
-
+    content: `Selamat datang di layanan otomatis PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember! 🎓✨
       Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat dan akurat.
       Apakah ada yang bisa saya bantu hari ini? 😊
-
       Apa yang ingin Anda tanyakan?
-
       🔍 Ingin tahu informasi terbaru seputar kampus?
       📚 Bingung dengan urusan akademik dan kemahasiswaan?
       📞 Mencari kontak penting di lingkungan kampus?
       ❓ Atau butuh bantuan lainnya?
-
-      Saya di sini untuk membantu Anda! Mari kita mulai petualangan informasi Anda bersama! 🌟
-    `,
+      Saya di sini untuk membantu Anda! Mari kita mulai petualangan informasi Anda bersama! 🌟`,
   },
 ];
 
