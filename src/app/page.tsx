@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className='relative container flex min-h-screen flex-col'>
-      <div className=' p-4 flex h-14 items-center justify-between supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur'>
+      <div className='p-4 flex h-14 items-center justify-between supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full bg-background/95 backdrop-blur'>
         <Image
           src='/logoPoltek.webp'
           alt='JEMPOL'
@@ -13,9 +13,6 @@ export default function Home() {
           height={125}
           loading='lazy'
         />
-        {/* <span className='font-bold'>
-          Jaringan Edukasi dan Informasi Layanan Mandiri POLIJE
-        </span> */}
         <DarkModeToggle />
       </div>
       <div className='flex flex-1 py-4'>
@@ -23,7 +20,7 @@ export default function Home() {
           <Chat />
         </div>
       </div>
-      <footer className='py-4 border-t text-center text-sm bg-background copyright'>
+      <footer className='py-4 text-center text-sm bg-background copyright'>
         <a
           href='https://github.com/SideeID'
           target='_blank'
