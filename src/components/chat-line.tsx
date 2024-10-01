@@ -57,11 +57,11 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
                   );
                 },
                 pre({ children }) {
-                  return <span>{children}</span>; // mengganti pre dengan span
+                  return <span>{children}</span>;
                 },
               }}
             >
-              {content}
+              {formattedText(content)}
             </ReactMarkdown>
           </Balancer>
         </CardContent>
