@@ -22,7 +22,31 @@ interface ChatLineProps extends Partial<Message> {}
 
 export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
   if (!content) {
-    return null;
+    return (
+      <div>
+        <Card className='mb-2'>
+          <CardHeader>
+            <CardTitle
+              className={
+                role !== 'assistant'
+                  ? 'text-amber-500 dark:text-amber-200'
+                  : 'text-blue-500 dark:text-blue-200'
+              }
+            >
+              {role === 'assistant' ? 'JEMPOL' : 'Anda'}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className='text-sm break-words whitespace-pre-wrap overflow-auto'>
+            <Balancer>
+              <p>
+                Alamak token gw habis cuy, kalau mau donasi silahkah di bawah ini cuy :D
+              </p>
+              <p>https://saweria.co/SideID</p>
+            </Balancer>
+          </CardContent>
+        </Card>
+      </div>
+    );
   }
 
   return (
