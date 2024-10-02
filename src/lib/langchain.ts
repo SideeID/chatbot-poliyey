@@ -8,6 +8,8 @@ import {
 } from "ai-stream-experimental";
 import { streamingModel, nonStreamingModel } from "./llm";
 import { STANDALONE_QUESTION_TEMPLATE, QA_TEMPLATE } from "./prompt-templates";
+import dbConnect from './dbConnect';
+import Question from '../models/Question';
 
 type callChainArgs = {
   question: string;
@@ -17,6 +19,8 @@ type callChainArgs = {
 export async function callChain({ question, chatHistory }: callChainArgs) {
   try {
     const sanitizedQuestion = question.trim().replaceAll("\n", " ");
+    await dbConnect();
+    const savedQuestion = await Question.create({ content: sanitizedQuestion });
     const pineconeClient = await getPineconeClient();
     const vectorStore = await getVectorStore(pineconeClient);
     const { stream, handlers } = LangChainStream({
@@ -48,6 +52,14 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
         [handlers]
       )
       .then(async (res) => {
+        const isAnswered = !res.text
+          .toLowerCase()
+          .includes('maaf, saya belum memiliki informasi');
+          
+        await Question.findByIdAndUpdate(savedQuestion._id, {
+          isAnswered: isAnswered,
+          answer: res.text,
+        });
         data.close();
       });
 
