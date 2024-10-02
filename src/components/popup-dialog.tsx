@@ -30,7 +30,7 @@ export default function PopupDialog() {
           <DialogTitle>Chatbot dalam Masa Pengembangan</DialogTitle>
           <DialogDescription>
             Chatbot ini masih dalam masa pengembangan. Beberapa fitur mungkin
-            belum berfungsi dengan sempurna. Terima kasih atas pengertiannya!
+            belum berfungsi dengan sempurna. Terima kasih atas pengertiannya 😘
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
