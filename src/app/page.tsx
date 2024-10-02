@@ -1,10 +1,12 @@
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 import { Chat } from "@/components/chat";
+import PopupDialog from "@/components/popup-dialog";
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className='relative md:container flex min-h-screen flex-col'>
+      <PopupDialog />
       <div className='p-4 flex h-14 items-center justify-between supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full bg-background/95 backdrop-blur'>
         <Image
           src='/polije.svg'
