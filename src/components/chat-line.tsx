@@ -39,7 +39,7 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
           <CardContent className='text-sm break-words whitespace-pre-wrap overflow-auto'>
             <Balancer>
               <p>
-                Alamak token gw habis cuy, kalau mau donasi silahkah di bawah ini cuy :D
+                Alamak token gw habis, kalau mau donasi silahkah di bawah ini cuy :D
               </p>
               <p>https://saweria.co/SideID</p>
             </Balancer>
