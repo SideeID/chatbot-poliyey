@@ -44,22 +44,23 @@ export function Chat() {
     }
   }, [isNewUser]);
 
-  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    try {
-      await fetch('/api/questions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ content: input }),
-      });
-    } catch (error) {
-      console.error('Failed to save question:', error);
-    }
-    handleSubmit(e);
-  };
+  //   // Save the question to the database
+  //   try {
+  //     await fetch('/api/questions', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({ content: input }),
+  //     });
+  //   } catch (error) {
+  //     console.error('Failed to save question:', error);
+  //   }
+  //   handleSubmit(e);
+  // };
 
   return (
     <div className='rounded-2xl h-[75vh] flex flex-col justify-between'>
