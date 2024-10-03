@@ -52,14 +52,14 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
         [handlers]
       )
       .then(async (res) => {
-        const isAnswered = !res.text
-          .toLowerCase()
-          .includes('maaf, saya belum memiliki informasi');
+        // const isAnswered = !res.text
+        //   .toLowerCase()
+        //   .includes('maaf, saya belum memiliki informasi');
           
-        await Question.findByIdAndUpdate(savedQuestion._id, {
-          isAnswered: isAnswered,
-          answer: res.text,
-        });
+        // await Question.findByIdAndUpdate(savedQuestion._id, {
+        //   isAnswered: isAnswered,
+        //   answer: res.text,
+        // });
         data.close();
       });
 
