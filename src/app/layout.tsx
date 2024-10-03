@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
