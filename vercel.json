@@ -4,5 +4,11 @@
     "src/app/api/chat/route.ts": {
       "maxDuration": 60
     }
-  }
+  },
+  "routes": [
+    {
+      "source": "/api/chat",
+      "destination": "/api/chat"
+    }
+  ]
 }
