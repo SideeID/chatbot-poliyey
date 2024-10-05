@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <footer className='py-4 text-center text-sm bg-background copyright'>
         <a
-          href='https://github.com/SideeID'
+          href='https://www.sideid.tech'
           target='_blank'
           className='hover:underline'
         >
