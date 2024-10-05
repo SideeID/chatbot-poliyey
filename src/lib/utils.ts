@@ -49,7 +49,6 @@ export const initialMessages: StreamMessage[] = [
       Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat dan akurat.
       Apakah ada yang bisa saya bantu hari ini? 😊
       Apa yang ingin Anda tanyakan?
-      🔍 Ingin tahu informasi terbaru seputar kampus?
       📚 Bingung dengan urusan akademik dan kemahasiswaan?
       📞 Mencari kontak penting di lingkungan kampus?
       ❓ Atau butuh bantuan lainnya?
