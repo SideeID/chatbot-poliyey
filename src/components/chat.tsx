@@ -47,7 +47,6 @@ export function Chat() {
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Save the question to the database
     try {
       await fetch('/api/questions', {
         method: 'POST',
