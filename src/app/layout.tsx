@@ -12,9 +12,6 @@ export const metadata: Metadata = {
     'JEMPOL - Jaringan Edukasi dan Informasi Layanan Mandiri Politeknik Negeri Jember',
   description:
     'Jaringan Edukasi dan Informasi Layanan Mandiri Politeknik Negeri Jember',
-  icons: {
-    icon: '/herta.ico',
-  },
 };
 
 type RootLayoutProps = {
