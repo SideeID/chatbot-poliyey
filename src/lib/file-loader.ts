@@ -18,8 +18,8 @@ export async function getChunkedDocsFromPDF() {
     const docs = await loader.load();
 
     const textSplitter = new RecursiveCharacterTextSplitter({
-      chunkSize: 1500,
-      chunkOverlap: 300,
+      chunkSize: 1000,
+      chunkOverlap: 200,
       lengthFunction: (text) => text.length,
       separators: [
         // Custom separators untuk konten akademik

@@ -34,7 +34,7 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
       {
         qaTemplate: QA_TEMPLATE,
         questionGeneratorTemplate: STANDALONE_QUESTION_TEMPLATE,
-        returnSourceDocuments: true, //default 4
+        returnSourceDocuments: false,
         questionGeneratorChainOptions: {
           llm: nonStreamingModel,
         },
