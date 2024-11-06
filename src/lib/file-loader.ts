@@ -10,7 +10,7 @@ export async function getChunkedDocsFromPDF() {
     const loader = new DirectoryLoader('./docs', {
       '.pdf': (path) =>
         new PDFLoader(path, {
-          splitPages: true,
+          splitPages: false,
         }),
       '.txt': (path) => new TextLoader(path),
     });
@@ -19,20 +19,20 @@ export async function getChunkedDocsFromPDF() {
 
     const textSplitter = new RecursiveCharacterTextSplitter({
       chunkSize: 1000,
-      chunkOverlap: 200,
+      chunkOverlap: 300,
       lengthFunction: (text) => text.length,
-      separators: [
-        // Custom separators untuk konten akademik
-        '\n\n',
-        '\n',
-        '.',
-        '!',
-        '?',
-        ';',
-        ':',
-        ' ',
-        '',
-      ],
+      // separators: [
+      //   // Custom separators untuk konten akademik
+      //   '\n\n',
+      //   '\n',
+      //   '.',
+      //   '!',
+      //   '?',
+      //   ';',
+      //   ':',
+      //   ' ',
+      //   '',
+      // ],
     });
 
     const chunkedDocs = await textSplitter.splitDocuments(docs);
