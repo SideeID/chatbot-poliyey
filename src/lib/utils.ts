@@ -58,15 +58,7 @@ export const initialMessages: StreamMessage[] = [
     role: 'assistant',
     id: '0',
     content: `Selamat datang di layanan otomatis PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember! 🎓✨
-      Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat.
-      
-      Ada yang bisa saya bantu hari ini? Berikut beberapa pertanyaan yang sering ditanyakan:
-      📚 *"Apa saja layanan yang disediakan oleh PINTU?"*
-      🎓 *"Saya ingin meminjam gedung, bagaimana prosedur peminjamannya?"*
-      📞 *"Berikan saya data dari dosen Taufiq Rizaldi!"*
-      ❓ *"Siapa admin prodi di manajemen informatika?"*
-
-      Silakan ajukan pertanyaan Anda atau pilih salah satu topik di atas! 😊`,
+      Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat.`,
   },
 ];
 
