@@ -37,22 +37,6 @@ export function formattedText(inputText: string) {
   return inputText.replace(/\n\s*\n/g, '\n');
 }
 
-// Default UI Message
-// export const initialMessages: StreamMessage[] = [
-//   {
-//     role: 'assistant',
-//     id: '0',
-//     content: `Selamat datang di layanan otomatis PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember! 🎓✨
-//       Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat dan akurat.
-//       Apakah ada yang bisa saya bantu hari ini? 😊
-//       Apa yang ingin Anda tanyakan?
-//       📚 Bingung dengan urusan akademik dan kemahasiswaan?
-//       📞 Mencari kontak penting di lingkungan kampus?
-//       ❓ Atau butuh bantuan lainnya?
-//       Saya di sini untuk membantu Anda! Mari kita mulai petualangan informasi Anda bersama! 🌟`,
-//   },
-// ];
-
 export const initialMessages: StreamMessage[] = [
   {
     role: 'assistant',
