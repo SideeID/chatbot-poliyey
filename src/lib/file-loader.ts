@@ -23,11 +23,13 @@ export async function getChunkedDocsFromPDF() {
 
     function preprocessTableContent(text: string) {
       // Normalisasi konten tabel
-      return text
-        // .replace(/\|/g, ' ')
-        .replace(/\n+/g, ' ') // Gabungkan baris
-        .replace(/\s+/g, ' ') // Normalize whitespace
-        .trim();
+      return (
+        text
+          // .replace(/\|/g, ' ')
+          .replace(/\n+/g, ' ') // Gabungkan baris
+          .replace(/\s+/g, ' ') // Normalize whitespace
+          .trim()
+      );
     }
 
     console.log('Starting document splitting process...');
