@@ -7,7 +7,7 @@ import { Document } from '@langchain/core/documents';
 export async function embedAndStoreDocs(
   client: Pinecone,
   // @ts-ignore docs type error
-  docs: Document<Record<string, any>>[]
+  docs: Document<Record<string, any>>[],
 ) {
   try {
     const embeddings = new GoogleGenerativeAIEmbeddings();
@@ -49,7 +49,7 @@ export async function getVectorStore(client: Pinecone) {
     const retriever = vectorStore.asRetriever({
       searchType: 'mmr',
       searchKwargs: {
-        fetchK: 6, // Ambil 6 teratas 
+        fetchK: 6, // Ambil 6 teratas
         lambda: 0.5, // Seimbangkan relevansi
       },
     });
@@ -90,7 +90,7 @@ export async function getVectorStore(client: Pinecone) {
             retrievedDocsCount: retrievedDocs.length,
             topRelevantSnippet: retrievedDocs[0]?.pageContent.slice(0, 400),
           };
-        })
+        }),
       );
 
       console.log('Embedding Evaluation Results:', evaluationResults);
@@ -110,7 +110,7 @@ export async function getVectorStore(client: Pinecone) {
             retrievalTime: endTime - startTime,
             retrievedDocsCount: retrievedDocs.length,
           };
-        })
+        }),
       );
 
       console.log('RAG Performance Metrics:', performanceMetrics);
@@ -146,7 +146,7 @@ export async function runRAGEvaluation(vectorStore: any) {
 
     // Debug Retrieval
     await Promise.all(
-      testQueries.map((query) => vectorStore.debugRetrieval(query))
+      testQueries.map((query) => vectorStore.debugRetrieval(query)),
     );
 
     // Evaluasi Embedding
