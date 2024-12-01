@@ -49,7 +49,7 @@ export async function getVectorStore(client: Pinecone) {
     const retriever = vectorStore.asRetriever({
       searchType: 'mmr',
       searchKwargs: {
-        fetchK: 6, // Ambil 6 dokumen teratas
+        fetchK: 6, // Ambil 6 teratas 
         lambda: 0.5, // Seimbangkan relevansi
       },
     });
