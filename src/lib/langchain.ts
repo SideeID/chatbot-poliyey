@@ -23,14 +23,6 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
     const savedQuestion = await Question.create({ content: sanitizedQuestion });
     const pineconeClient = await getPineconeClient();
     const vectorStore = await getVectorStore(pineconeClient);
-    // Debugging
-    // await vectorStore.debugRetrieval('test query');
-
-    // trackRAGPerformance
-    // await vectorStore.trackRAGPerformance([sanitizedQuestion]);
-
-    // Evaluasi
-    // await vectorStore.evaluateEmbedding();
 
     // Gunakan retriever kustom
     const retriever = vectorStore.retriever;
@@ -40,7 +32,7 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
       lambda: 0.5,
     };
 
-    // Optional: Logging retrieval untuk setiap pertanyaan
+    // Logging retrieval untuk setiap pertanyaan
     const retrievedDocs = await retriever.getRelevantDocuments(
       sanitizedQuestion
     );
