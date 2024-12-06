@@ -32,6 +32,12 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
       lambda: 0.5,
     };
 
+    //  debugging
+    await vectorStore.debugRetrieval(sanitizedQuestion);
+
+    // track RAG performance
+    await vectorStore.trackRAGPerformance([sanitizedQuestion]);
+
     // Logging retrieval untuk setiap pertanyaan
     const retrievedDocs = await retriever.getRelevantDocuments(
       sanitizedQuestion
@@ -68,7 +74,7 @@ export async function callChain({ question, chatHistory }: callChainArgs) {
           question: sanitizedQuestion,
           chat_history: chatHistory,
         },
-        [handlers]
+        [handlers],
       )
       .then(async (res) => {
         const isAnswered = !res.text
