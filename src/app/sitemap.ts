@@ -5,8 +5,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://jempol.sideid.tech',
       lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
     },
     // {
     //   url: 'https://jempol.sideid.tech/tentang',
