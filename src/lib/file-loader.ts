@@ -15,8 +15,8 @@ export async function getChunkedDocsFromPDF() {
     console.log(`Loaded ${docs.length} documents successfully`);
 
     const textSplitter = new RecursiveCharacterTextSplitter({
-      chunkSize: 800,
-      chunkOverlap: 150,
+      chunkSize: 1000,
+      chunkOverlap: 200,
       lengthFunction: (text) => text.length,
       separators: ['\n\n', '\n', '. ', '? ', '! ', '; ', ': ', ' - ', ', '],
     });
