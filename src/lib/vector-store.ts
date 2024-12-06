@@ -50,6 +50,7 @@ export async function getVectorStore(client: Pinecone) {
       searchType: 'mmr',
       searchKwargs: {
         fetchK: 6, // Ambil 6 teratas
+        lambda: 0.5, // seimbangkan relevansi data
       },
     });
 
@@ -96,11 +97,31 @@ export async function getVectorStore(client: Pinecone) {
       return evaluationResults;
     }
 
+    async function trackRAGPerformance(queries: string[]) {
+      const performanceMetrics = await Promise.all(
+        queries.map(async (query) => {
+          const startTime = Date.now();
+          const retrievedDocs = await retriever.getRelevantDocuments(query);
+          const endTime = Date.now();
+
+          return {
+            query,
+            retrievalTime: endTime - startTime,
+            retrievedDocsCount: retrievedDocs.length,
+          };
+        }),
+      );
+
+      console.log('RAG Performance Metrics:', performanceMetrics);
+      return performanceMetrics;
+    }
+
     return {
       ...vectorStore,
       retriever,
       debugRetrieval,
       evaluateEmbedding,
+      trackRAGPerformance,
     };
   } catch (error) {
     console.error('Vector Store Error:', error);
