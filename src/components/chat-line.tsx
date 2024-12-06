@@ -83,12 +83,37 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
                 pre({ children }) {
                   return <span>{children}</span>;
                 },
+                table({ children }) {
+                  return (
+                    <div className='overflow-x-auto'>
+                      <table className='min-w-full border-collapse border border-gray-200'>
+                        {children}
+                      </table>
+                    </div>
+                  );
+                },
+                th({ children }) {
+                  return (
+                    <th className='border border-gray-200 px-4 py-2 bg-gray-100 text-left'>
+                      {children}
+                    </th>
+                  );
+                },
+                td({ children }) {
+                  return (
+                    <td className='border border-gray-200 px-4 py-2'>
+                      {children}
+                    </td>
+                  );
+                },
               }}
             >
               {formattedText(content)}
             </ReactMarkdown>
           </Balancer>
         </CardContent>
+
+        
         {/* <CardFooter>
           <CardDescription className="w-full">
             {sources && sources.length ? (

@@ -27,48 +27,37 @@ export function scrollToBottom(containerRef: React.RefObject<HTMLElement>) {
 // github.com/hwchase17/langchainjs/blob/357d6fccfc78f1332b54d2302d92e12f0861c12c/examples/src/guides/expression_language/cookbook_conversational_retrieval.ts#L61
 export const formatChatHistory = (chatHistory: [string, string][]) => {
   const formattedDialogueTurns = chatHistory.map(
-    (dialogueTurn) => `Human: ${dialogueTurn[0]}\nAssistant: ${dialogueTurn[1]}`
+    (dialogueTurn) =>
+      `Human: ${dialogueTurn[0]}\nAssistant: ${dialogueTurn[1]}`,
   );
 
   return formattedDialogueTurns.join('\n');
 };
 
 export function formattedText(inputText: string) {
-  return inputText.replace(/\n\s*\n/g, '\n');
+  return inputText
+    .replace(/\n\s*\n/g, '\n')
+    .replace(/Berikut jawaban saya dalam format markdown:/g, '')
+    .replace(/Berikut jawabannya dalam format markdown:/g, '')
+    .replace(/Berikut jawaban dalam format markdown:/g, '')
 }
-
-// Default UI Message
-// export const initialMessages: StreamMessage[] = [
-//   {
-//     role: 'assistant',
-//     id: '0',
-//     content: `Selamat datang di layanan otomatis PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember! 🎓✨
-//       Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat dan akurat.
-//       Apakah ada yang bisa saya bantu hari ini? 😊
-//       Apa yang ingin Anda tanyakan?
-//       📚 Bingung dengan urusan akademik dan kemahasiswaan?
-//       📞 Mencari kontak penting di lingkungan kampus?
-//       ❓ Atau butuh bantuan lainnya?
-//       Saya di sini untuk membantu Anda! Mari kita mulai petualangan informasi Anda bersama! 🌟`,
-//   },
-// ];
 
 export const initialMessages: StreamMessage[] = [
   {
     role: 'assistant',
     id: '0',
-    content: `Selamat datang di layanan otomatis PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember! 🎓✨
-      Saya adalah asisten virtual Anda, siap membantu menjawab segala pertanyaan dan kebutuhan informasi Anda dengan cepat.
-      
-      Ada yang bisa saya bantu hari ini? Berikut beberapa pertanyaan yang sering ditanyakan:
-      📚 *"Apa saja layanan yang disediakan oleh PINTU?"*
-      🎓 *"Saya ingin meminjam gedung, bagaimana prosedur peminjamannya?"*
-      📞 *"Berikan saya data dari dosen Taufiq Rizaldi!"*
-      ❓ *"Siapa admin prodi di manajemen informatika?"*
+    content: `Hai, Sobat POLIJE! 👋 Aku JEMPOL dari PINTU siap membantumu. Mau info apa hari ini? 
 
-      Silakan ajukan pertanyaan Anda atau pilih salah satu topik di atas! 😊`,
+    Tanya aja langsung, ga usah ragu! Mulai dari akademik, layanan, sampai data dosen, semuanya aku bantu. Ayo, tembak pertanyaanmu! 🚀`,
   },
 ];
+
+// Ada yang bisa saya bantu hari ini? Berikut beberapa pertanyaan yang sering ditanyakan:
+// 📚 "Apa saja layanan yang disediakan oleh PINTU?"
+// 🎓 "Saya ingin meminjam gedung, bagaimana prosedur peminjamannya?"
+// 📞 "Berikan saya data dari dosen Taufiq Rizaldi!"
+// ❓ "Admin prodi di manajemen informatika?"
+// Silakan ajukan pertanyaan Anda atau pilih salah satu topik di atas! 😊
 
 interface Data {
   sources: string[];
