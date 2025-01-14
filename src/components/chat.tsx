@@ -226,11 +226,11 @@ export function Chat() {
           <div className='flex items-center justify-center w-10 h-10 rounded-full b text-white shadow-inner'>
             {/* <Bot className='w-5 h-5' /> */}
             <Image
-                        src='/logo-jempol.png'
-                        alt='Assistant Logo'
-                        width={40}
-                        height={40}
-                      />
+              src='/logo-jempol.png'
+              alt='Assistant Logo'
+              width={40}
+              height={40}
+            />
           </div>
           <div className='flex-1'>
             <h2 className='font-semibold tracking-tight'>JEMPOL Assistant</h2>
@@ -294,7 +294,7 @@ export function Chat() {
         className='p-4 border-t backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-b-2xl'
       >
         <form onSubmit={handleSubmit} className='flex gap-2'>
-            <div className='relative flex-1'>
+          <div className='relative flex-1'>
             <Input
               value={input}
               placeholder='Ketik pesan Anda...'
@@ -302,18 +302,14 @@ export function Chat() {
               className='input-field pr-10 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 rounded-full pl-12'
             />
             <MessageSquare className='absolute left-4 top-1/2 -translate-y-[65%] w-5 h-5 text-muted-foreground' />
-            </div>
+          </div>
           <Button
             type='submit'
             size='icon'
             className='rounded-full w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-200'
             disabled={isLoading || !input.trim()}
           >
-            {isLoading ? (
-              <Spinner />
-            ) : (
-              <Send className='w-4 h-4' />
-            )}
+            {isLoading ? <Spinner /> : <Send className='w-4 h-4' />}
           </Button>
         </form>
       </motion.div>
