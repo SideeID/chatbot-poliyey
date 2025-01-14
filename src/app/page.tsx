@@ -1,6 +1,6 @@
-import { DarkModeToggle } from "@/components/dark-mode-toggle";
-import { Chat } from "@/components/chat";
-import PopupDialog from "@/components/popup-dialog";
+import { DarkModeToggle } from '@/components/dark-mode-toggle';
+import { Chat } from '@/components/chat';
+import PopupDialog from '@/components/popup-dialog';
 import Image from 'next/image';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <DarkModeToggle />
       </div>
       <div className='flex flex-1 py-4'>
-        <div className='w-full'>
+        <div className='w-full max-w-4xl mx-auto'>
           <Chat />
         </div>
       </div>
@@ -26,6 +26,7 @@ export default function Home() {
         <a
           href='https://www.sideid.tech'
           target='_blank'
+          rel='noopener noreferrer'
           className='hover:underline'
         >
           &copy; 2024 Side ID. All rights reserved.
