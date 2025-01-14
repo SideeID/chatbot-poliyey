@@ -209,7 +209,7 @@ export function Chat() {
     <motion.div
       layout
       className={`flex flex-col ${
-        isExpanded ? 'fixed inset-4 z-50' : 'h-[75vh]'
+        isExpanded ? 'fixed inset-4 z-50' : 'h-[90vh]'
       } bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-gray-950 rounded-2xl border shadow-lg backdrop-blur-sm`}
       style={{
         boxShadow:
