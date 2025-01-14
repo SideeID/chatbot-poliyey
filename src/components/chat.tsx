@@ -147,6 +147,7 @@ import { useChat, Message } from 'ai-stream-experimental/react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Spinner } from './ui/spinner';
+import Image from 'next/image';
 import { driver } from 'driver.js';
 import {
   Bot,
@@ -222,8 +223,14 @@ export function Chat() {
         className='p-4 border-b backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-t-2xl'
       >
         <div className='flex items-center gap-3'>
-          <div className='flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-inner'>
-            <Bot className='w-5 h-5' />
+          <div className='flex items-center justify-center w-10 h-10 rounded-full b text-white shadow-inner'>
+            {/* <Bot className='w-5 h-5' /> */}
+            <Image
+                        src='/logo-jempol.png'
+                        alt='Assistant Logo'
+                        width={40}
+                        height={40}
+                      />
           </div>
           <div className='flex-1'>
             <h2 className='font-semibold tracking-tight'>JEMPOL Assistant</h2>
@@ -243,9 +250,6 @@ export function Chat() {
             >
               <Maximize2 className='w-4 h-4' />
             </Button>
-            {/* <Button variant='ghost' size='icon' className='rounded-full'>
-              <Settings className='w-4 h-4' />
-            </Button> */}
           </div>
         </div>
       </motion.div>

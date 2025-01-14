@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: 'JEMPOL Polije',
     images: [
       {
-        url: '/og-image.png',
+        url: '/logo-jempol.webp',
         width: 1200,
         height: 630,
         alt: 'JEMPOL Chatbot Politeknik Negeri Jember',
