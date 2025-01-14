@@ -140,8 +140,9 @@
 // }
 
 import Balancer from 'react-wrap-balancer';
-import { Bot, User, Check, CheckCheck } from 'lucide-react';
+import { User, Check, CheckCheck } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import Image from 'next/image';
 import { Message } from 'ai/react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -154,9 +155,7 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
   if (!content) {
     return null;
   }
-
   const isAssistant = role === 'assistant';
-
   return (
     <div className={`flex gap-3 ${isAssistant ? '' : 'flex-row-reverse'}`}>
       <motion.div
@@ -164,17 +163,21 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
         animate={{ scale: 1 }}
         className={`flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-full ${
           isAssistant
-            ? 'bg-gradient-to-br from-blue-500 to-blue-600 text-white'
+            ? 'bg-muted'
             : 'bg-gradient-to-br from-amber-500 to-amber-600 text-white'
-        } shadow-lg`}
+        } shadow-lg relative overflow-hidden`}
       >
         {isAssistant ? (
-          <Bot className='h-5 w-5' />
+          <Image
+            src='/logo-jempol.png'
+            alt='Assistant Logo'
+            width={40}
+            height={40}
+          />
         ) : (
-          <User className='h-5 w-5' />
+          <User className='w-6 h-6' />
         )}
       </motion.div>
-
       <div className='flex-1 space-y-2'>
         <Card
           className={`p-4 max-w-[85%] ${
@@ -228,7 +231,6 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
             {formattedText(content)}
           </ReactMarkdown>
         </Card>
-
         {!isAssistant && (
           <div className='flex items-center justify-end gap-1 text-xs text-muted-foreground pr-2'>
             <span>Terkirim</span>
@@ -239,4 +241,3 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
     </div>
   );
 }
-
