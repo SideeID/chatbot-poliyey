@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://jempol.sideid.tech'),
   title: {
     default: 'JEMPOL - Pusat Informasi Terpadu Politeknik Negeri Jember',
-    template: '%s | JEMPOL Polije',
+    template: '%s | JEMPOL - Chatbot PINTU Polije',
   },
   description:
-    'Chatbot cerdas PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember. Solusi informasi akademik dan layanan terpadu untuk mahasiswa, calon mahasiswa, dan sivitas akademika.',
-  applicationName: 'JEMPOL Polije',
+    'JEMPOL adalah chatbot AI dari PINTU Politeknik Negeri Jember, memberikan layanan terpadu untuk mahasiswa, dosen, dan calon mahasiswa. Temukan informasi layanan akademik, penyewaan gedung, dan pengaduan masyarakat.',
+  applicationName: 'JEMPOL - Chatbot PINTU Polije',
   authors: [
     { name: 'Politeknik Negeri Jember', url: 'https://www.polije.ac.id' },
   ],
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: 'JEMPOL - Pusat Informasi Terpadu Politeknik Negeri Jember',
     description:
       'Chatbot pintar PINTU untuk informasi dan layanan terpadu di Politeknik Negeri Jember',
-    siteName: 'JEMPOL Polije',
+    siteName: 'JEMPOL - Chatbot PINTU Polije',
     images: [
       {
         url: '/logo-jempol.webp',
