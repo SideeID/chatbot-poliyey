@@ -19,7 +19,7 @@ export function ChatHeader({
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className='flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-inner'
+          className='flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-l from-blue-50 to-blue-100 text-white shadow-inner'
         >
           <Image
             src='/logo-jempol.png'

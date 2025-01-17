@@ -17,7 +17,7 @@ export function MessageSuggestions({
           variant='outline'
           size='sm'
           onClick={() => onSuggestionClick(suggestion)}
-          className='text-xs bg-blue-50 text-blue-600 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800 dark:hover:bg-blue-900/40 transition-colors duration-200'
+          className='text-xs bg-blue-50 text-blue-500 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800 dark:hover:bg-blue-900/40 transition-colors duration-200'
         >
           {suggestion}
         </Button>
@@ -25,4 +25,3 @@ export function MessageSuggestions({
     </div>
   );
 }
-

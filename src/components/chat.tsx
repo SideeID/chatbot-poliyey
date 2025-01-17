@@ -24,9 +24,9 @@ export function Chat() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [suggestions, setSuggestions] = useState([
     'Bagaimana cara melakukan Peminjaman dan Penyewaan BMN (Gedung Serba Guna)?',
-    'Apa informasi terkait Wisata Edukasi dan Studi Banding?',
+    // 'Apa informasi terkait Wisata Edukasi dan Studi Banding?',
     'Bagaimana cara Legalisir Ijazah dan Transkrip Akademik?',
-    'Apa langkah untuk mengakses layanan Bidang Pengaduan Masyarakat?',
+    // 'Apa langkah untuk mengakses layanan Bidang Pengaduan Masyarakat?',
     'Apa yang harus dilakukan jika Kartu Pegawai Hilang?',
   ]);
 
