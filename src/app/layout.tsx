@@ -80,8 +80,34 @@ type RootLayoutProps = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    url: 'https://jempol.sideid.tech',
+    name: 'JEMPOL - Pusat Informasi Terpadu Politeknik Negeri Jember',
+    description:
+      'JEMPOL adalah chatbot AI untuk layanan terpadu PINTU di Politeknik Negeri Jember. Temukan informasi akademik, layanan mahasiswa, dan banyak lagi.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Politeknik Negeri Jember',
+      url: 'https://www.polije.ac.id',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://jempol.sideid.tech/logo-jempol.webp',
+        width: 1200,
+        height: 630,
+      },
+    },
+  };
+
   return (
     <html lang='id' suppressHydrationWarning>
+      <head>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
