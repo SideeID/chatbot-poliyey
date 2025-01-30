@@ -8,7 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jempol.sideid.tech'),
+  metadataBase: new URL('https://jempol.side.my.id'),
   title: {
     default: 'JEMPOL - Pusat Informasi Terpadu Politeknik Negeri Jember',
     template: '%s | JEMPOL - Chatbot PINTU Polije',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://jempol.sideid.tech',
+    url: 'https://jempol.side.my.id',
     title: 'JEMPOL - Pusat Informasi Terpadu Politeknik Negeri Jember',
     description:
       'Chatbot pintar PINTU untuk informasi dan layanan terpadu di Politeknik Negeri Jember',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://jempol.sideid.tech',
+    canonical: 'https://jempol.side.my.id',
   },
   category: 'Education',
   generator: 'Next.js',
@@ -83,7 +83,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    url: 'https://jempol.sideid.tech',
+    url: 'https://jempol.side.my.id',
     name: 'JEMPOL - Pusat Informasi Terpadu Politeknik Negeri Jember',
     description:
       'JEMPOL adalah chatbot AI untuk layanan terpadu PINTU di Politeknik Negeri Jember. Temukan informasi akademik, layanan mahasiswa, dan banyak lagi.',
@@ -93,7 +93,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       url: 'https://www.polije.ac.id',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://jempol.sideid.tech/logo-jempol.webp',
+        url: 'https://jempol.side.my.id/logo-jempol.webp',
         width: 1200,
         height: 630,
       },
