@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <footer className='py-4 text-center text-sm bg-background copyright'>
         <a
-          href='https://www.sideid.tech'
+          href='https://www.side.my.id'
           target='_blank'
           rel='noopener noreferrer'
           className='hover:underline'

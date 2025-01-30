@@ -35,7 +35,9 @@ export function Chat() {
   }, [messages]);
 
   useEffect(() => {
-    if (isNewUser) {
+    const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
+    
+    if (isNewUser && !hasSeenTutorial) {
       const driverObj = driver({
         showProgress: true,
         steps: [
@@ -62,6 +64,7 @@ export function Chat() {
       });
 
       driverObj.drive();
+      localStorage.setItem('hasSeenTutorial', 'true');
       setIsNewUser(false);
     }
   }, [isNewUser]);

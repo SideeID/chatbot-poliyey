@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://jempol.sideid.tech/sitemap.xml',
+    sitemap: 'https://jempol.side.my.id/sitemap.xml',
   };
 }

@@ -84,6 +84,13 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
               td({ children }) {
                 return <td className='px-4 py-2 text-sm'>{children}</td>;
               },
+              blockquote({ children }) {
+                return (
+                  <blockquote className='italic text-gray-600 dark:text-gray-400 border-l-4 border-gray-200 dark:border-gray-700 pl-4 my-6 py-2 bg-gray-50 dark:bg-gray-800/50 rounded-r'>
+                    {children}
+                  </blockquote>
+                );
+              },
             }}
           >
             {formattedText(content)}

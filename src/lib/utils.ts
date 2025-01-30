@@ -34,12 +34,16 @@ export const formatChatHistory = (chatHistory: [string, string][]) => {
   return formattedDialogueTurns.join('\n');
 };
 
-export function formattedText(inputText: string) {
-  return inputText
-    .replace(/\n\s*\n/g, '\n')
-    .replace(/Berikut jawaban saya dalam format markdown:/g, '')
-    .replace(/Berikut jawabannya dalam format markdown:/g, '')
-    .replace(/Berikut jawaban dalam format markdown:/g, '')
+export function formattedText(text: string): string {
+  // Replace <think> tags with a single styled markdown blockquote
+  return text.replace(
+    /<think>([\s\S]*?)<\/think>/g, 
+    (_, content) => {
+      // Convert the entire thinking content into a single markdown blockquote
+      const formattedContent = `> *${content.trim().replace(/\n/g, '\n> *')}*`;
+      return `\n\n${formattedContent}\n\n`;
+    }
+  );
 }
 
 export const initialMessages: StreamMessage[] = [
@@ -47,18 +51,6 @@ export const initialMessages: StreamMessage[] = [
     role: 'assistant',
     id: '0',
     content: `Hai, Sobat POLIJE! 👋 Aku JEMPOL dari PINTU siap membantumu. Mau info apa hari ini? 
-
     Tanya aja langsung, ga usah ragu! Mulai dari akademik, layanan, sampai data dosen, semuanya aku bantu. Ayo, tembak pertanyaanmu! 🚀`,
   },
 ];
-
-// Ada yang bisa saya bantu hari ini? Berikut beberapa pertanyaan yang sering ditanyakan:
-// 📚 "Apa saja layanan yang disediakan oleh PINTU?"
-// 🎓 "Saya ingin meminjam gedung, bagaimana prosedur peminjamannya?"
-// 📞 "Berikan saya data dari dosen Taufiq Rizaldi!"
-// ❓ "Admin prodi di manajemen informatika?"
-// Silakan ajukan pertanyaan Anda atau pilih salah satu topik di atas! 😊
-
-interface Data {
-  sources: string[];
-}
