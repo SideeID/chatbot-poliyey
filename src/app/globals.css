@@ -85,12 +85,32 @@
   background-size: 200% 200%;
   animation: gradient-x 15s ease infinite;
 }
-ol {
+
+/* ol {
   list-style-type: decimal;
-}
-p {
+} */
+/* p {
   white-space: pre-line;
 }
 .prose ol {
   list-style-position: inside;
+} */
+
+/* Add to your global CSS */
+.prose blockquote {
+  font-style: italic;
+  color: #666;
+  border-left: 4px solid #ddd;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Dark mode styles */
+.dark .prose blockquote {
+  color: #9ca3af;
+  border-left-color: #374151;
+  background-color: #1f2937;
 }
