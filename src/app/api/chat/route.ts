@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
   const formattedPreviousMessages = messages.slice(0, -1).map(formatMessage);
   const question = messages[messages.length - 1].content;
 
-  console.log("Chat history ", formattedPreviousMessages.join("\n"));
+  // console.log("Chat history ", formattedPreviousMessages.join("\n"));
 
   if (!question) {
     return NextResponse.json("Error: No question in the request", {

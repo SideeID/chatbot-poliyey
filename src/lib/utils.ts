@@ -35,15 +35,10 @@ export const formatChatHistory = (chatHistory: [string, string][]) => {
 };
 
 export function formattedText(text: string): string {
-  // Replace <think> tags with a single styled markdown blockquote
-  return text.replace(
-    /<think>([\s\S]*?)<\/think>/g, 
-    (_, content) => {
-      // Convert the entire thinking content into a single markdown blockquote
-      const formattedContent = `> *${content.trim().replace(/\n/g, '\n> *')}*`;
-      return `\n\n${formattedContent}\n\n`;
-    }
-  );
+  return text.replace(/<think>([\s\S]*?)<\/think>/g, (_, content) => {
+    const formattedContent = content.trim();
+    return `\n\n\`\`\`think\n${formattedContent}\n\`\`\`\n\n`;
+  });
 }
 
 export const initialMessages: StreamMessage[] = [

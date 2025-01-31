@@ -1,4 +1,5 @@
-import { User, Check, CheckCheck } from 'lucide-react';
+// chat-line.tsx
+import { User, CheckCheck } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import Image from 'next/image';
 import { Message } from 'ai/react';
@@ -6,6 +7,12 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { formattedText } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 interface ChatLineProps extends Partial<Message> {}
 
@@ -14,6 +21,7 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
     return null;
   }
   const isAssistant = role === 'assistant';
+
   return (
     <div className={`flex gap-3 ${isAssistant ? '' : 'flex-row-reverse'}`}>
       <motion.div
@@ -50,14 +58,41 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
             className='prose dark:prose-invert max-w-none text-sm'
             components={{
               code({ node, inline, className, children, ...props }) {
-                return inline ? (
-                  <code
-                    className='px-1.5 py-0.5 rounded-md bg-gray-100 dark:bg-gray-800 text-sm font-mono'
-                    {...props}
-                  >
-                    {children}
-                  </code>
-                ) : (
+                const language = className?.replace('language-', '');
+
+                if (language === 'think') {
+                  return (
+                    <div className='my-3'>
+                      <Accordion type='single' collapsible>
+                        <AccordionItem value='think' className='border-none'>
+                          <AccordionTrigger className='hover:no-underline py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700'>
+                            <span className='text-sm font-medium'>
+                              🔍 Proses Penalaran
+                            </span>
+                          </AccordionTrigger>
+                          <AccordionContent className='px-3 pt-2 pb-1'>
+                            <div className='text-sm text-gray-700 dark:text-gray-300 whitespace-pre-line'>
+                              {String(children).replace(/\n$/, '')}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                  );
+                }
+
+                if (inline) {
+                  return (
+                    <code
+                      className='px-1.5 py-0.5 rounded-md bg-gray-100 dark:bg-gray-800 text-sm font-mono'
+                      {...props}
+                    >
+                      {children}
+                    </code>
+                  );
+                }
+
+                return (
                   <pre className='p-4 rounded-lg bg-gray-100 dark:bg-gray-800 overflow-x-auto'>
                     <code className='text-sm font-mono' {...props}>
                       {children}
@@ -83,13 +118,6 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
               },
               td({ children }) {
                 return <td className='px-4 py-2 text-sm'>{children}</td>;
-              },
-              blockquote({ children }) {
-                return (
-                  <blockquote className='italic text-gray-600 dark:text-gray-400 border-l-4 border-gray-200 dark:border-gray-700 pl-4 my-6 py-2 bg-gray-50 dark:bg-gray-800/50 rounded-r'>
-                    {children}
-                  </blockquote>
-                );
               },
             }}
           >
