@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import React from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
           <SpeedInsights />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
