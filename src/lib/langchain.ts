@@ -58,7 +58,6 @@ export async function generateFollowUpSuggestions(
       answer,
     });
 
-    // Clean up the suggestions text
     suggestionsJson = suggestionsJson
       .replace(/```json/g, '') // Remove ```json
       .replace(/```/g, '') // Remove ```
