@@ -26,7 +26,7 @@ export function MessageSuggestions({
             type: 'spring',
             stiffness: 300,
           }}
-          className='px-3 py-1 text-sm bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors'
+          className='px-3 py-1 text-sm bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors border border-blue-200 dark:border-blue-800'
           onClick={() => onSuggestionClick(suggestion)}
         >
           {suggestion}
