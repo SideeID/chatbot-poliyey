@@ -1,3 +1,4 @@
+// src\lib\utils.ts
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { Message as StreamMessage } from 'ai-stream-experimental/react';
@@ -37,8 +38,44 @@ export const formatChatHistory = (chatHistory: [string, string][]) => {
 export function formattedText(text: string): string {
   return text.replace(/<think>([\s\S]*?)<\/think>/g, (_, content) => {
     const formattedContent = content.trim();
+
     return `\n\n\`\`\`think\n${formattedContent}\n\`\`\`\n\n`;
   });
+}
+
+export function generateSuggestions(lastMessage: string): string[] {
+  const suggestionMap: { [key: string]: string[] } = {
+    akademik: [
+      'Jadwal Perkuliahan',
+      'Informasi Jurusan',
+      'Prosedur Akademik',
+      'Pendaftaran KRS',
+    ],
+    dosen: ['Direktori Dosen', 'Kontak Dosen', 'Jadwal Konsultasi'],
+    layanan: ['Prosedur Administrasi', 'Alur Pendaftaran', 'Biaya Kuliah'],
+    kemahasiswaan: ['Kegiatan Mahasiswa', 'Beasiswa', 'Organisasi Kampus'],
+  };
+
+  const lowerMessage = lastMessage.toLowerCase();
+
+  const matchedCategories = Object.keys(suggestionMap).filter((category) =>
+    lowerMessage.includes(category),
+  );
+
+  if (matchedCategories.length === 0) {
+    return [
+      'Informasi Akademik',
+      'Layanan Kemahasiswaan',
+      'Jadwal Perkuliahan',
+      'Prosedur Administrasi',
+    ];
+  }
+
+  const suggestions = matchedCategories
+    .flatMap((category) => suggestionMap[category])
+    .slice(0, 4);
+
+  return suggestions;
 }
 
 export const initialMessages: StreamMessage[] = [
