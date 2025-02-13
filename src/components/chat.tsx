@@ -7,7 +7,7 @@ import { useChat, Message } from 'ai-stream-experimental/react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Spinner } from './ui/spinner';
-import { Send, MessageSquare } from 'lucide-react';
+import { Send, MessageSquare, SparklesIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { driver } from 'driver.js';
 import 'driver.js/dist/driver.css';
@@ -16,19 +16,29 @@ import { ChatHeader } from './chat-header';
 
 export function Chat() {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const { messages, input, handleInputChange, handleSubmit, isLoading } =
+  const { messages, input, handleInputChange, handleSubmit, isLoading, data } =
     useChat({
       initialMessages,
     });
   const [isNewUser, setIsNewUser] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [suggestions, setSuggestions] = useState([
+  const [followUpSuggestions, setFollowUpSuggestions] = useState<string[]>([]);
+  const [initialSuggestions, setInitialSuggestions] = useState([
     'Bagaimana cara melakukan Peminjaman dan Penyewaan BMN (Gedung Serba Guna)?',
-    // 'Apa informasi terkait Wisata Edukasi dan Studi Banding?',
     'Bagaimana cara Legalisir Ijazah dan Transkrip Akademik?',
-    // 'Apa langkah untuk mengakses layanan Bidang Pengaduan Masyarakat?',
     'Apa yang harus dilakukan jika Kartu Pegawai Hilang?',
   ]);
+
+  // Handle streaming data for follow-up suggestions
+  useEffect(() => {
+    if (data) {
+      for (const item of data) {
+        if (item.type === 'follow-up-suggestions') {
+          setFollowUpSuggestions(item.suggestions);
+        }
+      }
+    }
+  }, [data]);
 
   useEffect(() => {
     setTimeout(() => scrollToBottom(containerRef), 100);
@@ -36,7 +46,7 @@ export function Chat() {
 
   useEffect(() => {
     const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
-    
+
     if (isNewUser && !hasSeenTutorial) {
       const driverObj = driver({
         showProgress: true,
@@ -74,15 +84,18 @@ export function Chat() {
       target: { value: suggestion },
     } as React.ChangeEvent<HTMLInputElement>);
 
-    // Hilangkan suggestion yang dipilih
-    setSuggestions((prev) => prev.filter((item) => item !== suggestion));
+    // Clear suggestions after selection
+    setFollowUpSuggestions([]);
+    setInitialSuggestions([]);
   };
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleSubmit(e);
 
-    setSuggestions([]);
+    // Clear suggestions when submitting
+    setFollowUpSuggestions([]);
+    setInitialSuggestions([]);
   };
 
   return (
@@ -132,18 +145,54 @@ export function Chat() {
             </p>
           </motion.div>
         )}
+
+        {/* Follow-up Suggestions */}
+        {!isLoading && followUpSuggestions.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className='mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg'
+          >
+            <div className='flex items-center gap-2 mb-2'>
+              <SparklesIcon className='w-5 h-5 text-blue-500 dark:text-blue-300' />
+              <span className='text-sm font-medium text-blue-600 dark:text-blue-300'>
+                Mungkin Anda ingin bertanya...
+              </span>
+            </div>
+            <MessageSuggestions
+              suggestions={followUpSuggestions}
+              onSuggestionClick={handleSuggestionClick}
+            />
+          </motion.div>
+        )}
+
+        {/* Initial Suggestions */}
+        {!isLoading &&
+          messages.length <= 1 &&
+          initialSuggestions.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className='mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg'
+            >
+              <div className='flex items-center gap-2 mb-2'>
+                <SparklesIcon className='w-5 h-5 text-blue-500 dark:text-blue-300' />
+                <span className='text-sm font-medium text-blue-600 dark:text-blue-300'>
+                  Contoh Pertanyaan
+                </span>
+              </div>
+              <MessageSuggestions
+                suggestions={initialSuggestions}
+                onSuggestionClick={handleSuggestionClick}
+              />
+            </motion.div>
+          )}
       </motion.div>
 
       <motion.div
         layout
         className='p-4 border-t backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-b-2xl'
       >
-        <div className='flex items-center gap-2 mb-4'>
-          <MessageSuggestions
-            suggestions={suggestions}
-            onSuggestionClick={handleSuggestionClick}
-          />
-        </div>
         <form onSubmit={handleFormSubmit} className='flex gap-2'>
           <div className='relative flex-1'>
             <Input

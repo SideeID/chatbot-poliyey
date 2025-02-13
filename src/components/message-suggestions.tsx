@@ -1,26 +1,36 @@
-import { Button } from './ui/button';
+import React from 'react';
+import { motion } from 'framer-motion';
+
+interface MessageSuggestionsProps {
+  suggestions: string[];
+  onSuggestionClick: (suggestion: string) => void;
+  className?: string;
+}
 
 export function MessageSuggestions({
   suggestions,
   onSuggestionClick,
-}: {
-  suggestions: string[];
-  onSuggestionClick: (suggestion: string) => void;
-}) {
+  className = '',
+}: MessageSuggestionsProps) {
   if (suggestions.length === 0) return null;
 
   return (
-    <div className='flex flex-wrap gap-2 mt-4'>
+    <div className={`flex flex-wrap gap-2 ${className}`}>
       {suggestions.map((suggestion, index) => (
-        <Button
-          key={index}
-          variant='outline'
-          size='sm'
+        <motion.button
+          key={suggestion}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            delay: index * 0.1,
+            type: 'spring',
+            stiffness: 300,
+          }}
+          className='px-3 py-1 text-sm bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors'
           onClick={() => onSuggestionClick(suggestion)}
-          className='text-xs bg-blue-50 text-blue-500 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800 dark:hover:bg-blue-900/40 transition-colors duration-200'
         >
           {suggestion}
-        </Button>
+        </motion.button>
       ))}
     </div>
   );

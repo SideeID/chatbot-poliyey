@@ -60,21 +60,27 @@
 // Ini jawaban bermanfaat dari gue, disajiin dengan gaya markdown:
 // `;
 
-export const STANDALONE_QUESTION_TEMPLATE = `Berdasarkan riwayat percakapan sebelumnya, buatlah pertanyaan mandiri yang fokus dan lengkap. Hanya gunakan informasi yang benar-benar relevan dengan pertanyaan.
+// export const STANDALONE_QUESTION_TEMPLATE = `Berdasarkan riwayat percakapan sebelumnya, buatlah pertanyaan mandiri yang fokus dan lengkap. Hanya gunakan informasi yang benar-benar relevan dengan pertanyaan.
+
+// Riwayat Percakapan:
+// {chat_history}
+
+// Pertanyaan Lanjutan: {question}
+
+// Panduan pembuatan pertanyaan mandiri:
+// 1. Identifikasi inti pertanyaan dan informasi kunci yang diperlukan
+// 2. Pilih hanya konteks yang secara langsung terkait dengan pertanyaan
+// 3. Hapus semua referensi yang tidak esensial dari riwayat chat
+// 4. Pastikan pertanyaan bersifat self-contained dan dapat dipahami secara mandiri
+// 5. Fokus pada satu topik utama
+
+// Pertanyaan mandiri:`;
+export const STANDALONE_QUESTION_TEMPLATE = `Diberikan percakapan berikut dan pertanyaan lanjutan, ubahlah pertanyaan lanjutan tersebut menjadi pertanyaan yang mandiri.
 
 Riwayat Percakapan:
 {chat_history}
-
-Pertanyaan Lanjutan: {question}
-
-Panduan pembuatan pertanyaan mandiri:
-1. Identifikasi inti pertanyaan dan informasi kunci yang diperlukan
-2. Pilih hanya konteks yang secara langsung terkait dengan pertanyaan
-3. Hapus semua referensi yang tidak esensial dari riwayat chat
-4. Pastikan pertanyaan bersifat self-contained dan dapat dipahami secara mandiri
-5. Fokus pada satu topik utama
-
-Pertanyaan mandiri:`;
+Input Pertanyaan Lanjutan: {question}
+Pertanyaan Mandiri:`;
 
 export const QA_TEMPLATE = `Halo! Saya JEMPOL, asisten AI dari layanan PINTU (Pusat Informasi dan Pelayanan Terpadu) Politeknik Negeri Jember. 😊
 
