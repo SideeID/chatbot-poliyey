@@ -9,8 +9,6 @@ import { Button } from './ui/button';
 import { Spinner } from './ui/spinner';
 import { Send, MessageSquare, SparklesIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { driver } from 'driver.js';
-import 'driver.js/dist/driver.css';
 import { MessageSuggestions } from './message-suggestions';
 import { ChatHeader } from './chat-header';
 
@@ -20,7 +18,6 @@ export function Chat() {
     useChat({
       initialMessages,
     });
-  const [isNewUser, setIsNewUser] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
   const [followUpSuggestions, setFollowUpSuggestions] = useState<string[]>([]);
   const [initialSuggestions, setInitialSuggestions] = useState([
@@ -43,41 +40,6 @@ export function Chat() {
   useEffect(() => {
     setTimeout(() => scrollToBottom(containerRef), 100);
   }, [messages]);
-
-  useEffect(() => {
-    const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
-
-    if (isNewUser && !hasSeenTutorial) {
-      const driverObj = driver({
-        showProgress: true,
-        steps: [
-          {
-            element: '.chat-container',
-            popover: {
-              title: '✨ Selamat Datang di Chatbot JEMPOL!',
-              description:
-                'Area chat yang elegan untuk komunikasi yang nyaman.',
-              side: 'left',
-              align: 'start',
-            },
-          },
-          {
-            element: '.input-field',
-            popover: {
-              title: '💭 Mulai Percakapan',
-              description: 'Ketikkan pertanyaan atau pesan Anda di sini.',
-              side: 'bottom',
-              align: 'start',
-            },
-          },
-        ],
-      });
-
-      driverObj.drive();
-      localStorage.setItem('hasSeenTutorial', 'true');
-      setIsNewUser(false);
-    }
-  }, [isNewUser]);
 
   const handleSuggestionClick = (suggestion: string) => {
     handleInputChange({

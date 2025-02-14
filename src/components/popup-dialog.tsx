@@ -9,8 +9,9 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
-  DialogClose,
 } from './ui/dialog';
+import { driver } from 'driver.js';
+import 'driver.js/dist/driver.css';
 
 export default function PopupDialog() {
   const [open, setOpen] = useState(false);
@@ -23,6 +24,44 @@ export default function PopupDialog() {
     }
   }, []);
 
+  const handleClose = () => {
+    setOpen(false);
+
+    const hasSeenTutorial = localStorage.getItem('hasSeenTutorial');
+
+    if (!hasSeenTutorial) {
+      const driverObj = driver({
+        showProgress: true,
+        steps: [
+          {
+            element: '.chat-container',
+            popover: {
+              title: '✨ Selamat Datang di Chatbot JEMPOL!',
+              description:
+                'Area chat yang elegan untuk komunikasi yang nyaman.',
+              side: 'left',
+              align: 'start',
+            },
+          },
+          {
+            element: '.input-field',
+            popover: {
+              title: '💭 Mulai Percakapan',
+              description: 'Ketikkan pertanyaan atau pesan Anda di sini.',
+              side: 'bottom',
+              align: 'start',
+            },
+          },
+        ],
+        onCloseClick: () => {
+          localStorage.setItem('hasSeenTutorial', 'true');
+        },
+      });
+
+      driverObj.drive();
+    }
+  };
+
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className='max-w-md'>
@@ -34,7 +73,7 @@ export default function PopupDialog() {
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
-          <Button onClick={() => setOpen(false)}>Tutup</Button>
+          <Button onClick={handleClose}>Tutup</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

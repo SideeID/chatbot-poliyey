@@ -141,15 +141,6 @@ export async function scrapePolije() {
       'https://pintu.polije.ac.id/C_Artikel/detail/12-pendahuluan',
       'https://pintu.polije.ac.id/C_Artikel/detail/21-tentang-aplikasi-layanan-terpadu',
 
-      'https://polije.ac.id/',
-      'https://polije.ac.id/sejarah/',
-      'https://polije.ac.id/logo-4/',
-      'https://polije.ac.id/visi-misi-polije/',
-      'https://polije.ac.id/tujuan-sasaran-strategi/',
-      'https://polije.ac.id/pimpinan-polije/',
-      'https://polije.ac.id/dokumen-sakip/',
-      'https://polije.ac.id/biaya-pendidikan-2/',
-      'https://polije.ac.id/akreditasi/',
       'https://pmb.polije.ac.id/',
 
       'https://jti.polije.ac.id/',
@@ -157,7 +148,6 @@ export async function scrapePolije() {
       'https://jti.polije.ac.id/staf',
       'https://jti.polije.ac.id/profil-jti',
       'https://jti.polije.ac.id/tata-tertib-mahasiswa',
-      'https://jtit.polije.ac.id/index.php/jtit',
       'https://jti.polije.ac.id/galery/ruang-administrasi',
       'https://jti.polije.ac.id/prodi/trpl-sr',
       'https://jti.polije.ac.id/prodi/trk',
@@ -171,14 +161,83 @@ export async function scrapePolije() {
       'https://jti.polije.ac.id/prodi/tkk',
       'https://jti.polije.ac.id/prodi/int-tkk',
       'https://jti.polije.ac.id/prodi/bsd',
+
+      'https://polije.ac.id/',
+      'https://polije.ac.id/sejarah/',
+      'https://polije.ac.id/logo-4/',
+      'https://polije.ac.id/visi-misi-polije/',
+      'https://polije.ac.id/tujuan-sasaran-strategi/',
+      'https://polije.ac.id/pimpinan-polije/',
+      'https://polije.ac.id/dokumen-sakip/',
+      'https://polije.ac.id/biaya-pendidikan-2/',
+      'https://polije.ac.id/akreditasi/',
+      'https://polije.ac.id/produksi-tanaman-hortikultura-2/',
+      'https://polije.ac.id/produksi-tanaman-perkebunan-2/',
+      'https://polije.ac.id/teknik-produksi-benih-2/',
+      'https://polije.ac.id/teknologi-produksi-tanaman-pangan/',
+      'https://polije.ac.id/budidaya-tanaman-perkebunan/',
+      'https://polije.ac.id/pengelolaan-perkebunan-kopi/',
+      'https://polije.ac.id/10737-2/',
+      'https://polije.ac.id/teknologi-industri-pangan/',
+      'https://polije.ac.id/teknologi-rekayasa-pangan/',
+      'https://polije.ac.id/produksi-ternak/',
+      'https://polije.ac.id/manajemen-bisnis-unggas/',
+      'https://polije.ac.id/teknologi-pakan-ternak/',
+      'https://polije.ac.id/manajemen-agribisnis/',
+      'https://polije.ac.id/manajemen-agroindustri/',
+      'https://polije.ac.id/manajemen-informatika/',
+      'https://polije.ac.id/teknik-komputer/',
+      'https://polije.ac.id/teknik-informatika/',
+      'https://polije.ac.id/bisnis-digital-kampus-bondowoso/',
+      'https://polije.ac.id/bahasa-inggris/',
+      'https://polije.ac.id/destinasi-pariwisata/',
+      'https://polije.ac.id/manajemen-informasi-kesehatan/',
+      'https://polije.ac.id/gizi-klinik/',
+      'https://polije.ac.id/promosi-kesehatan/',
+      'https://polije.ac.id/teknik-energi-terbarukan/',
+      'https://polije.ac.id/mesin-otomotif/',
+      'https://polije.ac.id/teknologi-rekayasa-mekatronika/',
+      'https://polije.ac.id/teknologi-rekayasa-mekatronika/',
+      'https://polije.ac.id/manajemen-pemasaran-internasional/',
+      'https://polije.ac.id/manajemen-informatika-int/',
+      'https://polije.ac.id/teknik-informatika-int/',
+      'https://polije.ac.id/manajamen-agroindustri-int/',
+      'https://polije.ac.id/kampus-2-bondowoso/',
+      'https://polije.ac.id/kampus-3-nganjuk/',
+      'https://polije.ac.id/kampus-4-sidoarjo/',
+      'https://polije.ac.id/kampus-5-ngawi/',
+      'https://polije.ac.id/manajemen-perubahan/',
+      'https://polije.ac.id/penataan-tata-laksana/',
+      'https://polije.ac.id/penataan-sistem-manajemen-sdm/',
+      'https://polije.ac.id/penguatan-akuntabilitas/',
+      'https://polije.ac.id/penguatan-pengawasan/',
+      'https://polije.ac.id/peningkatan-kualitas-pelayanan-publik/',
+
+      'https://jtinova.com/',
+      'https://www.side.my.id/',
+      'https://www.linkedin.com/in/sideid',
     ],
     outputDir: './scraped_docs',
     maxDepth: 3,
   });
 
-  const scrapedDocuments = await scraper.scrapeUrls();
+  try {
+    const scrapedDocuments = await scraper.scrapeUrls();
 
-  const processedDocuments = await scraper.processScrapedDocuments(scrapedDocuments);
+    // Process and chunk the scraped documents
+    const processedDocuments = await scraper.processScrapedDocuments(
+      scrapedDocuments,
+    );
 
-  return processedDocuments;
+    // Filter out empty documents
+    const nonEmptyDocuments = processedDocuments.filter(
+      (doc) => doc.pageContent && doc.pageContent.trim().length > 0,
+    );
+
+    console.log(`Scraped ${nonEmptyDocuments.length} non-empty documents`);
+    return nonEmptyDocuments;
+  } catch (error) {
+    console.error('Failed to scrape Polije websites:', error);
+    return []; // Return empty array to prevent script failure
+  }
 }
