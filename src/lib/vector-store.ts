@@ -1,3 +1,4 @@
+// src\lib\vector-store.ts
 import { env } from './config';
 import { GoogleGenerativeAIEmbeddings } from '@langchain/google-genai';
 import { PineconeStore } from '@langchain/pinecone';
