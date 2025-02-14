@@ -76,39 +76,40 @@ export default function AboutChatbotPage() {
       initial='hidden'
       animate='visible'
       variants={containerVariants}
-      className='min-h-screen bg-gradient-to-br from-background to-secondary/20 py-12 px-4'
+      className='min-h-screen bg-gradient-to-br from-background to-secondary/20 py-4 md:py-12 px-2 md:px-4'
     >
-      <div className='container mx-auto max-w-4xl'>
+      <div className='container mx-auto max-w-4xl px-1 md:px-0'>
         <motion.div variants={itemVariants}>
           <Link
             href='/'
-            className='inline-flex items-center text-primary hover:text-primary/80 mb-6'
+            className='inline-flex items-center text-primary hover:text-primary/80 mb-4 md:mb-6 px-2 md:px-0'
           >
             <ArrowLeft className='mr-2 h-4 w-4' /> Kembali ke Beranda
           </Link>
         </motion.div>
 
-        <motion.div variants={itemVariants}>
-          <Card className='overflow-hidden'>
+        <motion.div variants={itemVariants} className='px-1 md:px-0'>
+          <Card className='overflow-hidden w-full'>
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: 'spring', stiffness: 100, delay: 0.2 }}
-              className='bg-gradient-to-r from-primary to-primary/80 text-primary-foreground p-8 text-center'
+              className='bg-gradient-to-r from-primary to-primary/80 text-primary-foreground p-4 md:p-8 text-center'
             >
-              <h1 className='text-4xl font-extrabold mb-4 tracking-tight'>
+              <h1 className='text-2xl md:text-4xl font-extrabold mb-2 md:mb-4 tracking-tight'>
                 JEMPOL Chatbot
               </h1>
-              <p className='text-xl opacity-90 max-w-2xl mx-auto'>
-                Jaringan Edukasi dan Informasi Layanan Mandiri POLIJE - Asisten Pintar untuk Informasi Akademik
+              <p className='text-sm md:text-xl opacity-90 max-w-2xl mx-auto'>
+                Jaringan Edukasi dan Informasi Layanan Mandiri POLIJE - Asisten
+                Pintar untuk Informasi Akademik
               </p>
             </motion.div>
 
             {/* Scope of Knowledge */}
-            <CardContent className='p-8'>
+            <CardContent className='p-4 md:p-8'>
               <CardHeader className='px-0'>
-                <CardTitle className='text-2xl font-bold flex items-center'>
+                <CardTitle className='text-xl md:text-2xl font-bold flex items-center'>
                   <Target className='mr-4 text-primary' size={24} />
                   Ruang Lingkup Pengetahuan
                 </CardTitle>
@@ -116,13 +117,13 @@ export default function AboutChatbotPage() {
 
               <motion.div
                 variants={containerVariants}
-                className='grid md:grid-cols-2 gap-6'
+                className='grid md:grid-cols-2 gap-4 md:gap-6'
               >
                 {scopeItems.map((section, index) => (
                   <motion.div key={index} variants={itemVariants}>
                     <Card className='overflow-hidden'>
-                      <CardHeader className='bg-muted'>
-                        <CardTitle className='text-xl font-semibold flex items-center'>
+                      <CardHeader className='bg-muted p-3 md:p-4'>
+                        <CardTitle className='text-base md:text-xl font-semibold flex items-center'>
                           <section.icon
                             className='mr-3 text-primary'
                             size={20}
@@ -130,18 +131,18 @@ export default function AboutChatbotPage() {
                           {section.title}
                         </CardTitle>
                       </CardHeader>
-                      <CardContent className='pt-4'>
+                      <CardContent className='pt-3 md:pt-4'>
                         <motion.ul
                           variants={containerVariants}
                           initial='hidden'
                           animate='visible'
-                          className='space-y-2'
+                          className='space-y-1 md:space-y-2'
                         >
                           {section.items.map((item, itemIndex) => (
                             <motion.li
                               key={itemIndex}
                               variants={itemVariants}
-                              className='flex items-center text-sm'
+                              className='flex items-center text-xs md:text-sm'
                             >
                               <CheckCircle
                                 className='mr-2 text-primary'

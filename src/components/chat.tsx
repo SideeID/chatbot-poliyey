@@ -64,7 +64,7 @@ export function Chat() {
     <motion.div
       layout
       className={`flex flex-col ${
-        isExpanded ? 'fixed inset-4 z-50' : 'h-[90vh]'
+        isExpanded ? 'fixed inset-2 md:inset-4 z-50' : 'h-[90vh]'
       } bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-gray-950 rounded-2xl border shadow-lg backdrop-blur-sm`}
       style={{
         boxShadow:
@@ -78,7 +78,7 @@ export function Chat() {
 
       <motion.div
         layout
-        className='flex-1 overflow-auto p-4 space-y-4 chat-container scroll-smooth'
+        className='flex-1 overflow-auto p-2 md:p-4 space-y-2 md:space-y-4 chat-container scroll-smooth'
         ref={containerRef}
       >
         <AnimatePresence mode='popLayout'>
@@ -153,7 +153,7 @@ export function Chat() {
 
       <motion.div
         layout
-        className='p-4 border-t backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-b-2xl'
+        className='p-2 md:p-4 border-t backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-b-2xl'
       >
         <form onSubmit={handleFormSubmit} className='flex gap-2'>
           <div className='relative flex-1'>
@@ -161,14 +161,14 @@ export function Chat() {
               value={input}
               placeholder='Ketik pesan Anda...'
               onChange={handleInputChange}
-              className='input-field pr-10 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 rounded-full pl-12'
+              className='input-field pr-10 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 rounded-full pl-10 md:pl-12 text-sm md:text-base'
             />
-            <MessageSquare className='absolute left-4 top-1/2 -translate-y-[65%] w-5 h-5 text-muted-foreground' />
+            <MessageSquare className='absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 text-muted-foreground' />
           </div>
           <Button
             type='submit'
             size='icon'
-            className='rounded-full w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-200'
+            className='rounded-full w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-200'
             disabled={isLoading || !input.trim()}
           >
             {isLoading ? <Spinner /> : <Send className='w-4 h-4' />}
