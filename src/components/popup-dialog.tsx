@@ -44,7 +44,7 @@ export default function PopupDialog() {
             },
           },
           {
-            element: '.input-field',
+            element: '.form--input',
             popover: {
               title: '💭 Mulai Percakapan',
               description: 'Ketikkan pertanyaan atau pesan Anda di sini.',

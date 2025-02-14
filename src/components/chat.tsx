@@ -153,13 +153,13 @@ export function Chat() {
 
       <motion.div
         layout
-        className='p-2 md:p-4 border-t backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-b-2xl'
+        className='p-2 md:p-4 border-t backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 rounded-b-2xl form--input'
       >
         <form onSubmit={handleFormSubmit} className='flex gap-2'>
           <div className='relative flex-1'>
             <Input
               value={input}
-              placeholder='Ketik pesan Anda...'
+              placeholder='Ketik pertanyaan Anda...'
               onChange={handleInputChange}
               className='input-field pr-10 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 rounded-full pl-10 md:pl-12 text-sm md:text-base'
             />
