@@ -148,7 +148,6 @@ export async function scrapePolije() {
       'https://jti.polije.ac.id/staf',
       'https://jti.polije.ac.id/profil-jti',
       'https://jti.polije.ac.id/tata-tertib-mahasiswa',
-      'https://jtit.polije.ac.id/index.php/jtit',
       'https://jti.polije.ac.id/galery/ruang-administrasi',
       'https://jti.polije.ac.id/prodi/trpl-sr',
       'https://jti.polije.ac.id/prodi/trk',
@@ -222,9 +221,23 @@ export async function scrapePolije() {
     maxDepth: 3,
   });
 
-  const scrapedDocuments = await scraper.scrapeUrls();
+  try {
+    const scrapedDocuments = await scraper.scrapeUrls();
 
-  const processedDocuments = await scraper.processScrapedDocuments(scrapedDocuments);
+    // Process and chunk the scraped documents
+    const processedDocuments = await scraper.processScrapedDocuments(
+      scrapedDocuments,
+    );
 
-  return processedDocuments;
+    // Filter out empty documents
+    const nonEmptyDocuments = processedDocuments.filter(
+      (doc) => doc.pageContent && doc.pageContent.trim().length > 0,
+    );
+
+    console.log(`Scraped ${nonEmptyDocuments.length} non-empty documents`);
+    return nonEmptyDocuments;
+  } catch (error) {
+    console.error('Failed to scrape Polije websites:', error);
+    return []; // Return empty array to prevent script failure
+  }
 }
