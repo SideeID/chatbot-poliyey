@@ -1,3 +1,4 @@
+// src\lib\langchain.ts
 import { ConversationalRetrievalQAChain } from 'langchain/chains';
 import {
   ChatPromptTemplate,
