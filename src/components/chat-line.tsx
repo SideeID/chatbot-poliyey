@@ -1,3 +1,4 @@
+import React from 'react';
 import { User, CheckCheck, Info, AlertTriangle, Lightbulb } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import Image from 'next/image';
@@ -167,49 +168,70 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
                 );
               },
               // Custom alert parsing
-              p({ node, children, ...props }) {
-                const text = String(children).trim();
-                if (text.startsWith('!!! info')) {
-                  return (
-                    <CustomAlert type='info'>
-                      {text.replace('!!! info', '')}
-                    </CustomAlert>
-                  );
+              p(props) {
+                const { children } = props;
+                // Ensure we're dealing with children as an array
+                const childrenArray = React.Children.toArray(children);
+
+                // Check if the first child is a string and starts with the expected patterns
+                if (
+                  childrenArray.length > 0 &&
+                  typeof childrenArray[0] === 'string'
+                ) {
+                  const firstChild = childrenArray[0] as string;
+
+                  if (firstChild.startsWith('!!! info')) {
+                    const content = firstChild.replace('!!! info', '');
+                    const restChildren = childrenArray.slice(1);
+                    return (
+                      <CustomAlert type='info'>
+                        {content}
+                        {restChildren}
+                      </CustomAlert>
+                    );
+                  }
+
+                  if (firstChild.startsWith('!!! warning')) {
+                    const content = firstChild.replace('!!! warning', '');
+                    const restChildren = childrenArray.slice(1);
+                    return (
+                      <CustomAlert type='warning'>
+                        {content}
+                        {restChildren}
+                      </CustomAlert>
+                    );
+                  }
+
+                  if (firstChild.startsWith('!!! success')) {
+                    const content = firstChild.replace('!!! success', '');
+                    const restChildren = childrenArray.slice(1);
+                    return (
+                      <CustomAlert type='success'>
+                        {content}
+                        {restChildren}
+                      </CustomAlert>
+                    );
+                  }
+
+                  if (firstChild.startsWith('!!! tip')) {
+                    const content = firstChild.replace('!!! tip', '');
+                    const restChildren = childrenArray.slice(1);
+                    return (
+                      <CustomAlert type='tip'>
+                        {content}
+                        {restChildren}
+                      </CustomAlert>
+                    );
+                  }
                 }
-                if (text.startsWith('!!! warning')) {
-                  return (
-                    <CustomAlert type='warning'>
-                      {text.replace('!!! warning', '')}
-                    </CustomAlert>
-                  );
-                }
-                if (text.startsWith('!!! success')) {
-                  return (
-                    <CustomAlert type='success'>
-                      {text.replace('!!! success', '')}
-                    </CustomAlert>
-                  );
-                }
-                if (text.startsWith('!!! tip')) {
-                  return (
-                    <CustomAlert type='tip'>
-                      {text.replace('!!! tip', '')}
-                    </CustomAlert>
-                  );
-                }
+
                 return <p {...props}>{children}</p>;
               },
               ul({ children }) {
-                return (
-                  <ul className='list-disc pl-6 mb-4'>{children}</ul>
-                );
+                return <ul className='list-disc pl-6 mb-4'>{children}</ul>;
               },
               ol({ children }) {
-                return (
-                  <ol className='list-decimal pl-6 mb-4'>
-                    {children}
-                  </ol>
-                );
+                return <ol className='list-decimal pl-6 mb-4'>{children}</ol>;
               },
             }}
           >
