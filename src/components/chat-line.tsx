@@ -1,4 +1,3 @@
-// src\components\chat-line.tsx
 import { User, CheckCheck } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import Image from 'next/image';
@@ -23,11 +22,13 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
   const isAssistant = role === 'assistant';
 
   return (
-    <div className={`flex gap-3 ${isAssistant ? '' : 'flex-row-reverse'}`}>
+    <div
+      className={`flex gap-2 md:gap-3 ${isAssistant ? '' : 'flex-row-reverse'}`}
+    >
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        className={`flex h-10 w-10 shrink-0 select-none items-center justify-center rounded-full ${
+        className={`flex h-8 w-8 md:h-10 md:w-10 shrink-0 select-none items-center justify-center rounded-full ${
           isAssistant
             ? 'bg-muted'
             : 'bg-gradient-to-br from-amber-500 to-amber-600 text-white'
@@ -46,7 +47,7 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
       </motion.div>
       <div className='flex-1 space-y-2'>
         <Card
-          className={`p-4 max-w-[85%] ${
+          className={`p-2 md:p-4 max-w-[85%] ${
             isAssistant
               ? 'ml-0 mr-auto bg-white dark:bg-gray-900'
               : 'ml-auto mr-0 bg-amber-50 dark:bg-amber-900/20'
