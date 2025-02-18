@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import React from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -115,6 +116,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <SpeedInsights />
           <Analytics />
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

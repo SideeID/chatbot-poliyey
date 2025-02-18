@@ -1,3 +1,4 @@
+// src\components\chat-line.tsx
 import React from 'react';
 import { User, CheckCheck, Info, AlertTriangle, Lightbulb } from 'lucide-react';
 import { Card } from '@/components/ui/card';
@@ -7,6 +8,9 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { formattedText } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import { Copy } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useToast } from '@/hooks/use-toast';
 import {
   Accordion,
   AccordionContent,
@@ -50,6 +54,24 @@ const CustomAlert = ({
 };
 
 export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
+  const { toast } = useToast();
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast({
+        description: 'Pesan berhasil disalin ke clipboard!',
+        duration: 2000,
+      });
+    } catch (err) {
+      toast({
+        variant: 'destructive',
+        description: 'Gagal menyalin pesan. Silakan coba lagi.',
+        duration: 2000,
+      });
+    }
+  };
+
   if (!content) {
     return null;
   }
@@ -238,12 +260,27 @@ export function ChatLine({ role = 'assistant', content }: ChatLineProps) {
             {formattedText(content)}
           </ReactMarkdown>
         </Card>
-        {!isAssistant && (
-          <div className='flex items-center justify-end gap-1 text-xs text-muted-foreground pr-2'>
-            <span>Terkirim</span>
-            <CheckCheck className='w-4 h-4' />
-          </div>
-        )}
+        <div
+          className={`flex items-center gap-2 ${
+            isAssistant ? 'justify-start' : 'justify-end'
+          }`}
+        >
+          <Button
+            variant='ghost'
+            size='sm'
+            className='h-8 px-2 text-muted-foreground hover:text-foreground'
+            onClick={() => copyToClipboard(content)}
+          >
+            <Copy className='h-4 w-4 mr-1' />
+            <span className='text-xs'>Salin</span>
+          </Button>
+          {!isAssistant && (
+            <div className='flex items-center gap-1 text-xs text-muted-foreground'>
+              <span>Terkirim</span>
+              <CheckCheck className='w-4 h-4' />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
