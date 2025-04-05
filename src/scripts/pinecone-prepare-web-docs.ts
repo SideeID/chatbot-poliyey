@@ -1,3 +1,4 @@
+// src\scripts\pinecone-prepare-web-docs.ts
 import { scrapePolije } from '@/lib/web-loader';
 import { embedAndStoreDocs } from '@/lib/vector-store';
 import { getPineconeClient } from '@/lib/pinecone-client';
