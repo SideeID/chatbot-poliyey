@@ -1,5 +1,4 @@
-// src\lib\web-loader.ts
-import { PuppeteerWebBaseLoader } from "@langchain/community/document_loaders/web/puppeteer";
+import { PuppeteerWebBaseLoader } from '@langchain/community/document_loaders/web/puppeteer';
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import { Document } from '@langchain/core/documents';
 import fs from 'fs/promises';
@@ -25,11 +24,13 @@ class WebScraper {
   }
 
   private sanitizeFileName(url: string): string {
-    return url
-      .replace(/^https?:\/\//, '')
-      .replace(/[^a-z0-9]/gi, '_')
-      .toLowerCase()
-      .substring(0, 255) + '.txt';
+    return (
+      url
+        .replace(/^https?:\/\//, '')
+        .replace(/[^a-z0-9]/gi, '_')
+        .toLowerCase()
+        .substring(0, 255) + '.txt'
+    );
   }
 
   public async scrapeUrls(): Promise<Document[]> {
@@ -44,51 +45,60 @@ class WebScraper {
         const loader = new PuppeteerWebBaseLoader(url, {
           launchOptions: {
             headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
           },
           gotoOptions: {
             waitUntil: 'networkidle0',
-            timeout: 30000
+            timeout: 30000,
           },
           evaluate: async (page) => {
-            // Custom content extraction 
             const contentSelectors = [
-              'main', 
-              'article', 
-              '.content', 
-              '#content', 
-              '.page-content', 
-              'body'
+              'main',
+              'article',
+              '.content',
+              '#content',
+              '.page-content',
+              'body',
             ];
 
             return await page.evaluate((selectors: string[]): string => {
               for (const selector of selectors) {
-              const contentElement: Element | null = document.querySelector(selector);
-              if (contentElement) {
-                // Remove scripts, styles, and navigation elements
-                const elementsToRemove: NodeListOf<Element> = contentElement.querySelectorAll('script, style, nav, header, footer, aside');
-                elementsToRemove.forEach((el: Element): void => el.remove());
+                const contentElement: Element | null =
+                  document.querySelector(selector);
+                if (contentElement) {
+                  const elementsToRemove: NodeListOf<Element> =
+                    contentElement.querySelectorAll(
+                      'script, style, nav, header, footer, aside',
+                    );
+                  elementsToRemove.forEach((el: Element): void => el.remove());
 
-                // Extract text content
-                return contentElement.textContent?.trim() || '';
+                  return contentElement.textContent?.trim() || '';
+                }
               }
-              }
-              // Fallback to body text if no specific content found
               return document.body.textContent?.trim() || '';
             }, contentSelectors);
-          }
+          },
         });
 
         const docs = await loader.load();
 
+        const enhancedDocs = docs.map((doc) => {
+          return new Document({
+            pageContent: doc.pageContent,
+            metadata: {
+              ...doc.metadata,
+              source_type: 'web_scraped',
+              scraped_at: new Date().toISOString(),
+              url: url,
+            },
+          });
+        });
+
         await this.createOutputDir();
-        const filename = path.join(
-          this.outputDir, 
-          this.sanitizeFileName(url)
-        );
+        const filename = path.join(this.outputDir, this.sanitizeFileName(url));
         await fs.writeFile(filename, docs[0].pageContent);
 
-        allDocuments.push(...docs);
+        allDocuments.push(...enhancedDocs);
       } catch (error) {
         console.error(`Error scraping ${url}:`, error);
       }
@@ -97,7 +107,9 @@ class WebScraper {
     return allDocuments;
   }
 
-  public async processScrapedDocuments(documents: Document[]): Promise<Document[]> {
+  public async processScrapedDocuments(
+    documents: Document[],
+  ): Promise<Document[]> {
     const textSplitter = new RecursiveCharacterTextSplitter({
       chunkSize: 1000,
       chunkOverlap: 200,
@@ -116,8 +128,8 @@ class WebScraper {
       metadata: {
         ...doc.metadata,
         source_type: 'web_scraped',
-        processed_at: new Date().toISOString()
-      }
+        processed_at: new Date().toISOString(),
+      },
     }));
 
     return cleanedChunks;
@@ -225,12 +237,10 @@ export async function scrapePolije() {
   try {
     const scrapedDocuments = await scraper.scrapeUrls();
 
-    // Process and chunk the scraped documents
     const processedDocuments = await scraper.processScrapedDocuments(
       scrapedDocuments,
     );
 
-    // Filter out empty documents
     const nonEmptyDocuments = processedDocuments.filter(
       (doc) => doc.pageContent && doc.pageContent.trim().length > 0,
     );
@@ -239,6 +249,6 @@ export async function scrapePolije() {
     return nonEmptyDocuments;
   } catch (error) {
     console.error('Failed to scrape Polije websites:', error);
-    return []; // Return empty array to prevent script failure
+    return [];
   }
 }
