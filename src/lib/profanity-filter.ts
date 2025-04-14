@@ -3,11 +3,9 @@ import { IDProfanityFilter, idFilter } from '@sideid/id-profanity-filter';
 const filter = new IDProfanityFilter({
   fullWordCensor: false,
   detectLeetSpeak: true,
-  detectSplit: true,
   useLevenshtein: true,
   detectSimilarity: true,
   maxLevenshteinDistance: 2,
-  // regions: ['jawa', 'general'],
 });
 
 export interface ProfanityCheckResult {
@@ -15,8 +13,6 @@ export interface ProfanityCheckResult {
   filteredText?: string;
   profaneWords?: string[];
 }
-
-filter.addToWhitelist('jablay');
 
 export function checkProfanity(text: string): ProfanityCheckResult {
   const hasProfanity = filter.isProfane(text);
