@@ -4,7 +4,6 @@ const filter = new IDProfanityFilter({
   fullWordCensor: false,
   detectLeetSpeak: true,
   useLevenshtein: true,
-  detectSimilarity: true,
   maxLevenshteinDistance: 2,
 });
 
