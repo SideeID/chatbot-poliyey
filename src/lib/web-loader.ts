@@ -8,15 +8,24 @@ class WebScraper {
   private urls: string[];
   private outputDir: string;
   private maxDepth: number;
+  private timeout: number;
+  private retries: number;
+  private delayBetweenRequests: number;
 
   constructor(options: {
     urls: string[];
     outputDir?: string;
     maxDepth?: number;
+    timeout?: number;
+    retries?: number;
+    delayBetweenRequests?: number;
   }) {
     this.urls = options.urls;
     this.outputDir = options.outputDir || './scraped_docs';
     this.maxDepth = options.maxDepth || 3;
+    this.timeout = options.timeout || 60000;
+    this.retries = options.retries || 2; 
+    this.delayBetweenRequests = options.delayBetweenRequests || 1000;
   }
 
   private async createOutputDir() {
@@ -33,74 +42,104 @@ class WebScraper {
     );
   }
 
-  public async scrapeUrls(): Promise<Document[]> {
-    interface ContentSelectors {
-      selectors: string[];
-    }
+  private async delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
 
+  private async scrapeWithRetry(
+    url: string,
+    retryCount = 0,
+  ): Promise<Document[]> {
+    try {
+      const loader = new PuppeteerWebBaseLoader(url, {
+        launchOptions: {
+          headless: 'new',
+          args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        },
+        gotoOptions: {
+          waitUntil: 'domcontentloaded',
+          timeout: this.timeout,
+        },
+        evaluate: async (page) => {
+          const contentSelectors = [
+            'main',
+            'article',
+            '.content',
+            '#content',
+            '.page-content',
+            'body',
+          ];
+
+          return await page.evaluate((selectors: string[]): string => {
+            for (const selector of selectors) {
+              const contentElement: Element | null =
+                document.querySelector(selector);
+              if (contentElement) {
+                const elementsToRemove: NodeListOf<Element> =
+                  contentElement.querySelectorAll(
+                    'script, style, nav, header, footer, aside',
+                  );
+                elementsToRemove.forEach((el: Element): void => el.remove());
+
+                return contentElement.textContent?.trim() || '';
+              }
+            }
+            return document.body.textContent?.trim() || '';
+          }, contentSelectors);
+        },
+      });
+
+      const docs = await loader.load();
+
+      const enhancedDocs = docs.map((doc) => {
+        return new Document({
+          pageContent: doc.pageContent,
+          metadata: {
+            ...doc.metadata,
+            source_type: 'web_scraped',
+            scraped_at: new Date().toISOString(),
+            url: url,
+          },
+        });
+      });
+
+      return enhancedDocs;
+    } catch (error) {
+      if (retryCount < this.retries) {
+        console.log(`Retry ${retryCount + 1}/${this.retries} for ${url}`);
+        await this.delay((retryCount + 1) * 2000);
+        return this.scrapeWithRetry(url, retryCount + 1);
+      }
+
+      console.error(
+        `Failed to scrape ${url} after ${this.retries} retries:`,
+        error,
+      );
+      return [];
+    }
+  }
+
+  public async scrapeUrls(): Promise<Document[]> {
+    await this.createOutputDir();
     const allDocuments: Document[] = [];
 
     for (const url of this.urls) {
       try {
-        const loader = new PuppeteerWebBaseLoader(url, {
-          launchOptions: {
-            headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox'],
-          },
-          gotoOptions: {
-            waitUntil: 'networkidle0',
-            timeout: 30000,
-          },
-          evaluate: async (page) => {
-            const contentSelectors = [
-              'main',
-              'article',
-              '.content',
-              '#content',
-              '.page-content',
-              'body',
-            ];
+        console.log(`Scraping: ${url}`);
+        const enhancedDocs = await this.scrapeWithRetry(url);
 
-            return await page.evaluate((selectors: string[]): string => {
-              for (const selector of selectors) {
-                const contentElement: Element | null =
-                  document.querySelector(selector);
-                if (contentElement) {
-                  const elementsToRemove: NodeListOf<Element> =
-                    contentElement.querySelectorAll(
-                      'script, style, nav, header, footer, aside',
-                    );
-                  elementsToRemove.forEach((el: Element): void => el.remove());
+        if (enhancedDocs.length > 0) {
+          const filename = path.join(
+            this.outputDir,
+            this.sanitizeFileName(url),
+          );
+          await fs.writeFile(filename, enhancedDocs[0].pageContent);
+          allDocuments.push(...enhancedDocs);
+        }
 
-                  return contentElement.textContent?.trim() || '';
-                }
-              }
-              return document.body.textContent?.trim() || '';
-            }, contentSelectors);
-          },
-        });
-
-        const docs = await loader.load();
-
-        const enhancedDocs = docs.map((doc) => {
-          return new Document({
-            pageContent: doc.pageContent,
-            metadata: {
-              ...doc.metadata,
-              source_type: 'web_scraped',
-              scraped_at: new Date().toISOString(),
-              url: url,
-            },
-          });
-        });
-
-        await this.createOutputDir();
-        const filename = path.join(this.outputDir, this.sanitizeFileName(url));
-        await fs.writeFile(filename, docs[0].pageContent);
-
-        allDocuments.push(...enhancedDocs);
+        await this.delay(this.delayBetweenRequests);
       } catch (error) {
-        console.error(`Error scraping ${url}:`, error);
+        console.error(`Error processing ${url}:`, error);
       }
     }
 
@@ -293,6 +332,9 @@ export async function scrapePolije() {
     ],
     outputDir: './scraped_docs',
     maxDepth: 3,
+    timeout: 60000,
+    retries: 2,
+    delayBetweenRequests: 2000,
   });
 
   try {
