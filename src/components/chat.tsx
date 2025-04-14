@@ -61,6 +61,7 @@ export function Chat() {
 
     // Cek kata kotor sebelum submit
     const profanityCheck = checkProfanity(input);
+    console.log('Profanity Check Result:', profanityCheck);
 
     if (profanityCheck.isProfane) {
       // Tampilkan pesan peringatan
