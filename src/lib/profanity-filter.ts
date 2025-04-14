@@ -7,7 +7,7 @@ const filter = new IDProfanityFilter({
   indonesianVariation: true,
   detectSplit: true,
   useLevenshtein: true,
-  detectSimilarity: true,
+  //detectSimilarity: true,
   maxLevenshteinDistance: 2,
 });
 
