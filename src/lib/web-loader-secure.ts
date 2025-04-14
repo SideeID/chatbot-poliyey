@@ -1,0 +1,383 @@
+import { PuppeteerWebBaseLoader } from '@langchain/community/document_loaders/web/puppeteer';
+import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
+import { Document } from '@langchain/core/documents';
+import fs from 'fs/promises';
+import path from 'path';
+
+class WebScraper {
+  private urls: string[];
+  private outputDir: string;
+  private maxDepth: number;
+  private userAgents: string[];
+
+  constructor(options: {
+    urls: string[];
+    outputDir?: string;
+    maxDepth?: number;
+  }) {
+    this.urls = options.urls;
+    this.outputDir = options.outputDir || './scraped_docs';
+    this.maxDepth = options.maxDepth || 3;
+
+    this.userAgents = [
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15',
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0',
+      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36',
+    ];
+  }
+
+  private async createOutputDir() {
+    await fs.mkdir(this.outputDir, { recursive: true });
+  }
+
+  private sanitizeFileName(url: string): string {
+    return (
+      url
+        .replace(/^https?:\/\//, '')
+        .replace(/[^a-z0-9]/gi, '_')
+        .toLowerCase()
+        .substring(0, 255) + '.txt'
+    );
+  }
+
+  private async randomDelay(min = 1000, max = 3000): Promise<void> {
+    const delay = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(`Tunggu ${delay / 1000} detik sebelum request berikutnya...`);
+    return new Promise((resolve) => setTimeout(resolve, delay));
+  }
+
+  private getRandomUserAgent(): string {
+    return this.userAgents[Math.floor(Math.random() * this.userAgents.length)];
+  }
+
+  private isMainPolijeUrl(url: string): boolean {
+    return url.match(/^https?:\/\/(www\.)?polije\.ac\.id(\/|$)/) !== null;
+  }
+
+  public async scrapeUrls(): Promise<Document[]> {
+    const mainPolijeUrls: string[] = [];
+    const otherUrls: string[] = [];
+
+    this.urls.forEach((url) => {
+      if (this.isMainPolijeUrl(url)) {
+        mainPolijeUrls.push(url);
+      } else {
+        otherUrls.push(url);
+      }
+    });
+
+    console.log(`URLs domain utama polije.ac.id: ${mainPolijeUrls.length}`);
+    console.log(`URLs domain lain: ${otherUrls.length}`);
+
+    const allDocuments: Document[] = [];
+
+    if (otherUrls.length > 0) {
+      console.log('Memproses URLs dari domain non-polije.ac.id utama...');
+      for (let i = 0; i < otherUrls.length; i++) {
+        try {
+          const url = otherUrls[i];
+          console.log(`Mengakses ${url} (${i + 1}/${otherUrls.length})`);
+
+          const docs = await this.scrapeSingleUrl(url);
+          allDocuments.push(...docs);
+
+          if (i < otherUrls.length - 1) {
+            await this.randomDelay(1000, 3000);
+          }
+        } catch (error) {
+          console.error(`Error scraping ${otherUrls[i]}:`, error);
+        }
+      }
+    }
+
+    if (mainPolijeUrls.length > 0) {
+      console.log(
+        'Memproses URLs dari domain polije.ac.id utama dengan hati-hati...',
+      );
+
+      const shuffledPolijeUrls = [...mainPolijeUrls].sort(
+        () => Math.random() - 0.5,
+      );
+
+      const batchSize = 3;
+
+      for (let i = 0; i < shuffledPolijeUrls.length; i += batchSize) {
+        const batch = shuffledPolijeUrls.slice(i, i + batchSize);
+        console.log(
+          `Memproses batch ${Math.floor(i / batchSize) + 1} dari ${Math.ceil(
+            shuffledPolijeUrls.length / batchSize,
+          )}`,
+        );
+
+        for (let j = 0; j < batch.length; j++) {
+          try {
+            const url = batch[j];
+            console.log(`Mengakses ${url} (${j + 1}/${batch.length})`);
+
+            const docs = await this.scrapeSingleUrl(url, true);
+            allDocuments.push(...docs);
+
+            if (j < batch.length - 1) {
+              await this.randomDelay(8000, 15000);
+            }
+          } catch (error) {
+            console.error(`Error scraping ${batch[j]}:`, error);
+          }
+        }
+
+        if (i + batchSize < shuffledPolijeUrls.length) {
+          const breakTime = 60000 + Math.random() * 30000; // 60-90 detik
+          console.log(
+            `Istirahat ${Math.round(
+              breakTime / 1000,
+            )} detik sebelum batch berikutnya...`,
+          );
+          await new Promise((resolve) => setTimeout(resolve, breakTime));
+        }
+      }
+    }
+
+    return allDocuments;
+  }
+
+  private async scrapeSingleUrl(
+    url: string,
+    isMainPolije = false,
+  ): Promise<Document[]> {
+    const userAgent = this.getRandomUserAgent();
+
+    const loader = new PuppeteerWebBaseLoader(url, {
+      launchOptions: {
+        headless: 'new',
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      },
+      gotoOptions: {
+        waitUntil: 'networkidle0',
+        timeout: 30000,
+      },
+      evaluate: async (page) => {
+        await page.setUserAgent(userAgent);
+
+        if (isMainPolije) {
+          await page.evaluate(() => {
+            const height = document.body.scrollHeight;
+            const scrollSteps = 5 + Math.floor(Math.random() * 3);
+
+            return new Promise((resolve) => {
+              let scrolled = 0;
+              const timer = setInterval(() => {
+                const scrollAmount = Math.floor(height / scrollSteps);
+                window.scrollBy(0, scrollAmount);
+                scrolled++;
+
+                if (scrolled >= scrollSteps) {
+                  clearInterval(timer);
+                  setTimeout(() => {
+                    window.scrollTo(0, 0);
+                    resolve(true);
+                  }, 800);
+                }
+              }, 800 + Math.random() * 400);
+            });
+          });
+        }
+
+        const contentSelectors = [
+          'main',
+          'article',
+          '.content',
+          '#content',
+          '.page-content',
+          'body',
+        ];
+
+        return await page.evaluate((selectors: string[]): string => {
+          for (const selector of selectors) {
+            const contentElement: Element | null =
+              document.querySelector(selector);
+            if (contentElement) {
+              const elementsToRemove: NodeListOf<Element> =
+                contentElement.querySelectorAll(
+                  'script, style, nav, header, footer, aside',
+                );
+              elementsToRemove.forEach((el: Element): void => el.remove());
+
+              return contentElement.textContent?.trim() || '';
+            }
+          }
+          return document.body.textContent?.trim() || '';
+        }, contentSelectors);
+      },
+    });
+
+    const docs = await loader.load();
+
+    const enhancedDocs = docs.map((doc) => {
+      return new Document({
+        pageContent: doc.pageContent,
+        metadata: {
+          ...doc.metadata,
+          source_type: 'web_scraped',
+          scraped_at: new Date().toISOString(),
+          url: url,
+        },
+      });
+    });
+
+    await this.createOutputDir();
+    const filename = path.join(this.outputDir, this.sanitizeFileName(url));
+    await fs.writeFile(filename, docs[0].pageContent);
+
+    return enhancedDocs;
+  }
+
+  public async processScrapedDocuments(
+    documents: Document[],
+  ): Promise<Document[]> {
+    const textSplitter = new RecursiveCharacterTextSplitter({
+      chunkSize: 1000,
+      chunkOverlap: 200,
+      lengthFunction: (text) => text.length,
+      separators: ['\n\n', '\n', '. ', '? ', '! ', '; ', ': ', ' - ', ', '],
+    });
+
+    const chunkedDocs = await textSplitter.splitDocuments(documents);
+
+    const cleanedChunks = chunkedDocs.map((doc) => ({
+      ...doc,
+      pageContent: doc.pageContent
+        .replace(/\n+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim(),
+      metadata: {
+        ...doc.metadata,
+        source_type: 'web_scraped',
+        processed_at: new Date().toISOString(),
+      },
+    }));
+
+    return cleanedChunks;
+  }
+}
+
+export async function scrapePolije() {
+  const scraper = new WebScraper({
+    urls: [
+      'https://pintu.polije.ac.id/',
+      'https://pintu.polije.ac.id/C_Halaman/page/7-layanan-usulan-pensiun-dini',
+      'https://pintu.polije.ac.id/C_Halaman/page/9-layanan-usul-kartu-taspen',
+      'https://pintu.polije.ac.id/C_Halaman/page/11-layanan-peminjaman-dan-penyewaan-bmn-gedung-serba-guna',
+      'https://pintu.polije.ac.id/C_Halaman/page/13-layanan-peliputan-media',
+      'https://pintu.polije.ac.id/C_Halaman/page/15-pelayanan-bidang-pengaduan-masyarakat',
+      'https://pintu.polije.ac.id/C_Halaman/page/8-layanan-kartu-pegawai-hilang',
+      'https://pintu.polije.ac.id/C_Halaman/page/10-layanan-usul-kartu-istri-suami',
+      'https://pintu.polije.ac.id/C_Halaman/page/12-pelayanan-wisata-edukasi-dan-studi-banding',
+      'https://pintu.polije.ac.id/C_Halaman/page/17-layanan-legalisir-ijasah-dan-transkrip-akademik',
+      'https://pintu.polije.ac.id/C_Halaman/page/16-permohonan-data-dan-informasi',
+      'https://pintu.polije.ac.id/C_Artikel/detail/14-memulai-aplikasi',
+      'https://pintu.polije.ac.id/C_Artikel/detail/12-pendahuluan',
+      'https://pintu.polije.ac.id/C_Artikel/detail/21-tentang-aplikasi-layanan-terpadu',
+
+      'https://pmb.polije.ac.id/',
+
+      'https://jti.polije.ac.id/',
+      'https://jti.polije.ac.id/dosen',
+      'https://jti.polije.ac.id/staf',
+      'https://jti.polije.ac.id/profil-jti',
+      'https://jti.polije.ac.id/tata-tertib-mahasiswa',
+      'https://jti.polije.ac.id/galery/ruang-administrasi',
+      'https://jti.polije.ac.id/prodi/trpl-sr',
+      'https://jti.polije.ac.id/prodi/trk',
+      'https://jti.polije.ac.id/prodi/tif',
+      'https://jti.polije.ac.id/prodi/tif-bondowoso',
+      'https://jti.polije.ac.id/prodi/tif-nganjuk',
+      'https://jti.polije.ac.id/prodi/tif-sidoarjo',
+      'https://jti.polije.ac.id/prodi/int-tif',
+      'https://jti.polije.ac.id/prodi/mif',
+      'https://jti.polije.ac.id/prodi/int-mif',
+      'https://jti.polije.ac.id/prodi/tkk',
+      'https://jti.polije.ac.id/prodi/int-tkk',
+      'https://jti.polije.ac.id/prodi/bsd',
+
+      'https://polije.ac.id/',
+      'https://polije.ac.id/sejarah/',
+      'https://polije.ac.id/logo-4/',
+      'https://polije.ac.id/visi-misi-polije/',
+      'https://polije.ac.id/tujuan-sasaran-strategi/',
+      'https://polije.ac.id/pimpinan-polije/',
+      'https://polije.ac.id/dokumen-sakip/',
+      'https://polije.ac.id/biaya-pendidikan-2/',
+      'https://polije.ac.id/akreditasi/',
+      'https://polije.ac.id/produksi-tanaman-hortikultura-2/',
+      'https://polije.ac.id/produksi-tanaman-perkebunan-2/',
+      'https://polije.ac.id/teknik-produksi-benih-2/',
+      'https://polije.ac.id/teknologi-produksi-tanaman-pangan/',
+      'https://polije.ac.id/budidaya-tanaman-perkebunan/',
+      'https://polije.ac.id/pengelolaan-perkebunan-kopi/',
+      'https://polije.ac.id/10737-2/',
+      'https://polije.ac.id/teknologi-industri-pangan/',
+      'https://polije.ac.id/teknologi-rekayasa-pangan/',
+      'https://polije.ac.id/produksi-ternak/',
+      'https://polije.ac.id/manajemen-bisnis-unggas/',
+      'https://polije.ac.id/teknologi-pakan-ternak/',
+      'https://polije.ac.id/manajemen-agribisnis/',
+      'https://polije.ac.id/manajemen-agroindustri/',
+      'https://polije.ac.id/manajemen-informatika/',
+      'https://polije.ac.id/teknik-komputer/',
+      'https://polije.ac.id/teknik-informatika/',
+      'https://polije.ac.id/bisnis-digital-kampus-bondowoso/',
+      'https://polije.ac.id/bahasa-inggris/',
+      'https://polije.ac.id/destinasi-pariwisata/',
+      'https://polije.ac.id/manajemen-informasi-kesehatan/',
+      'https://polije.ac.id/gizi-klinik/',
+      'https://polije.ac.id/promosi-kesehatan/',
+      'https://polije.ac.id/teknik-energi-terbarukan/',
+      'https://polije.ac.id/mesin-otomotif/',
+      'https://polije.ac.id/teknologi-rekayasa-mekatronika/',
+      'https://polije.ac.id/teknologi-rekayasa-mekatronika/',
+      'https://polije.ac.id/manajemen-pemasaran-internasional/',
+      'https://polije.ac.id/manajemen-informatika-int/',
+      'https://polije.ac.id/teknik-informatika-int/',
+      'https://polije.ac.id/manajamen-agroindustri-int/',
+      'https://polije.ac.id/kampus-2-bondowoso/',
+      'https://polije.ac.id/kampus-3-nganjuk/',
+      'https://polije.ac.id/kampus-4-sidoarjo/',
+      'https://polije.ac.id/kampus-5-ngawi/',
+      'https://polije.ac.id/manajemen-perubahan/',
+      'https://polije.ac.id/penataan-tata-laksana/',
+      'https://polije.ac.id/penataan-sistem-manajemen-sdm/',
+      'https://polije.ac.id/penguatan-akuntabilitas/',
+      'https://polije.ac.id/penguatan-pengawasan/',
+      'https://polije.ac.id/peningkatan-kualitas-pelayanan-publik/',
+
+      'https://jtinova.com/',
+      'https://www.side.my.id/',
+      'https://www.linkedin.com/in/sideid',
+    ],
+    outputDir: './scraped_docs',
+    maxDepth: 3,
+  });
+
+  try {
+    console.log('Memulai proses scraping...');
+    const scrapedDocuments = await scraper.scrapeUrls();
+    console.log(
+      `Selesai scraping, memproses ${scrapedDocuments.length} dokumen...`,
+    );
+
+    const processedDocuments = await scraper.processScrapedDocuments(
+      scrapedDocuments,
+    );
+
+    const nonEmptyDocuments = processedDocuments.filter(
+      (doc) => doc.pageContent && doc.pageContent.trim().length > 0,
+    );
+
+    console.log(`Scraped ${nonEmptyDocuments.length} non-empty documents`);
+    return nonEmptyDocuments;
+  } catch (error) {
+    console.error('Failed to scrape Polije websites:', error);
+    return [];
+  }
+}
