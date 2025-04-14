@@ -8,24 +8,23 @@ class WebScraper {
   private urls: string[];
   private outputDir: string;
   private maxDepth: number;
-  private timeout: number;
-  private retries: number;
-  private delayBetweenRequests: number;
+  private userAgents: string[];
 
   constructor(options: {
     urls: string[];
     outputDir?: string;
     maxDepth?: number;
-    timeout?: number;
-    retries?: number;
-    delayBetweenRequests?: number;
   }) {
     this.urls = options.urls;
     this.outputDir = options.outputDir || './scraped_docs';
     this.maxDepth = options.maxDepth || 3;
-    this.timeout = options.timeout || 60000;
-    this.retries = options.retries || 2; 
-    this.delayBetweenRequests = options.delayBetweenRequests || 1000;
+
+    this.userAgents = [
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15',
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0',
+      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36',
+    ];
   }
 
   private async createOutputDir() {
@@ -42,108 +41,195 @@ class WebScraper {
     );
   }
 
-  private async delay(ms: number): Promise<void> {
-    return new Promise((resolve) => setTimeout(resolve, ms));
+  private async randomDelay(min = 1000, max = 3000): Promise<void> {
+    const delay = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(`Tunggu ${delay / 1000} detik sebelum request berikutnya...`);
+    return new Promise((resolve) => setTimeout(resolve, delay));
   }
 
-  private async scrapeWithRetry(
-    url: string,
-    retryCount = 0,
-  ): Promise<Document[]> {
-    try {
-      const loader = new PuppeteerWebBaseLoader(url, {
-        launchOptions: {
-          headless: 'new',
-          args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        },
-        gotoOptions: {
-          waitUntil: 'domcontentloaded',
-          timeout: this.timeout,
-        },
-        evaluate: async (page) => {
-          const contentSelectors = [
-            'main',
-            'article',
-            '.content',
-            '#content',
-            '.page-content',
-            'body',
-          ];
+  private getRandomUserAgent(): string {
+    return this.userAgents[Math.floor(Math.random() * this.userAgents.length)];
+  }
 
-          return await page.evaluate((selectors: string[]): string => {
-            for (const selector of selectors) {
-              const contentElement: Element | null =
-                document.querySelector(selector);
-              if (contentElement) {
-                const elementsToRemove: NodeListOf<Element> =
-                  contentElement.querySelectorAll(
-                    'script, style, nav, header, footer, aside',
-                  );
-                elementsToRemove.forEach((el: Element): void => el.remove());
-
-                return contentElement.textContent?.trim() || '';
-              }
-            }
-            return document.body.textContent?.trim() || '';
-          }, contentSelectors);
-        },
-      });
-
-      const docs = await loader.load();
-
-      const enhancedDocs = docs.map((doc) => {
-        return new Document({
-          pageContent: doc.pageContent,
-          metadata: {
-            ...doc.metadata,
-            source_type: 'web_scraped',
-            scraped_at: new Date().toISOString(),
-            url: url,
-          },
-        });
-      });
-
-      return enhancedDocs;
-    } catch (error) {
-      if (retryCount < this.retries) {
-        console.log(`Retry ${retryCount + 1}/${this.retries} for ${url}`);
-        await this.delay((retryCount + 1) * 2000);
-        return this.scrapeWithRetry(url, retryCount + 1);
-      }
-
-      console.error(
-        `Failed to scrape ${url} after ${this.retries} retries:`,
-        error,
-      );
-      return [];
-    }
+  private isMainPolijeUrl(url: string): boolean {
+    return url.match(/^https?:\/\/(www\.)?polije\.ac\.id(\/|$)/) !== null;
   }
 
   public async scrapeUrls(): Promise<Document[]> {
-    await this.createOutputDir();
+    const mainPolijeUrls: string[] = [];
+    const otherUrls: string[] = [];
+
+    this.urls.forEach((url) => {
+      if (this.isMainPolijeUrl(url)) {
+        mainPolijeUrls.push(url);
+      } else {
+        otherUrls.push(url);
+      }
+    });
+
+    console.log(`URLs domain utama polije.ac.id: ${mainPolijeUrls.length}`);
+    console.log(`URLs domain lain: ${otherUrls.length}`);
+
     const allDocuments: Document[] = [];
 
-    for (const url of this.urls) {
-      try {
-        console.log(`Scraping: ${url}`);
-        const enhancedDocs = await this.scrapeWithRetry(url);
+    if (otherUrls.length > 0) {
+      console.log('Memproses URLs dari domain non-polije.ac.id utama...');
+      for (let i = 0; i < otherUrls.length; i++) {
+        try {
+          const url = otherUrls[i];
+          console.log(`Mengakses ${url} (${i + 1}/${otherUrls.length})`);
 
-        if (enhancedDocs.length > 0) {
-          const filename = path.join(
-            this.outputDir,
-            this.sanitizeFileName(url),
-          );
-          await fs.writeFile(filename, enhancedDocs[0].pageContent);
-          allDocuments.push(...enhancedDocs);
+          const docs = await this.scrapeSingleUrl(url);
+          allDocuments.push(...docs);
+
+          if (i < otherUrls.length - 1) {
+            await this.randomDelay(1000, 3000);
+          }
+        } catch (error) {
+          console.error(`Error scraping ${otherUrls[i]}:`, error);
+        }
+      }
+    }
+
+    if (mainPolijeUrls.length > 0) {
+      console.log(
+        'Memproses URLs dari domain polije.ac.id utama dengan hati-hati...',
+      );
+
+      const shuffledPolijeUrls = [...mainPolijeUrls].sort(
+        () => Math.random() - 0.5,
+      );
+
+      const batchSize = 3;
+
+      for (let i = 0; i < shuffledPolijeUrls.length; i += batchSize) {
+        const batch = shuffledPolijeUrls.slice(i, i + batchSize);
+        console.log(
+          `Memproses batch ${Math.floor(i / batchSize) + 1} dari ${Math.ceil(
+            shuffledPolijeUrls.length / batchSize,
+          )}`,
+        );
+
+        for (let j = 0; j < batch.length; j++) {
+          try {
+            const url = batch[j];
+            console.log(`Mengakses ${url} (${j + 1}/${batch.length})`);
+
+            const docs = await this.scrapeSingleUrl(url, true);
+            allDocuments.push(...docs);
+
+            if (j < batch.length - 1) {
+              await this.randomDelay(8000, 15000);
+            }
+          } catch (error) {
+            console.error(`Error scraping ${batch[j]}:`, error);
+          }
         }
 
-        await this.delay(this.delayBetweenRequests);
-      } catch (error) {
-        console.error(`Error processing ${url}:`, error);
+        if (i + batchSize < shuffledPolijeUrls.length) {
+          const breakTime = 60000 + Math.random() * 30000; // 60-90 detik
+          console.log(
+            `Istirahat ${Math.round(
+              breakTime / 1000,
+            )} detik sebelum batch berikutnya...`,
+          );
+          await new Promise((resolve) => setTimeout(resolve, breakTime));
+        }
       }
     }
 
     return allDocuments;
+  }
+
+  private async scrapeSingleUrl(
+    url: string,
+    isMainPolije = false,
+  ): Promise<Document[]> {
+    const userAgent = this.getRandomUserAgent();
+
+    const loader = new PuppeteerWebBaseLoader(url, {
+      launchOptions: {
+        headless: 'new',
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      },
+      gotoOptions: {
+        waitUntil: 'networkidle0',
+        timeout: 30000,
+      },
+      evaluate: async (page) => {
+        await page.setUserAgent(userAgent);
+
+        if (isMainPolije) {
+          await page.evaluate(() => {
+            const height = document.body.scrollHeight;
+            const scrollSteps = 5 + Math.floor(Math.random() * 3);
+
+            return new Promise((resolve) => {
+              let scrolled = 0;
+              const timer = setInterval(() => {
+                const scrollAmount = Math.floor(height / scrollSteps);
+                window.scrollBy(0, scrollAmount);
+                scrolled++;
+
+                if (scrolled >= scrollSteps) {
+                  clearInterval(timer);
+                  setTimeout(() => {
+                    window.scrollTo(0, 0);
+                    resolve(true);
+                  }, 800);
+                }
+              }, 800 + Math.random() * 400);
+            });
+          });
+        }
+
+        const contentSelectors = [
+          'main',
+          'article',
+          '.content',
+          '#content',
+          '.page-content',
+          'body',
+        ];
+
+        return await page.evaluate((selectors: string[]): string => {
+          for (const selector of selectors) {
+            const contentElement: Element | null =
+              document.querySelector(selector);
+            if (contentElement) {
+              const elementsToRemove: NodeListOf<Element> =
+                contentElement.querySelectorAll(
+                  'script, style, nav, header, footer, aside',
+                );
+              elementsToRemove.forEach((el: Element): void => el.remove());
+
+              return contentElement.textContent?.trim() || '';
+            }
+          }
+          return document.body.textContent?.trim() || '';
+        }, contentSelectors);
+      },
+    });
+
+    const docs = await loader.load();
+
+    const enhancedDocs = docs.map((doc) => {
+      return new Document({
+        pageContent: doc.pageContent,
+        metadata: {
+          ...doc.metadata,
+          source_type: 'web_scraped',
+          scraped_at: new Date().toISOString(),
+          url: url,
+        },
+      });
+    });
+
+    await this.createOutputDir();
+    const filename = path.join(this.outputDir, this.sanitizeFileName(url));
+    await fs.writeFile(filename, docs[0].pageContent);
+
+    return enhancedDocs;
   }
 
   public async processScrapedDocuments(
@@ -332,13 +418,14 @@ export async function scrapePolije() {
     ],
     outputDir: './scraped_docs',
     maxDepth: 3,
-    timeout: 60000,
-    retries: 2,
-    delayBetweenRequests: 2000,
   });
 
   try {
+    console.log('Memulai proses scraping...');
     const scrapedDocuments = await scraper.scrapeUrls();
+    console.log(
+      `Selesai scraping, memproses ${scrapedDocuments.length} dokumen...`,
+    );
 
     const processedDocuments = await scraper.processScrapedDocuments(
       scrapedDocuments,
