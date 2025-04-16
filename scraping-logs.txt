@@ -8,3 +8,25 @@
 [2025-04-05T03:42:53.481Z] Embedding and storing 479 chunks in Pinecone...
 [2025-04-05T03:43:08.333Z] Web data update completed successfully
 [2025-04-05T03:43:08.334Z] Scraping job completed successfully
+[2025-04-15T03:33:41.591Z] Starting scheduled scraping job
+[2025-04-15T03:33:44.160Z] Successfully deleted all data from Pinecone namespace
+[2025-04-15T03:33:44.162Z] Uploading PDF data back to Pinecone...
+[2025-04-15T03:33:56.452Z] Successfully re-uploaded 501 PDF document chunks
+[2025-04-15T03:33:56.565Z] Cleaned 138 files from scraped_docs folder
+[2025-04-15T03:33:56.567Z] Starting web scraping process...
+[2025-04-15T03:34:50.113Z] Starting scheduled scraping job
+[2025-04-15T03:35:20.378Z] Warning: Could not delete data from namespace: A call to https://chatbot-poltek-v6-zehxxfl.svc.aped-4627-b74a.pinecone.io/vectors/delete returned HTTP status 404.
+[2025-04-15T03:35:20.383Z] Cleaned 1 files from scraped_docs folder
+[2025-04-15T03:35:20.385Z] Starting web scraping process...
+[2025-04-15T03:35:44.290Z] Starting scheduled scraping job
+[2025-04-15T03:35:46.434Z] Warning: Could not delete data from namespace: A call to https://chatbot-poltek-v6-zehxxfl.svc.aped-4627-b74a.pinecone.io/vectors/delete returned HTTP status 404.
+[2025-04-15T03:35:46.439Z] Cleaned 2 files from scraped_docs folder
+[2025-04-15T03:35:46.440Z] Starting web scraping process...
+[2025-04-15T03:38:36.308Z] Starting scheduled scraping job
+[2025-04-15T03:38:39.569Z] Warning: Could not delete data from namespace: A call to https://chatbot-poltek-v6-zehxxfl.svc.aped-4627-b74a.pinecone.io/vectors/delete returned HTTP status 404.
+[2025-04-15T03:38:39.593Z] Cleaned 15 files from scraped_docs folder
+[2025-04-15T03:38:39.596Z] Starting web scraping process...
+[2025-04-15T03:51:10.258Z] Starting scheduled scraping job
+[2025-04-15T03:51:20.222Z] Warning: Could not delete data from namespace: A call to https://chatbot-poltek-v6-zehxxfl.svc.aped-4627-b74a.pinecone.io/vectors/delete returned HTTP status 404.
+[2025-04-15T03:51:20.257Z] Cleaned 37 files from scraped_docs folder
+[2025-04-15T03:51:20.259Z] Starting web scraping process...
