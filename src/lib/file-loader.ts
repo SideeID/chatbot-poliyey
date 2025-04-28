@@ -1,6 +1,6 @@
 // src\lib\file-loader.ts
 import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
-// import { TextLoader } from 'langchain/document_loaders/fs/text';
+import { TextLoader } from 'langchain/document_loaders/fs/text';
 import { DirectoryLoader } from 'langchain/document_loaders/fs/directory';
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 
@@ -9,7 +9,7 @@ export async function getChunkedDocsFromPDF() {
     console.log('Starting document loading process...');
     const loader = new DirectoryLoader('./docs', {
       '.pdf': (path) => new PDFLoader(path),
-      // '.txt': (path) => new TextLoader(path),
+      '.txt': (path) => new TextLoader(path),
     });
 
     const docs = await loader.load();
