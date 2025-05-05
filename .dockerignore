@@ -29,8 +29,9 @@ scraping-logs.txt
 .hg/
 
 # Environment and secrets
-.env*
-*.env
+# Don't ignore .env files for Docker as we need the example
+# .env*
+# *.env
 *.pem
 *.key
 *.crt
