@@ -1,0 +1,17 @@
+services:
+  typescript-app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: typescript-app
+    restart: unless-stopped
+    init: true
+    env_file: ./.env
+    ports:
+      - "3000:3000"
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge
