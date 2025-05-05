@@ -1,0 +1,80 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+
+# Test and debug artifacts
+test/
+tests/
+*.log
+scraping-logs.txt
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Version control
+.git/
+.gitignore
+.svn/
+.hg/
+
+# Environment and secrets
+.env*
+*.env
+*.pem
+*.key
+*.crt
+config.local.*
+*.local.yml
+
+# Documentation and markdown
+README*
+CHANGELOG*
+CONTRIBUTING*
+LICENSE*
+
+# Temporary and local files
+tmp/
+temp/
+*.tmp
+.local/
+local/
+
+# Python cache (in case of scripts)
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# Go cache (in case of scripts)
+/vendor/
+*.test
+.go-cache/
+
+# Java artifacts (in case of scripts)
+target/
+*.class
+.gradle/
+
+# Docker files (except Dockerfile itself)
+docker-compose*
+.dockerignore
+
+# Miscellaneous
+components.json
+.DS_Store
+
+# Don't ignore specific directories needed for the application
+!docs/
+!dosen/

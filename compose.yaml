@@ -1,0 +1,48 @@
+services:
+  chatbot-app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: chatbot-poltek
+    restart: unless-stopped
+    init: true
+    env_file: ./.env
+    ports:
+      - '3000:3000'
+    volumes:
+      - scraped_docs:/app/scraped_docs
+      - logs:/app/logs
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'wget',
+          '--no-verbose',
+          '--tries=1',
+          '--spider',
+          'http://localhost:3000/',
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 3G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+    networks:
+      - appnet
+
+volumes:
+  scraped_docs:
+    driver: local
+  logs:
+    driver: local
+
+networks:
+  appnet:
+    driver: bridge

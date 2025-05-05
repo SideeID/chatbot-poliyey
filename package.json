@@ -10,7 +10,8 @@
     "lint": "next lint",
     "prepare:data": "tsx -r dotenv/config ./src/scripts/pinecone-prepare-docs.ts",
     "prepare:web": "tsx -r dotenv/config ./src/scripts/pinecone-prepare-web-docs.ts",
-    "scrape:web": "tsx -r dotenv/config ./src/scripts/run-web-scraping.ts"
+    "scrape:web": "tsx -r dotenv/config ./src/scripts/run-web-scraping.ts",
+    "check:cron": "tsx -r dotenv/config ./src/scripts/check-cron-status.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.19.0",
