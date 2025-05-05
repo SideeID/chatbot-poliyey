@@ -1,0 +1,30 @@
+services:
+  chatbot-app:
+    # Your existing app configuration
+    # ...
+
+  scraper:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.scraper
+    container_name: chatbot-poltek-scraper
+    restart: unless-stopped
+    init: true
+    env_file: ./.env
+    volumes:
+      - scraped_docs:/app/scraped_docs
+      - logs:/app/logs
+    networks:
+      - appnet
+    depends_on:
+      - chatbot-app
+
+volumes:
+  scraped_docs:
+    driver: local
+  logs:
+    driver: local
+
+networks:
+  appnet:
+    driver: bridge

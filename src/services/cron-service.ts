@@ -6,12 +6,20 @@ import { embedAndStoreDocs } from '@/lib/vector-store';
 import { getPineconeClient } from '@/lib/pinecone-client';
 import { Pinecone } from '@pinecone-database/pinecone';
 
-const LOG_FILE = path.join(process.cwd(), 'scraping-logs.txt');
+// Update the log file path to use logs directory
+const LOG_FILE = path.join(process.cwd(), 'logs', 'scraping-logs.txt');
 
 /**
  * Logs scraping activity with timestamp
  */
 async function logScrapingActivity(message: string): Promise<void> {
+  // Create logs directory if it doesn't exist
+  try {
+    await fs.mkdir(path.join(process.cwd(), 'logs'), { recursive: true });
+  } catch (error) {
+    // Ignore if directory already exists
+  }
+
   const timestamp = new Date().toISOString();
   const logMessage = `[${timestamp}] ${message}\n`;
 

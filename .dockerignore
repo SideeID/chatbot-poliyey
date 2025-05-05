@@ -8,6 +8,7 @@ yarn-error.log
 dist/
 build/
 out/
+.next/
 
 # Test and debug artifacts
 test/
@@ -38,8 +39,9 @@ config.local.*
 
 # Documentation and markdown
 README*
-*.md
-docs/
+CHANGELOG*
+CONTRIBUTING*
+LICENSE*
 
 # Temporary and local files
 tmp/
@@ -65,9 +67,14 @@ target/
 *.class
 .gradle/
 
-# Docker files (do not include Dockerfile itself)
-Dockerfile*
+# Docker files (except Dockerfile itself)
 docker-compose*
+.dockerignore
 
 # Miscellaneous
 components.json
+.DS_Store
+
+# Don't ignore specific directories needed for the application
+!docs/
+!dosen/
