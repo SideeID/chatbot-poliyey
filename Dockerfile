@@ -45,6 +45,9 @@ RUN apt-get update && apt-get install -y \
     xdg-utils \
     && rm -rf /var/lib/apt/lists/*
 
+# Copy environment files first
+COPY .env.example /app/.env
+
 # Install dependencies (only package.json and lock for cache efficiency)
 COPY --link package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm \
@@ -110,8 +113,11 @@ RUN apt-get update && apt-get install -y \
 RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
 
 # Create directories needed for the app with proper permissions
-RUN mkdir -p /app/docs /app/dosen /app/scraped_docs \
+RUN mkdir -p /app/docs /app/dosen /app/scraped_docs /app/logs \
     && chown -R appuser:appgroup /app
+
+# Copy environment variables from builder stage
+COPY --from=builder /app/.env /app/.env
 
 # Copy only necessary files from builder
 COPY --from=builder --chown=appuser:appgroup /app/.next ./.next
@@ -128,8 +134,10 @@ COPY --from=builder --chown=appuser:appgroup /app/docs ./docs
 COPY --from=builder --chown=appuser:appgroup /app/dosen ./dosen
 COPY --from=builder --chown=appuser:appgroup /app/scraped_docs ./scraped_docs
 
-ENV NODE_ENV=production
-ENV NODE_OPTIONS="--max-old-space-size=2048"
+# Set environment variables with defaults
+ENV NODE_ENV=production \
+    TZ=Asia/Jakarta \
+    NODE_OPTIONS="--max-old-space-size=2048"
 
 # Add healthcheck
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \

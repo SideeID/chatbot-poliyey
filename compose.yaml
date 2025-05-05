@@ -3,10 +3,17 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+      args:
+        - NODE_ENV=production
     container_name: chatbot-poltek
     restart: unless-stopped
     init: true
-    env_file: ./.env
+    env_file:
+      - ./.env
+    environment:
+      - NODE_ENV=production
+      - TZ=Asia/Jakarta
+      - NODE_OPTIONS=--max-old-space-size=2048
     ports:
       - '3000:3000'
     volumes:
