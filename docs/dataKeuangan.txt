@@ -1,0 +1,3474 @@
+No Gaji: 0
+NIP: 197910032014042001
+Nama: OKLAN TIMUR, S.Sos.
+Kelahiran: -, 01 Januari 1900
+Jabatan: Pegawai
+
+No Gaji: 1
+NIP: 198009272008011008
+Nama: ARIF WAHYUDIONO, S.T., M.T.
+Kelahiran: -, 01 Januari 1900
+Jabatan: Pegawai
+
+No Gaji: 1
+NIP: 197306172023211006
+Nama: Ely Mulyadi, M.Kom.
+Kelahiran: Brebes, 17 Juni 1973
+Jabatan: Pegawai
+
+No Gaji: 2
+NIP: 197807192023211007
+Nama: Dedy Eko Rahmanto, S.T.P., M.Si.
+Kelahiran: Ngawi, 19 Juli 1978
+Jabatan: Pegawai
+
+No Gaji: 2
+NIP: 196111011987031001
+Nama: Ir. H. Triono  Bambang Irawan, MP
+Kelahiran: Sumenep, 01 November 1961
+Jabatan: Pegawai
+
+No Gaji: 3
+NIP: 198012112023212010
+Nama: Alinea Dwi Elisanti, S.K.M., M.Kes.
+Kelahiran: Tulungagung, 11 Desember 1980
+Jabatan: Pegawai
+
+No Gaji: 3
+NIP: 196201291989031002
+Nama: Dr.Ir. Rahmat Ali Syaban, M.Si
+Kelahiran: Bandung, 29 Januari 1962
+Jabatan: Pegawai
+
+No Gaji: 4
+NIP: 198303282023212031
+Nama: Indah Muflihatin, S.Si.T., M.Kes.
+Kelahiran: Jember, 28 Maret 1983
+Jabatan: Pegawai
+
+No Gaji: 4
+NIP: 196202151989032003
+Nama: Ir. Wahyu Suryaningsih,M.Si
+Kelahiran: Madiun, 15 Februari 1962
+Jabatan: Pegawai
+
+No Gaji: 5
+NIP: 198308192023211008
+Nama: Ahmad Rofi'I, M.Pd.
+Kelahiran: Tuban, 19 Agustus 1983
+Jabatan: Pegawai
+
+No Gaji: 5
+NIP: 196210091987031003
+Nama: Ir. Nantil Bambang Eko S,M.Si
+Kelahiran: Jember, 09 Oktober 1962
+Jabatan: Pegawai
+
+No Gaji: 6
+NIP: 198608182023212049
+Nama: Rusdiarti, M.Gz.
+Kelahiran: Jember, 18 Agustus 1986
+Jabatan: Pegawai
+
+No Gaji: 6
+NIP: 196212121989031003
+Nama: Ir. Abi Bakri , M.Si
+Kelahiran: Pamekasan, 12 Desember 1962
+Jabatan: Pegawai
+
+No Gaji: 7
+NIP: 198608262023212032
+Nama: Pascawati Savitri Universitasari, S.E., M.M.
+Kelahiran: Blitar, 26 Agustus 1986
+Jabatan: Pegawai
+
+No Gaji: 7
+NIP: 196302021989031001
+Nama: Ir. Michael Joko Wibowo, MT
+Kelahiran: Pekalongan, 02 Februari 1963
+Jabatan: Pegawai
+
+No Gaji: 8
+NIP: 198703052023211011
+Nama: Andri Permana Wicaksono, S.S.T., M.T.
+Kelahiran: Jember, 05 Maret 1987
+Jabatan: Pegawai
+
+No Gaji: 8
+NIP: 196609301993031002
+Nama: Dr. Ir. Ujang Suryadi, MP
+Kelahiran: Subang, 30 September 1966
+Jabatan: Pegawai
+
+No Gaji: 9
+NIP: 198704202023212047
+Nama: Emi Kumiawati, S.Si., M.P.
+Kelahiran: Banyuwangi, 20 April 1987
+Jabatan: Pegawai
+
+No Gaji: 9
+NIP: 196610311993032001
+Nama: Ir. Dian Hartatie,MP
+Kelahiran: Jember, 31 Oktober 1966
+Jabatan: Pegawai
+
+No Gaji: 10
+NIP: 198706202023211017
+Nama: Muhammad Ardiyansyah Surya N, M.Si.
+Kelahiran: Jember, 20 Juni 1987
+Jabatan: Pegawai
+
+No Gaji: 10
+NIP: 196806251995122001
+Nama: Ir. Rosa Tri Hertamawati, M.Si
+Kelahiran: Jember, 25 Juni 1968
+Jabatan: Pegawai
+
+No Gaji: 11
+NIP: 198808252023211016
+Nama: Mohammad Edwinsyah Yanuan Putra, S.S.T., M.Tr.P.
+Kelahiran: Jember, 25 Agustus 1988
+Jabatan: Pegawai
+
+No Gaji: 11
+NIP: 196910021994031002
+Nama: Dr. Ir. Bagus Putu Yudhia K,MP
+Kelahiran: Jember, 02 Oktober 1969
+Jabatan: Pegawai
+
+No Gaji: 12
+NIP: 198901192023212028
+Nama: Ida Nurmawati, S.K.M., M.Kes.
+Kelahiran: Demak, 19 Januari 1989
+Jabatan: Pegawai
+
+No Gaji: 12
+NIP: 196906051996031001
+Nama: Dr. Rizal, SP,MP
+Kelahiran: Palembang, 05 Juni 1969
+Jabatan: Pegawai
+
+No Gaji: 13
+NIP: 198906252023211023
+Nama: Ns. Kurniawan Erman Wicaksono, S.Kep., M.Kes.
+Kelahiran: Jember, 25 Juni 1989
+Jabatan: Pegawai
+
+No Gaji: 13
+NIP: 195909181989031003
+Nama: DR. IR. Ridwan Iskandar, MT
+Kelahiran: Bandung, 18 September 1959
+Jabatan: Pegawai
+
+No Gaji: 14
+NIP: 198911042023212044
+Nama: Yoswenita Susindra, S.S.T., M.Kes.
+Kelahiran: Bondowoso, 04 November 1989
+Jabatan: Pegawai
+
+No Gaji: 14
+NIP: 196003071987032001
+Nama: DR. IR. Nurul  Sjamsijah,MP
+Kelahiran: Sidoarjo, 07 Maret 1960
+Jabatan: Pegawai
+
+No Gaji: 15
+NIP: 199004062023212052
+Nama: Agatha Widyawati, S.S.T., M.Gizi.
+Kelahiran: Sragen, 06 April 1990
+Jabatan: Pegawai
+
+No Gaji: 15
+NIP: 196102201988031001
+Nama: Ir. Sugiyarto, MP
+Kelahiran: Purworejo, 20 Februari 1961
+Jabatan: Pegawai
+
+No Gaji: 16
+NIP: 199008192023212038
+Nama: Sekar Ayu Wulandari, S.T.P., M.M.
+Kelahiran: Surabaya, 19 Agustus 1990
+Jabatan: Pegawai
+
+No Gaji: 16
+NIP: 196103011989032002
+Nama: Ir. Hj. RR. Liliek Dwi Soelaksini,MP
+Kelahiran: Jember, 01 Maret 1961
+Jabatan: Pegawai
+
+No Gaji: 17
+NIP: 199012062023212032
+Nama: Niyalatul Muna, S.Kom., M.T.
+Kelahiran: Pontianak, 06 Desember 1990
+Jabatan: Pegawai
+
+No Gaji: 17
+NIP: 196106231988111001
+Nama: Ir. Dwi Djoko Suranto, MT
+Kelahiran: Solo, 23 Juni 1961
+Jabatan: Pegawai
+
+No Gaji: 18
+NIP: 199102202023212033
+Nama: Siti Diah Ayu Febriani, S.Si., M.Si.
+Kelahiran: Jember, 20 Februari 1991
+Jabatan: Pegawai
+
+No Gaji: 18
+NIP: 196206061990031003
+Nama: Ir. Suwardi,MP
+Kelahiran: Sumenep, 06 Juni 1962
+Jabatan: Pegawai
+
+No Gaji: 19
+NIP: 199106222023212037
+Nama: Nadhifah Al Indis, S.Si., M.Si.
+Kelahiran: Jember, 22 Juni 1991
+Jabatan: Pegawai
+
+No Gaji: 19
+NIP: 196308151992021001
+Nama: Ir. Agus Santoso,M.Si
+Kelahiran: Tulungagung, 15 Agustus 1963
+Jabatan: Pegawai
+
+No Gaji: 20
+NIP: 199108032023211019
+Nama: A. Sirojul Anam Izza Rosyadi, S.Pd., M.Si.
+Kelahiran: Banyuwangi, 03 Agustus 1991
+Jabatan: Pegawai
+
+No Gaji: 20
+NIP: 196411101992021001
+Nama: Ir. Iswahyono, MP
+Kelahiran: Blitar, 10 November 1964
+Jabatan: Pegawai
+
+No Gaji: 21
+NIP: 199203072023211018
+Nama: Dhony Manggala Putra, S.E., M.M.
+Kelahiran: Mojokerto, 07 Maret 1992
+Jabatan: Pegawai
+
+No Gaji: 21
+NIP: 196611191992021001
+Nama: Dr.Ir.R.Abdoel Djamali, M.Si
+Kelahiran: Sampang, 19 November 1966
+Jabatan: Pegawai
+
+No Gaji: 22
+NIP: 199208202023212058
+Nama: Berlina Yudha Pratiwi, S.E., M.S.A., Ak.
+Kelahiran: Jember, 20 Agustus 1992
+Jabatan: Pegawai
+
+No Gaji: 22
+NIP: 195908221988031001
+Nama: Ir. Nanang Dwi Wahyono, MM
+Kelahiran: Jember, 22 Agustus 1959
+Jabatan: Pegawai
+
+No Gaji: 23
+NIP: 199305232023212040
+Nama: Mahindra Dewi Nur Aisyah, S.P., M.Si.
+Kelahiran: Pasuruan, 23 Mei 1993
+Jabatan: Pegawai
+
+No Gaji: 23
+NIP: 196601121994032002
+Nama: Dra. Dedeh Ayu  Firna Prihatin
+Kelahiran: Jember, 12 Januari 1966
+Jabatan: Pegawai
+
+No Gaji: 24
+NIP: 199310162023212039
+Nama: Trisnani Alif, M.Sc.
+Kelahiran: Lamongan, 16 Oktober 1993
+Jabatan: Pegawai
+
+No Gaji: 24
+NIP: 196802011995122001
+Nama: Dr.Ir. Rr. Merry Muspita Dyah U.,MP
+Kelahiran: Tulungagung, 01 Februari 1968
+Jabatan: Pegawai
+
+No Gaji: 25
+NIP: 199403042023211017
+Nama: Ahmad Haris Hasanuddin Slamet, S.T.P., M.P.
+Kelahiran: Lamongan, 04 Maret 1994
+Jabatan: Pegawai
+
+No Gaji: 25
+NIP: 196905021994032004
+Nama: Dyah Nuning Erawati, SP, MP
+Kelahiran: Madiun, 02 Mei 1969
+Jabatan: Pegawai
+
+No Gaji: 26
+NIP: 198610122023212041
+Nama: Susan Parismala Devi, S.T.P.
+Kelahiran: Malang, 12 Oktober 1986
+Jabatan: Pegawai
+
+No Gaji: 26
+NIP: 196905121990021001
+Nama: Djoko Soengkowo, S.E.,MAP
+Kelahiran: Jember, 12 Mei 1969
+Jabatan: Pegawai
+
+No Gaji: 27
+NIP: 199202012023211018
+Nama: Taufan Febri Yuanto, S.S.T.
+Kelahiran: Bondowoso, 01 Februari 1992
+Jabatan: Pegawai
+
+No Gaji: 27
+NIP: 197108041998022001
+Nama: Wenny Dhamayanthi, SE,M.Si
+Kelahiran: Jember, 04 Agustus 1971
+Jabatan: Pegawai
+
+No Gaji: 28
+NIP: 199202242023212044
+Nama: Fenti Tanjung Sari, S.S.
+Kelahiran: Jember, 24 Februari 1992
+Jabatan: Pegawai
+
+No Gaji: 28
+NIP: 195909041987032001
+Nama: Ir. Sri Rahayu, MP
+Kelahiran: Banyuwangi, 04 September 1959
+Jabatan: Pegawai
+
+No Gaji: 29
+NIP: 199208072023212046
+Nama: Indah Putri Lestari, S.S.T.
+Kelahiran: Jember, 07 Agustus 1992
+Jabatan: Pegawai
+
+No Gaji: 29
+NIP: 195910311988111001
+Nama: Ir. Supriyono,MP
+Kelahiran: Bantul, 31 Oktober 1959
+Jabatan: Pegawai
+
+No Gaji: 30
+NIP: 199210042023212038
+Nama: Sisca Diani Rosalina, S.T.P.
+Kelahiran: Banyuwangi, 04 Oktober 1992
+Jabatan: Pegawai
+
+No Gaji: 30
+NIP: 196106231988031002
+Nama: Ir. Didiek Hermanuadi, MT
+Kelahiran: Madiun, 23 Juni 1961
+Jabatan: Pegawai
+
+No Gaji: 31
+NIP: 196110011988112001
+Nama: Ir. Titien Fatimah,MP
+Kelahiran: Probolinggo, 01 Oktober 1961
+Jabatan: Pegawai
+
+No Gaji: 31
+NIP: 199205052023211027
+Nama: Angga Eka Pratama, A.Md.
+Kelahiran: Situbondo, 05 Mei 1992
+Jabatan: Pegawai
+
+No Gaji: 32
+NIP: 196202191989032001
+Nama: Ir. Tri Rini Kusparwanti, MP
+Kelahiran: Yogyakarta, 19 Februari 1962
+Jabatan: Pegawai
+
+No Gaji: 32
+NIP: 199206232023212047
+Nama: Marmiatul Hasanah, A.Md.
+Kelahiran: Jember, 23 Juni 1992
+Jabatan: Pegawai
+
+No Gaji: 33
+NIP: 199309072023212029
+Nama: Dr. Niswatin Hasanah, S.Pt., M.P.
+Kelahiran: Lamongan, 07 September 1993
+Jabatan: Pegawai
+
+No Gaji: 33
+NIP: 196209261988031001
+Nama: Ir. Heri Warsito, MP
+Kelahiran: Sragen, 26 September 1962
+Jabatan: Pegawai
+
+No Gaji: 34
+NIP: 199604202023212022
+Nama: Siska Aprilia Oktaviani, S.E., M.Ak.
+Kelahiran: Bogor, 20 April 1996
+Jabatan: Pegawai
+
+No Gaji: 34
+NIP: 196210051989031004
+Nama: Ir. M. Bintoro, MP
+Kelahiran: Malang, 05 Oktober 1962
+Jabatan: Pegawai
+
+No Gaji: 35
+NIP: 196301121988111001
+Nama: Ir. Muh. Zayin Sukri,MP
+Kelahiran: Sragen, 12 Januari 1963
+Jabatan: Pegawai
+
+No Gaji: 35
+NIP: 199701062023211009
+Nama: Bagus Azizul Amri, A.Md.
+Kelahiran: Banyuwangi, 06 Januari 1997
+Jabatan: Pegawai
+
+No Gaji: 36
+NIP: 197712172024212001
+Nama: Ade Galuh Rakhmadevi. S.T.P., M.P.
+Kelahiran: Jember, 17 Desember 1977
+Jabatan: Pegawai
+
+No Gaji: 36
+NIP: 196306071989031002
+Nama: Ir. Ujang Setyoko, MP
+Kelahiran: Jombang, 07 Juni 1963
+Jabatan: Pegawai
+
+No Gaji: 37
+NIP: 196605191992021001
+Nama: Dr.Ir. Budi Hariono, M.Si
+Kelahiran: Jember, 19 Mei 1966
+Jabatan: Pegawai
+
+No Gaji: 37
+NIP: 197806142024211001
+Nama: Aditya Wahyu Pratama, S.T., M.T.
+Kelahiran: Jember, 14 Juni 1978
+Jabatan: Pegawai
+
+No Gaji: 38
+NIP: 198102132024211001
+Nama: Efri Tri Ardianto, S.K.M., M.Kes.
+Kelahiran: Surabaya, 13 Februari 1981
+Jabatan: Pegawai
+
+No Gaji: 38
+NIP: 196712041992021001
+Nama: Ir. Anang Supriyadi S, MP
+Kelahiran: Jember, 04 Desember 1967
+Jabatan: Pegawai
+
+No Gaji: 39
+NIP: 196008271993032001
+Nama: Ir. Hj. Siti Djamila, M. Si
+Kelahiran: Malang, 27 Agustus 1960
+Jabatan: Pegawai
+
+No Gaji: 39
+NIP: 198502132024211001
+Nama: Ardhitya Alam Wiguna, S.E., M.M.
+Kelahiran: Madiun, 13 Februari 1985
+Jabatan: Pegawai
+
+No Gaji: 40
+NIP: 198507082024212001
+Nama: Financia Mayasari, S.E., M.M.
+Kelahiran: Jember, 08 Juli 1985
+Jabatan: Pegawai
+
+No Gaji: 40
+NIP: 196606051989021001
+Nama: Bagus Djuni Ahadi, S.Pt
+Kelahiran: Lumajang, 05 Juni 1966
+Jabatan: Pegawai
+
+No Gaji: 41
+NIP: 196708211993032004
+Nama: DR. IR. Suci Wulandari, M.SI
+Kelahiran: Yogyakarta, 21 Agustus 1967
+Jabatan: Pegawai
+
+No Gaji: 41
+NIP: 198701232024211001
+Nama: Iqbal Erdiansyah, S.P., M.P.
+Kelahiran: Jember, 23 Januari 1987
+Jabatan: Pegawai
+
+No Gaji: 42
+NIP: 196308241993031002
+Nama: Dr. Ir. Edi Siswadi, MP
+Kelahiran: Malang, 24 Agustus 1963
+Jabatan: Pegawai
+
+No Gaji: 42
+NIP: 198901152024211001
+Nama: Lukman Hakim, S.Kom.,M.Kom.
+Kelahiran: Situbondo, 15 Januari 1989
+Jabatan: Pegawai
+
+No Gaji: 43
+NIP: 196312311995121001
+Nama: Alwan Abdurahman, SH,MM
+Kelahiran: Lamahala, 31 Desember 1963
+Jabatan: Pegawai
+
+No Gaji: 43
+NIP: 199205102024211001
+Nama: Aditya Wahyu Winadi Atmajaya, S.T., M.T.
+Kelahiran: Banyuwangi, 10 Mei 1992
+Jabatan: Pegawai
+
+No Gaji: 44
+NIP: 199212192024211001
+Nama: Demiawan Rachmatta Putro Mudiono, S.S.T., M.Kes.
+Kelahiran: Probolinggo, 19 Desember 1992
+Jabatan: Pegawai
+
+No Gaji: 44
+NIP: 196710171995121001
+Nama: Ir. Dadik Pantaya,M.Si
+Kelahiran: Sleman, 17 Oktober 1967
+Jabatan: Pegawai
+
+No Gaji: 45
+NIP: 196806161989011002
+Nama: H. Agus Riyanto, SE,M.Si
+Kelahiran: Klaten, 16 Juni 1968
+Jabatan: Pegawai
+
+No Gaji: 45
+NIP: 199309132024211001
+Nama: Candra Pramula Pinandita, M.M.
+Kelahiran: Pacitan, 13 September 1993
+Jabatan: Pegawai
+
+No Gaji: 46
+NIP: 199402232024212001
+Nama: Ponti Primastuti Aulia Nugraheni, S.E., M.Akun.
+Kelahiran: Jember, 23 Februari 1994
+Jabatan: Pegawai
+
+No Gaji: 46
+NIP: 196409141997032001
+Nama: DR. IR. Sri Sundari, M.SI
+Kelahiran: Sumenep, 14 September 1964
+Jabatan: Pegawai
+
+No Gaji: 47
+NIP: 198208012024211001
+Nama: Danu Fitrianto, S.E.
+Kelahiran: Jember, 01 Agustus 1982
+Jabatan: Pegawai
+
+No Gaji: 47
+NIP: 196912251997021005
+Nama: Saiful Anwar, S. Tp., M.P.
+Kelahiran: Jember, 25 Desember 1969
+Jabatan: Pegawai
+
+No Gaji: 48
+NIP: 196809111996031002
+Nama: Amal Bahariawan, S.Tp,M.Si
+Kelahiran: Situbondo, 11 September 1968
+Jabatan: Pegawai
+
+No Gaji: 48
+NIP: 199207022024212001
+Nama: Yeni Suprapti, A.Md.
+Kelahiran: Nganjuk, 02 Juli 1992
+Jabatan: Pegawai
+
+No Gaji: 49
+NIP: 198701212024211013
+Nama: Vigo Dewangga, S.S., M.Pd.
+Kelahiran: Jombang, 21 Januari 1987
+Jabatan: Pegawai
+
+No Gaji: 49
+NIP: 197312291998031001
+Nama: Agung Wahyono, SP, M.SI, PH.D
+Kelahiran: Tulangan-Sidoarjo, 29 Desember 1973
+Jabatan: Pegawai
+
+No Gaji: 50
+NIP: 198309102024212015
+Nama: Haning Hasbiyati, S.Pd., M.Si.
+Kelahiran: Sidoarjo, 10 September 1983
+Jabatan: Pegawai
+
+No Gaji: 50
+NIP: 196802022000121002
+Nama: R. Alamsyah Sutantio, SE, M.Si
+Kelahiran: Tulungagung, 02 Februari 1968
+Jabatan: Pegawai
+
+No Gaji: 51
+NIP: 196912192000032001
+Nama: Irma Wardati, SP,MP
+Kelahiran: Gresik, 19 Desember 1969
+Jabatan: Pegawai
+
+No Gaji: 51
+NIP: 198707232024212031
+Nama: Julia Agustina, S.P., M.P.
+Kelahiran: Bandar Lampung, 23 Juli 1987
+Jabatan: Pegawai
+
+No Gaji: 52
+NIP: 197005072000032001
+Nama: Retno Sari Mahanani, SP, MM
+Kelahiran: Kediri, 07 Mei 1970
+Jabatan: Pegawai
+
+No Gaji: 52
+NIP: 198805192024211022
+Nama: Budi Fajar Supriyanto, S.Kom., M.Kom.
+Kelahiran: Ngawi, 19 Mei 1988
+Jabatan: Pegawai
+
+No Gaji: 53
+NIP: 197008272000031002
+Nama: Endro Sugiartono, SE, MM
+Kelahiran: Jember, 27 Agustus 1970
+Jabatan: Pegawai
+
+No Gaji: 53
+NIP: 198806282024212026
+Nama: Tunjung Genarsih, M.Pd.
+Kelahiran: Pacitan, 28 Juni 1988
+Jabatan: Pegawai
+
+No Gaji: 54
+NIP: 198807222024211014
+Nama: Fawait Afnani, M.Si.
+Kelahiran: Probolinggo, 22 Juli 1988
+Jabatan: Pegawai
+
+No Gaji: 54
+NIP: 197405192003121002
+Nama: Nugroho Setyo Wibowo, ST., MT
+Kelahiran: Bondowoso, 19 Mei 1974
+Jabatan: Pegawai
+
+No Gaji: 55
+NIP: 199404282024212045
+Nama: Prisilia Angel Tantri, S.E., M.M.
+Kelahiran: Palembang, 28 April 1994
+Jabatan: Pegawai
+
+No Gaji: 55
+NIP: 197808172003121005
+Nama: Agus Hariyanto, ST, M.Kom
+Kelahiran: Jember, 17 Agustus 1978
+Jabatan: Pegawai
+
+No Gaji: 56
+NIP: 197907032003121001
+Nama: Surateno,S.Kom. M.Kom
+Kelahiran: Jember, 03 Juli 1979
+Jabatan: Pegawai
+
+No Gaji: 56
+NIP: 198911142024211015
+Nama: Arief Norma Sari, S.Pd.
+Kelahiran: Lumajang, 14 November 1989
+Jabatan: Pegawai
+
+No Gaji: 57
+NIP: 196004261987032001
+Nama: Ir. Siti Humaida, MP
+Kelahiran: Nganjuk, 26 April 1960
+Jabatan: Pegawai
+
+No Gaji: 57
+NIP: 199302212024211018
+Nama: Ahmad Nuril Firdaus, S.E.
+Kelahiran: Jember, 21 Februari 1993
+Jabatan: Pegawai
+
+No Gaji: 58
+NIP: 196010211988112001
+Nama: Ir. Usken Fisdiana
+Kelahiran: Nganjuk, 21 Oktober 1960
+Jabatan: Pegawai
+
+No Gaji: 59
+NIP: 196204241989031006
+Nama: Ir. Hari Prasetyo,MP
+Kelahiran: Tulungagung, 24 April 1962
+Jabatan: Pegawai
+
+No Gaji: 61
+NIP: 196801201994032002
+Nama: Ir. Rindiani,MP
+Kelahiran: Jember, 20 Januari 1968
+Jabatan: Pegawai
+
+No Gaji: 62
+NIP: 196806171994032001
+Nama: Nanik Andayani, A.Md
+Kelahiran: Blitar, 17 Juni 1968
+Jabatan: Pegawai
+
+No Gaji: 63
+NIP: 196906131989032001
+Nama: Indah Ernani, SE
+Kelahiran: Banyuwangi, 13 Juni 1969
+Jabatan: Pegawai
+
+No Gaji: 64
+NIP: 196906241990021002
+Nama: Mohamad Haris Wibowo, SE
+Kelahiran: Jember, 24 Juni 1969
+Jabatan: Pegawai
+
+No Gaji: 65
+NIP: 196906281989012001
+Nama: Nunuk Nurhayati
+Kelahiran: Pasuruan, 28 Juni 1969
+Jabatan: Pegawai
+
+No Gaji: 66
+NIP: 196909151989011001
+Nama: Misnawar
+Kelahiran: Jember, 15 September 1969
+Jabatan: Pegawai
+
+No Gaji: 67
+NIP: 197006021994031003
+Nama: Eko Hadi Cahyono, SP, MP
+Kelahiran: Jember, 02 Juni 1970
+Jabatan: Pegawai
+
+No Gaji: 68
+NIP: 196807211991121002
+Nama: Ony Asmoro Adi, ST
+Kelahiran: Jember, 21 Juli 1968
+Jabatan: Pegawai
+
+No Gaji: 69
+NIP: 197012131997031002
+Nama: Dr. Hariadi Subagja, SPt, MP
+Kelahiran: Kulon Progo, 13 Desember 1970
+Jabatan: Pegawai
+
+No Gaji: 70
+NIP: 197306161998021001
+Nama: Rizal Perlambang CNAWP,SE,MP
+Kelahiran: Banyuwangi, 16 Juni 1973
+Jabatan: Pegawai
+
+No Gaji: 71
+NIP: 197309291997021001
+Nama: Dr. Yossi Wibisono, S.Tp, MP
+Kelahiran: Jember, 29 September 1973
+Jabatan: Pegawai
+
+No Gaji: 72
+NIP: 196702201994032001
+Nama: Endang Wahyu Wahyani,SE
+Kelahiran: Magetan, 20 Februari 1967
+Jabatan: Pegawai
+
+No Gaji: 73
+NIP: 196708221993031002
+Nama: Aguswadi
+Kelahiran: Bondowoso, 22 Agustus 1967
+Jabatan: Pegawai
+
+No Gaji: 74
+NIP: 197104082001121003
+Nama: Wahyu Kurnia  Dewanto, S.Kom, MT
+Kelahiran: Banyuwangi, 08 April 1971
+Jabatan: Pegawai
+
+No Gaji: 75
+NIP: 197106212001121001
+Nama: Budi Prasetyo, S.Pt,MP
+Kelahiran: Kediri, 21 Juni 1971
+Jabatan: Pegawai
+
+No Gaji: 76
+NIP: 197310101998031002
+Nama: Dr. Muksin, SP.,M.Si
+Kelahiran: Probolinggo, 10 Oktober 1973
+Jabatan: Pegawai
+
+No Gaji: 77
+NIP: 197501292001122001
+Nama: Cholimatus Zuhro,S.Pd
+Kelahiran: Malang, 29 Januari 1975
+Jabatan: Pegawai
+
+No Gaji: 78
+NIP: 197506252001121002
+Nama: Suluh Nusantoro,S.Pi, M.SC
+Kelahiran: Jember, 25 Juni 1975
+Jabatan: Pegawai
+
+No Gaji: 79
+NIP: 197607052001122001
+Nama: Ratih Puspitorini Y.A.,SE,MM
+Kelahiran: Purworejo, 05 Juli 1976
+Jabatan: Pegawai
+
+No Gaji: 80
+NIP: 197011282003121001
+Nama: Hariyono Rakhmad, S.Pd,M.Kom
+Kelahiran: Jember, 28 November 1970
+Jabatan: Pegawai
+
+No Gaji: 81
+NIP: 197110092003121001
+Nama: Denny Trias Utomo S.Si, MT
+Kelahiran: Malang, 09 Oktober 1971
+Jabatan: Pegawai
+
+No Gaji: 82
+NIP: 197704272002122003
+Nama: Siti  Aisyiyah,S.Pd, M.Pd
+Kelahiran: Lumajang, 27 April 1977
+Jabatan: Pegawai
+
+No Gaji: 83
+NIP: 197711102003121002
+Nama: Adriadi Novawan, S.Pd
+Kelahiran: Mojokerto, 10 November 1977
+Jabatan: Pegawai
+
+No Gaji: 84
+NIP: 197902122002122001
+Nama: Yuana Susmiati,S.Tp,M.Si
+Kelahiran: Blitar, 12 Februari 1979
+Jabatan: Pegawai
+
+No Gaji: 85
+NIP: 197009132005012001
+Nama: Dr.Tanti Kustiari, S.Sos, M.Si
+Kelahiran: Jakarta, 13 September 1970
+Jabatan: Pegawai
+
+No Gaji: 86
+NIP: 197310252005011003
+Nama: Candra Hariyadi, SE
+Kelahiran: Jember, 25 Oktober 1973
+Jabatan: Pegawai
+
+No Gaji: 87
+NIP: 197512152005011001
+Nama: Anang Budi Wiyanto,SE
+Kelahiran: Jember, 15 Desember 1975
+Jabatan: Pegawai
+
+No Gaji: 88
+NIP: 197901132005012001
+Nama: Dewi Kurniawati, S.Sos.M.Si
+Kelahiran: Ngawi, 13 Januari 1979
+Jabatan: Pegawai
+
+No Gaji: 89
+NIP: 198012122005011001
+Nama: Prawidya Destarianto, S.Kom, MT
+Kelahiran: Jember, 12 Desember 1980
+Jabatan: Pegawai
+
+No Gaji: 90
+NIP: 197107302006041002
+Nama: Iwan Dedy Julianto,S.Sos
+Kelahiran: Jember, 30 Juli 1971
+Jabatan: Pegawai
+
+No Gaji: 91
+NIP: 197308312008011003
+Nama: AGUS PURWADI. ST, MT
+Kelahiran: JEMBER, 31 Agustus 1973
+Jabatan: Pegawai
+
+No Gaji: 92
+NIP: 197501262006041001
+Nama: Wendy Triadji Nugroho, ST, MT
+Kelahiran: Jember, 26 Januari 1975
+Jabatan: Pegawai
+
+No Gaji: 93
+NIP: 197608292006041001
+Nama: Anjar Tri  Laksana,SE
+Kelahiran: Jember, 29 Agustus 1976
+Jabatan: Pegawai
+
+No Gaji: 94
+NIP: 197609292006041002
+Nama: Abi Hasan Said, SE
+Kelahiran: Palembang, 29 September 1976
+Jabatan: Pegawai
+
+No Gaji: 95
+NIP: 197702272006041001
+Nama: Hariadi Pramono,S.Kom
+Kelahiran: Jember, 27 Februari 1977
+Jabatan: Pegawai
+
+No Gaji: 96
+NIP: 198007242006041003
+Nama: Yudi Sanjaya, S.Kom
+Kelahiran: Jember, 24 Juli 1980
+Jabatan: Pegawai
+
+No Gaji: 97
+NIP: 198109032006041002
+Nama: Jodhi Ikhramsyah,S.Hut
+Kelahiran: Jakarta, 03 September 1981
+Jabatan: Pegawai
+
+No Gaji: 98
+NIP: 198302032006041003
+Nama: Hendra Yufit Riskiawan,S.Kom
+Kelahiran: Jember, 03 Februari 1983
+Jabatan: Pegawai
+
+No Gaji: 99
+NIP: 198005172008121002
+Nama: Dwi Putro Sarwo Setyohadi, S.Kom,M.Kom
+Kelahiran: Semarang, 17 Mei 1980
+Jabatan: Pegawai
+
+No Gaji: 100
+NIP: 198407222009122004
+Nama: Faiqatul Hikmah, S.KM.,M.Kes
+Kelahiran: Bondowoso, 22 Juli 1984
+Jabatan: Pegawai
+
+No Gaji: 101
+NIP: 198203112010122004
+Nama: dr. Rinda Nurul Karimah
+Kelahiran: Banyuwangi, 11 Maret 1982
+Jabatan: Pegawai
+
+No Gaji: 102
+NIP: 198508172010122008
+Nama: dr. Arinda Lironika Suryana
+Kelahiran: Mojokerto, 17 Agustus 1985
+Jabatan: Pegawai
+
+No Gaji: 103
+NIP: 196809211989032002
+Nama: L a s m i n i
+Kelahiran: Nganjuk, 21 September 1968
+Jabatan: Pegawai
+
+No Gaji: 104
+NIP: 196806271990121001
+Nama: Joko Hendaryono
+Kelahiran: Prajekan, Bondowoso, 27 Juni 1968
+Jabatan: Pegawai
+
+No Gaji: 105
+NIP: 197108171990021001
+Nama: Agus Nur Salim
+Kelahiran: Jember, 17 Agustus 1971
+Jabatan: Pegawai
+
+No Gaji: 106
+NIP: 196909141991031006
+Nama: Sunaryanto, A.Md
+Kelahiran: Ciamis, 14 September 1969
+Jabatan: Pegawai
+
+No Gaji: 107
+NIP: 196702041991032001
+Nama: Kori Sriwaheti, A.Md
+Kelahiran: Jember, 04 Februari 1967
+Jabatan: Pegawai
+
+No Gaji: 108
+NIP: 196705121992031003
+Nama: Muhammad Djabir Saing, SE
+Kelahiran: Ujung Pandang, 12 Mei 1967
+Jabatan: Pegawai
+
+No Gaji: 109
+NIP: 196812111992031001
+Nama: Syarifuddin Nur
+Kelahiran: Ujung Pandang, 11 Desember 1968
+Jabatan: Pegawai
+
+No Gaji: 110
+NIP: 196908121992031003
+Nama: Sutrisno
+Kelahiran: Jember, 12 Agustus 1969
+Jabatan: Pegawai
+
+No Gaji: 111
+NIP: 197005021993031002
+Nama: Hendro Agus Suhartono, A.Md
+Kelahiran: Jember, 02 Mei 1970
+Jabatan: Pegawai
+
+No Gaji: 112
+NIP: 197006161992031001
+Nama: Edi Sucipto
+Kelahiran: Puger, Jember, 16 Juni 1970
+Jabatan: Pegawai
+
+No Gaji: 113
+NIP: 197008121995011001
+Nama: Agus Priono, A.Md
+Kelahiran: Pasirian, Lumajang, 12 Agustus 1970
+Jabatan: Pegawai
+
+No Gaji: 114
+NIP: 197011091992031001
+Nama: Suprapto
+Kelahiran: Sambirejo, 09 November 1970
+Jabatan: Pegawai
+
+No Gaji: 115
+NIP: 197302071993031002
+Nama: Hadi Poernomo, S.Pt
+Kelahiran: Jember, 07 Februari 1973
+Jabatan: Pegawai
+
+No Gaji: 116
+NIP: 197311091995011001
+Nama: Ahmad Fanani, A.Md
+Kelahiran: Jember, 09 November 1973
+Jabatan: Pegawai
+
+No Gaji: 117
+NIP: 196908191995011001
+Nama: Totok Dwi Sukmayoga
+Kelahiran: Jember, 19 Agustus 1969
+Jabatan: Pegawai
+
+No Gaji: 118
+NIP: 196909251999031002
+Nama: Drs. Syaiful Bachri
+Kelahiran: Bangkalan, 25 September 1969
+Jabatan: Pegawai
+
+No Gaji: 119
+NIP: 197002071995121002
+Nama: Atho' Amrulloh, SP, MP
+Kelahiran: Jember, 07 Februari 1970
+Jabatan: Pegawai
+
+No Gaji: 120
+NIP: 197008211999032001
+Nama: Agustina Endah W, S.Sos,M.Kes
+Kelahiran: Banyuwangi, 21 Agustus 1970
+Jabatan: Pegawai
+
+No Gaji: 121
+NIP: 197008311998031001
+Nama: Moch. Munih Dian W, S.Kom.,MT
+Kelahiran: Malang, 31 Agustus 1970
+Jabatan: Pegawai
+
+No Gaji: 122
+NIP: 197309281999032001
+Nama: Elly Kurniawati, S.Tp,MP
+Kelahiran: Kediri, 28 September 1973
+Jabatan: Pegawai
+
+No Gaji: 123
+NIP: 197402281998021001
+Nama: Budi Hariyanto, A.Md
+Kelahiran: Jember, 28 Februari 1974
+Jabatan: Pegawai
+
+No Gaji: 124
+NIP: 196902062001122001
+Nama: Saptasari Rahayuningsih, S. Sos
+Kelahiran: Jember, 06 Februari 1969
+Jabatan: Pegawai
+
+No Gaji: 125
+NIP: 196808262001122001
+Nama: Dyah Aju Hermawati,SS
+Kelahiran: Jombang, 26 Agustus 1968
+Jabatan: Pegawai
+
+No Gaji: 126
+NIP: 197006031996031001
+Nama: T o s a n, SP
+Kelahiran: Jember, 03 Juni 1970
+Jabatan: Pegawai
+
+No Gaji: 127
+NIP: 197206042001122001
+Nama: Nanik Mariyati, S.Pd, M. Pd
+Kelahiran: Nganjuk, 04 Juni 1972
+Jabatan: Pegawai
+
+No Gaji: 128
+NIP: 197512122001122001
+Nama: Ida Adha Anrosana Pongoh, S.Pi, MP
+Kelahiran: Banyuwangi, 12 Desember 1975
+Jabatan: Pegawai
+
+No Gaji: 129
+NIP: 197512162000031001
+Nama: Suseno Edi Nugroho, A.Md
+Kelahiran: Blitar, 16 Desember 1975
+Jabatan: Pegawai
+
+No Gaji: 130
+NIP: 197609102000032001
+Nama: Endang Widyawatiningrum, A.Md
+Kelahiran: Ponorogo, 10 September 1976
+Jabatan: Pegawai
+
+No Gaji: 131
+NIP: 197611112001121001
+Nama: Mochammad Nuruddin,ST,M.Si
+Kelahiran: Jember, 11 November 1976
+Jabatan: Pegawai
+
+No Gaji: 132
+NIP: 197005202002122001
+Nama: DR. Titik Budiati, S.TP,MT.,M.SC
+Kelahiran: Yogyakarta, 20 Mei 1970
+Jabatan: Pegawai
+
+No Gaji: 133
+NIP: 197009292003121001
+Nama: Yogiswara,ST
+Kelahiran: Malang, 29 September 1970
+Jabatan: Pegawai
+
+No Gaji: 134
+NIP: 197304052002121001
+Nama: Drh. Dharwin Siswantoro, M.Kes
+Kelahiran: Madiun, 05 April 1973
+Jabatan: Pegawai
+
+No Gaji: 135
+NIP: 197304292000032002
+Nama: Dwi Setyowati, A.Md
+Kelahiran: Jember, 29 April 1973
+Jabatan: Pegawai
+
+No Gaji: 136
+NIP: 197312212002121001
+Nama: Dr. Bayu Rudiyanto, ST, M.Si
+Kelahiran: Jember, 21 Desember 1973
+Jabatan: Pegawai
+
+No Gaji: 137
+NIP: 197404102003122001
+Nama: Yuslaili Ningsih, S.Pd
+Kelahiran: Malang, 10 April 1974
+Jabatan: Pegawai
+
+No Gaji: 138
+NIP: 197406302002121001
+Nama: Agus Setia Budi, S.Pd,M.Pd
+Kelahiran: Jember, 30 Juni 1974
+Jabatan: Pegawai
+
+No Gaji: 139
+NIP: 197409102002122001
+Nama: Enik Rukiati, S.Pd, M. Pd
+Kelahiran: Nganjuk, 10 September 1974
+Jabatan: Pegawai
+
+No Gaji: 140
+NIP: 197604062000121001
+Nama: Agung Wicaksono, A.Md
+Kelahiran: Jember, 06 April 1976
+Jabatan: Pegawai
+
+No Gaji: 141
+NIP: 197609092002121002
+Nama: Erfan Kustiawan, SPt,MP
+Kelahiran: Jember, 09 September 1976
+Jabatan: Pegawai
+
+No Gaji: 142
+NIP: 197107221999032001
+Nama: Evy Laksmiwati, SE
+Kelahiran: Jember, 22 Juli 1971
+Jabatan: Pegawai
+
+No Gaji: 143
+NIP: 197004232001122001
+Nama: Tri Winarsih, A.Md
+Kelahiran: Jember, 23 April 1970
+Jabatan: Pegawai
+
+No Gaji: 144
+NIP: 197211132005011001
+Nama: Heru Purnomo, SE
+Kelahiran: Blitar, 13 November 1972
+Jabatan: Pegawai
+
+No Gaji: 145
+NIP: 197409022005011001
+Nama: Taufik Hidayat, SE, M.Si
+Kelahiran: Trenggalek, 02 September 1974
+Jabatan: Pegawai
+
+No Gaji: 146
+NIP: 197709292005011003
+Nama: Didit Rahmat Hartadi, S.Kom
+Kelahiran: Jember, 29 September 1977
+Jabatan: Pegawai
+
+No Gaji: 147
+NIP: 197712282002122001
+Nama: Dian Nurhayati, S.TP
+Kelahiran: Surabaya, 28 Desember 1977
+Jabatan: Pegawai
+
+No Gaji: 148
+NIP: 197806142002122001
+Nama: Etik Tri Lukiantini, SE., MM
+Kelahiran: Jember, 14 Juni 1978
+Jabatan: Pegawai
+
+No Gaji: 149
+NIP: 197808162005011002
+Nama: Beni Widiawan,S.ST
+Kelahiran: Kediri, 16 Agustus 1978
+Jabatan: Pegawai
+
+No Gaji: 150
+NIP: 197808192005012001
+Nama: Ika Widiastuti,S.ST, MT
+Kelahiran: Banyumas, 19 Agustus 1978
+Jabatan: Pegawai
+
+No Gaji: 151
+NIP: 197809082005011001
+Nama: Denny Wijanarko, ST
+Kelahiran: Jember, 08 September 1978
+Jabatan: Pegawai
+
+No Gaji: 152
+NIP: 197809152005012002
+Nama: Nila Susanti, SS
+Kelahiran: Surabaya, 15 September 1978
+Jabatan: Pegawai
+
+No Gaji: 153
+NIP: 197810112005012002
+Nama: Elly Antika, ST, M. Kom
+Kelahiran: Jember, 11 Oktober 1978
+Jabatan: Pegawai
+
+No Gaji: 154
+NIP: 197906272005011002
+Nama: Luluk Cahyo Wiyono,S.Sos, M.Sc
+Kelahiran: Blitar, 27 Juni 1979
+Jabatan: Pegawai
+
+No Gaji: 155
+NIP: 197909212005011001
+Nama: I Putu Dody Lesmana, ST, MT
+Kelahiran: Situbondo, 21 September 1979
+Jabatan: Pegawai
+
+No Gaji: 156
+NIP: 197911072002122001
+Nama: Novi Tri Kurniawati , A.Md
+Kelahiran: Bondowoso, 07 November 1979
+Jabatan: Pegawai
+
+No Gaji: 157
+NIP: 198101152005011011
+Nama: Nurul Zainal Fanani, S.ST, MT
+Kelahiran: Kediri, 15 Januari 1981
+Jabatan: Pegawai
+
+No Gaji: 158
+NIP: 198106142005012001
+Nama: Dwi Nur Rifatin O,SE
+Kelahiran: Situbondo, 14 Juni 1981
+Jabatan: Pegawai
+
+No Gaji: 159
+NIP: 198110052005012001
+Nama: Oktanita Jaya Anggraeni, SE, MP
+Kelahiran: Jember, 05 Oktober 1981
+Jabatan: Pegawai
+
+No Gaji: 160
+NIP: 197112242001121001
+Nama: Hari Prabowo, SE
+Kelahiran: Jember, 24 Desember 1971
+Jabatan: Pegawai
+
+No Gaji: 161
+NIP: 197212202001121001
+Nama: Iwan Setiadi, S. Sos
+Kelahiran: Jember, 20 Desember 1972
+Jabatan: Pegawai
+
+No Gaji: 162
+NIP: 197702052005011004
+Nama: Teguh Prasetyawan, A.Md
+Kelahiran: Jember, 05 Februari 1977
+Jabatan: Pegawai
+
+No Gaji: 163
+NIP: 197808302001122001
+Nama: Ike Agustin Yuvianti, SE
+Kelahiran: Jember, 30 Agustus 1978
+Jabatan: Pegawai
+
+No Gaji: 164
+NIP: 197911092005012002
+Nama: Sri Supriyatiningsih, A.Md
+Kelahiran: Wonogiri, 09 November 1979
+Jabatan: Pegawai
+
+No Gaji: 165
+NIP: 198003202003121002
+Nama: Dwiyogo Kurniawan, A.Md
+Kelahiran: Banyumas, 20 Maret 1980
+Jabatan: Pegawai
+
+No Gaji: 166
+NIP: 198101072005012001
+Nama: Siti Khotijah, SE
+Kelahiran: Jember, 07 Januari 1981
+Jabatan: Pegawai
+
+No Gaji: 167
+NIP: 198106152006041002
+Nama: Syamsul Arifin,S.Kom
+Kelahiran: Jember, 15 Juni 1981
+Jabatan: Pegawai
+
+No Gaji: 168
+NIP: 198207042001121001
+Nama: Dony Cahyono, SE
+Kelahiran: Jember, 04 Juli 1982
+Jabatan: Pegawai
+
+No Gaji: 169
+NIP: 198212192006042001
+Nama: Dessy Putri Andini, SE, M.M
+Kelahiran: Jember, 19 Desember 1982
+Jabatan: Pegawai
+
+No Gaji: 170
+NIP: 197508182008122002
+Nama: Netty Ermawati,SP, Ph.D
+Kelahiran: Trenggalek, 18 Agustus 1975
+Jabatan: Pegawai
+
+No Gaji: 171
+NIP: 197612232003121001
+Nama: Moch. Zakaria, ST
+Kelahiran: Jember, 23 Desember 1976
+Jabatan: Pegawai
+
+No Gaji: 172
+NIP: 197801032008121001
+Nama: Nurkholis, S.Pt.,MP
+Kelahiran: Jember, 03 Januari 1978
+Jabatan: Pegawai
+
+No Gaji: 173
+NIP: 198401012008122004
+Nama: Ika Ristianingsih, SE
+Kelahiran: Jember, 01 Januari 1984
+Jabatan: Pegawai
+
+No Gaji: 174
+NIP: 198411142008122001
+Nama: Dahlia Indah Amareta,S.KM.
+Kelahiran: Jember, 14 November 1984
+Jabatan: Pegawai
+
+No Gaji: 175
+NIP: 198411172010011019
+Nama: Atma Deharja, S.K.M., M.Kes.
+Kelahiran: Jember, 17 November 1984
+Jabatan: Pegawai
+
+No Gaji: 176
+NIP: 197608312010122001
+Nama: Dwi Rahmawati, SP, MP
+Kelahiran: Lumajang, 31 Agustus 1976
+Jabatan: Pegawai
+
+No Gaji: 177
+NIP: 197708302005012002
+Nama: Nur Hamzah Jamila, S.Sos
+Kelahiran: Jember, 30 Agustus 1977
+Jabatan: Pegawai
+
+No Gaji: 178
+NIP: 197711212010122001
+Nama: Siska Rahmawati, S.E
+Kelahiran: Jember, 21 November 1977
+Jabatan: Pegawai
+
+No Gaji: 179
+NIP: 198105132005022006
+Nama: Ari Prihastutik, S. ST
+Kelahiran: Boyolali, 13 Mei 1981
+Jabatan: Pegawai
+
+No Gaji: 180
+NIP: 198204102010122002
+Nama: Ariesia Ayuning Gemaputri,S.Pi, MP
+Kelahiran: Jember, 10 April 1982
+Jabatan: Pegawai
+
+No Gaji: 181
+NIP: 198301242010122003
+Nama: Naning Retnowati, S.TP. MP
+Kelahiran: Jember, 24 Januari 1983
+Jabatan: Pegawai
+
+No Gaji: 182
+NIP: 198303102010122007
+Nama: Sri Lestari, SE
+Kelahiran: Jember, 10 Maret 1983
+Jabatan: Pegawai
+
+No Gaji: 183
+NIP: 198411072010122002
+Nama: DR.Novita Nuraini, M.A.R.S
+Kelahiran: Jember, 07 November 1984
+Jabatan: Pegawai
+
+No Gaji: 184
+NIP: 198308252010122005
+Nama: dr.Arisanty Nur Setia Restuti
+Kelahiran: Jember, 25 Agustus 1983
+Jabatan: Pegawai
+
+No Gaji: 185
+NIP: 198310032011011009
+Nama: AVISENNA HARKAT, S.E., M.M.
+Kelahiran: Jember, 03 Oktober 1983
+Jabatan: Pegawai
+
+No Gaji: 186
+NIP: 198605202014042001
+Nama: Puspito Arum, S.Gz., M.Gizi.
+Kelahiran: Semarang, 20 Mei 1986
+Jabatan: Pegawai
+
+No Gaji: 187
+NIP: 198402192015042002
+Nama: Rossalina Adi Wijayanti, S.KM., M.Kes
+Kelahiran: Pasuruan, 19 Februari 1984
+Jabatan: Pegawai
+
+No Gaji: 188
+NIP: 198504132015042007
+Nama: Alfi Hidayatu Miqawati, S.Pd., M.Pd.
+Kelahiran: Bondowoso, 13 April 1985
+Jabatan: Pegawai
+
+No Gaji: 189
+NIP: 198801082015042004
+Nama: Uyun Erma Malika, S.TP., M.P.
+Kelahiran: Jember, 08 Januari 1988
+Jabatan: Pegawai
+
+No Gaji: 190
+NIP: 198802112015041003
+Nama: Anang Febri Prasetyo, S.Pt., M.Sc
+Kelahiran: Sukoharjo, 11 Februari 1988
+Jabatan: Pegawai
+
+No Gaji: 191
+NIP: 196702101990022002
+Nama: Suwanik
+Kelahiran: Mojokerto, 10 Februari 1967
+Jabatan: Pegawai
+
+No Gaji: 192
+NIP: 196801191989012001
+Nama: Susilowati
+Kelahiran: Ponorogo, 19 Januari 1968
+Jabatan: Pegawai
+
+No Gaji: 193
+NIP: 196703231989011001
+Nama: Ponidi Nasution
+Kelahiran: Banyuwangi, 23 Maret 1967
+Jabatan: Pegawai
+
+No Gaji: 194
+NIP: 196706091993031001
+Nama: Arief Witjaksono,S,Sos
+Kelahiran: Jember, 09 Juni 1967
+Jabatan: Pegawai
+
+No Gaji: 195
+NIP: 196912061988031001
+Nama: S y a i f u l
+Kelahiran: Genteng, Banyuwangi, 06 Desember 1969
+Jabatan: Pegawai
+
+No Gaji: 196
+NIP: 196912211992031002
+Nama: R.Muhamad Arief
+Kelahiran: Sampang, 21 Desember 1969
+Jabatan: Pegawai
+
+No Gaji: 197
+NIP: 197003191991031002
+Nama: Irwan Siswanto
+Kelahiran: Jember, 19 Maret 1970
+Jabatan: Pegawai
+
+No Gaji: 198
+NIP: 196701081989031002
+Nama: Suradi
+Kelahiran: Boyolali, 08 Januari 1967
+Jabatan: Pegawai
+
+No Gaji: 199
+NIP: 196801151990021001
+Nama: Imam Amwari
+Kelahiran: Jember, 15 Januari 1968
+Jabatan: Pegawai
+
+No Gaji: 200
+NIP: 196910171991032002
+Nama: Nunuk Andayani
+Kelahiran: Candipuro, Lumajang, 17 Oktober 1969
+Jabatan: Pegawai
+
+No Gaji: 201
+NIP: 197002192000032001
+Nama: Sylvie Nurul Damayanti, SE
+Kelahiran: Jember, 19 Februari 1970
+Jabatan: Pegawai
+
+No Gaji: 202
+NIP: 197012211993031001
+Nama: Dudik Hadi Iswanto
+Kelahiran: Glenmore, Banyuwangi, 21 Desember 1970
+Jabatan: Pegawai
+
+No Gaji: 202
+NIP: 197012211993031001
+Nama: Dudik Hadi Iswanto
+Kelahiran: Glenmore, Banyuwangi, 21 Desember 1970
+Jabatan: Pegawai
+
+No Gaji: 202
+NIP: 197012211993031001
+Nama: Dudik Hadi Iswanto
+Kelahiran: Glenmore, Banyuwangi, 21 Desember 1970
+Jabatan: Pegawai
+
+No Gaji: 203
+NIP: 197308121998031003
+Nama: K a i d i, A.Md
+Kelahiran: Magetan, 12 Agustus 1973
+Jabatan: Pegawai
+
+No Gaji: 204
+NIP: 196708102000121001
+Nama: Yahya Kusbiantoro
+Kelahiran: Jember, 10 Agustus 1967
+Jabatan: Pegawai
+
+No Gaji: 205
+NIP: 197505242007012001
+Nama: Siti Rodiyah Andary, A.Md
+Kelahiran: Gresik, 24 Mei 1975
+Jabatan: Pegawai
+
+No Gaji: 205
+NIP: 197505242007012001
+Nama: Siti Rodiyah Andary, A.Md
+Kelahiran: Gresik, 24 Mei 1975
+Jabatan: Pegawai
+
+No Gaji: 206
+NIP: 196612202000031001
+Nama: Tjatur Derta Utama
+Kelahiran: Jember, 20 Desember 1966
+Jabatan: Pegawai
+
+No Gaji: 207
+NIP: 197206161997031003
+Nama: Guntoro,A.Md
+Kelahiran: Jember, 16 Juni 1972
+Jabatan: Pegawai
+
+No Gaji: 208
+NIP: 197310031996031001
+Nama: Siswanto
+Kelahiran: Malang, 03 Oktober 1973
+Jabatan: Pegawai
+
+No Gaji: 209
+NIP: 197512272000031001
+Nama: Saiful Mukhlis , A.Md
+Kelahiran: Malang, 27 Desember 1975
+Jabatan: Pegawai
+
+No Gaji: 210
+NIP: 197108271991031003
+Nama: L a t i p
+Kelahiran: Jember, 27 Agustus 1971
+Jabatan: Pegawai
+
+No Gaji: 211
+NIP: 197210052003121001
+Nama: Asep Samsudin, S.Pd
+Kelahiran: Tasikmalaya, 05 Oktober 1972
+Jabatan: Pegawai
+
+No Gaji: 212
+NIP: 197506192001121003
+Nama: Prayitno, SP
+Kelahiran: Magetan, 19 Juni 1975
+Jabatan: Pegawai
+
+No Gaji: 213
+NIP: 197707222002121001
+Nama: Yuli Hananto, STP., MSi.
+Kelahiran: Bojonegoro, 22 Juli 1977
+Jabatan: Pegawai
+
+No Gaji: 214
+NIP: 197810082001121001
+Nama: Mulyadi Nyoto,SE
+Kelahiran: Jember, 08 Oktober 1978
+Jabatan: Pegawai
+
+No Gaji: 215
+NIP: 198106072002121003
+Nama: Joko Prayitno, S.ST
+Kelahiran: Banyuwangi, 07 Juni 1981
+Jabatan: Pegawai
+
+No Gaji: 216
+NIP: 197605052005012001
+Nama: Sri Santi Utami, A.Md
+Kelahiran: Ponorogo, 05 Mei 1976
+Jabatan: Pegawai
+
+No Gaji: 217
+NIP: 198111132005012003
+Nama: Lilian Nova Paramita ,S.ST
+Kelahiran: Kendal, 13 November 1981
+Jabatan: Pegawai
+
+No Gaji: 218
+NIP: 197910232006042001
+Nama: Rini Indrawati , A.Md
+Kelahiran: Jember, 23 Oktober 1979
+Jabatan: Pegawai
+
+No Gaji: 219
+NIP: 198103092006041004
+Nama: Didik Nurhadi, A.Md
+Kelahiran: Jember, 09 Maret 1981
+Jabatan: Pegawai
+
+No Gaji: 220
+NIP: 198107082006041003
+Nama: Ujang Tri Cahyono, SP
+Kelahiran: Jember, 08 Juli 1981
+Jabatan: Pegawai
+
+No Gaji: 221
+NIP: 198408302006042001
+Nama: Poppy Cahyo Dewantari, A.Md
+Kelahiran: Jember, 30 Agustus 1984
+Jabatan: Pegawai
+
+No Gaji: 222
+NIP: 198511282008121002
+Nama: Aji Seto Arifianto, S.ST
+Kelahiran: Jember, 28 November 1985
+Jabatan: Pegawai
+
+No Gaji: 223
+NIP: 198606092008122004
+Nama: Nanik Anita Mukhlisoh, S.ST
+Kelahiran: Nganjuk, 09 Juni 1986
+Jabatan: Pegawai
+
+No Gaji: 224
+NIP: 198405262008011005
+Nama: Kartika Setyawan, A.Md
+Kelahiran: Jember, 26 Mei 1984
+Jabatan: Pegawai
+
+No Gaji: 225
+NIP: 198609262005011001
+Nama: Mohamad Budi Kurniawan
+Kelahiran: Jember, 26 September 1986
+Jabatan: Pegawai
+
+No Gaji: 226
+NIP: 197612072008121001
+Nama: Agus Santoso, A.Md
+Kelahiran: Kediri, 07 Desember 1976
+Jabatan: Pegawai
+
+No Gaji: 227
+NIP: 198203272008012009
+Nama: Irene Margaret Wahyu Eka Sari, A.Md
+Kelahiran: Jember, 27 Maret 1982
+Jabatan: Pegawai
+
+No Gaji: 228
+NIP: 198307232010122005
+Nama: dr. Adhiningsih Yulianti
+Kelahiran: Jember, 23 Juli 1983
+Jabatan: Pegawai
+
+No Gaji: 229
+NIP: 198311232010122005
+Nama: Novita Cholifah Ida, S.Si
+Kelahiran: Jember, 23 November 1983
+Jabatan: Pegawai
+
+No Gaji: 230
+NIP: 197705102009121004
+Nama: Hadi Siswanta , A.Md
+Kelahiran: Jember, 10 Mei 1977
+Jabatan: Pegawai
+
+No Gaji: 231
+NIP: 198101192014041001
+Nama: Ahmad Robiul Awal Udin, S.T., M.T.
+Kelahiran: Jember, 19 Januari 1981
+Jabatan: Pegawai
+
+No Gaji: 232
+NIP: 198109052014041001
+Nama: drh. Aan Awaludin
+Kelahiran: Kulon Progo, 05 September 1981
+Jabatan: Pegawai
+
+No Gaji: 233
+NIP: 198109152014041001
+Nama: Adityo, S.T., M.T.
+Kelahiran: Malang, 15 September 1981
+Jabatan: Pegawai
+
+No Gaji: 234
+NIP: 198207162015042001
+Nama: Fitri Wijayanti, S.Pd., M.Pd.
+Kelahiran: Boyolali, 16 Juli 1982
+Jabatan: Pegawai
+
+No Gaji: 235
+NIP: 198305132009121001
+Nama: Andik Susanto, S.TP.
+Kelahiran: Lumajang, 13 Mei 1983
+Jabatan: Pegawai
+
+No Gaji: 236
+NIP: 198312102014041001
+Nama: Dhanang Eka Putra, S.P., M.Sc.
+Kelahiran: Jember, 10 Desember 1983
+Jabatan: Pegawai
+
+No Gaji: 237
+NIP: 198403082015042002
+Nama: Linda Ekadewi Widyatami, S.P.,M.P.
+Kelahiran: Jember, 08 Maret 1984
+Jabatan: Pegawai
+
+No Gaji: 238
+NIP: 198406252015041004
+Nama: Bekti Maryuni Susanto, S.Pd.T.,M.Kom.
+Kelahiran: Gunung Kidul, 25 Juni 1984
+Jabatan: Pegawai
+
+No Gaji: 239
+NIP: 198408112014041001
+Nama: Azamataufiq Budiprasojo, S.T., M.T.
+Kelahiran: Jember, 11 Agustus 1984
+Jabatan: Pegawai
+
+No Gaji: 240
+NIP: 198608022015042002
+Nama: Ratih Ayuninghemi, S.ST., M.Kom.
+Kelahiran: Magetan, 02 Agustus 1986
+Jabatan: Pegawai
+
+No Gaji: 241
+NIP: 198609032015041005
+Nama: Sepdian Luri Asmono, S.ST., M.P.
+Kelahiran: Lampung Tengah, 03 September 1986
+Jabatan: Pegawai
+
+No Gaji: 242
+NIP: 198707222014042001
+Nama: Betty Pramudita Sari, S.E.
+Kelahiran: Sumenep, 22 Juli 1987
+Jabatan: Pegawai
+
+No Gaji: 243
+NIP: 198804102015042004
+Nama: Mulia Winirsya Apriliayanti, S.TP., M.P.
+Kelahiran: Surabaya, 10 April 1988
+Jabatan: Pegawai
+
+No Gaji: 244
+NIP: 198804252014042001
+Nama: Ratna Budi Wulandari, S.Pt.
+Kelahiran: Banyuwangi, 25 April 1988
+Jabatan: Pegawai
+
+No Gaji: 245
+NIP: 198906022014041001
+Nama: Andik Irawan, S.T., M.Eng
+Kelahiran: Jember, 02 Juni 1989
+Jabatan: Pegawai
+
+No Gaji: 246
+NIP: 199107252014042001
+Nama: Savitri Aulia Wuri Handayani, S.E.
+Kelahiran: Jember, 25 Juli 1991
+Jabatan: Pegawai
+
+No Gaji: 247
+NIP: 198301092018031001
+Nama: Hermawan Arief Putranto, M.T.
+Kelahiran: Malang, 09 Januari 1983
+Jabatan: Pegawai
+
+No Gaji: 248
+NIP: 198405022018032001
+Nama: Rahmawati, S.P., M.P.
+Kelahiran: Banyuwangi, 02 Mei 1984
+Jabatan: Pegawai
+
+No Gaji: 249
+NIP: 198405212019032008
+Nama: SELVIA JUWITA SWARI, S.KM.,M.Kes
+Kelahiran: Jember, 21 Mei 1984
+Jabatan: Pegawai
+
+No Gaji: 250
+NIP: 198409102019032012
+Nama: AULIA BRILLIANTINA, S.TP., M.P.
+Kelahiran: KEDIRI, 10 September 1984
+Jabatan: Pegawai
+
+No Gaji: 251
+NIP: 198410302019032012
+Nama: SILVIA OKTAVIA NUR YUDIASTUTI, S.T.P., M.T.P.
+Kelahiran: KOTA BANDUNG, 30 Oktober 1984
+Jabatan: Pegawai
+
+No Gaji: 252
+NIP: 198412092018032001
+Nama: Eliyatiningsih, S.P., M.Sc.
+Kelahiran: Sleman, 09 Desember 1984
+Jabatan: Pegawai
+
+No Gaji: 253
+NIP: 198504022019032009
+Nama: EVA ROSDIANA, SP., M.P.
+Kelahiran: Aceh Tamiang, 02 April 1985
+Jabatan: Pegawai
+
+No Gaji: 254
+NIP: 198507082019031009
+Nama: GANDU EKO JULIANTO SUYOSO, S.Ked., M.KKK.
+Kelahiran: KAB. JEMBER, 08 Juli 1985
+Jabatan: Pegawai
+
+No Gaji: 255
+NIP: 198509032019032009
+Nama: VERONIKA VESTINE, S.ST., M.Kes.
+Kelahiran: KAB. LUMAJANG, 03 September 1985
+Jabatan: Pegawai
+
+No Gaji: 256
+NIP: 198510242019032010
+Nama: PUTRI RAHAYU RATRI, S.Si., M.Biomed.
+Kelahiran: KAB. GUNUNG KIDUL, 24 Oktober 1985
+Jabatan: Pegawai
+
+No Gaji: 257
+NIP: 198510312018031001
+Nama: Victor Phoa, S.Si., M.Cs
+Kelahiran: Ambon, 31 Oktober 1985
+Jabatan: Pegawai
+
+No Gaji: 258
+NIP: 198511092019032006
+Nama: DHYANI AYU PERWIRANINGRUM, S.KM.,M.P.H.
+Kelahiran: KOTA MAGELANG, 09 November 1985
+Jabatan: Pegawai
+
+No Gaji: 259
+NIP: 198603192019031009
+Nama: FENDIK EKO PURNOMO, S.Pd.,M.T
+Kelahiran: Jember, 19 Maret 1986
+Jabatan: Pegawai
+
+No Gaji: 260
+NIP: 198604292019031004
+Nama: MOCHAMAD IRWAN NARI, ST., M.T.
+Kelahiran: Jember, 29 April 1986
+Jabatan: Pegawai
+
+No Gaji: 261
+NIP: 198607042019032014
+Nama: RISKHA DORA CANDRA DEWI, S.Sos., M.H.Kes.
+Kelahiran: KAB. BANTUL, 04 Juli 1986
+Jabatan: Pegawai
+
+No Gaji: 262
+NIP: 198607152018032001
+Nama: Leli Kurniasari, S.P., M.Si.
+Kelahiran: Bandar Lampung, 15 Juli 1986
+Jabatan: Pegawai
+
+No Gaji: 263
+NIP: 198611082019032008
+Nama: ELOK KURNIA NOVITA SARI, S.TP.,M.P
+Kelahiran: Bondowoso, 08 November 1986
+Jabatan: Pegawai
+
+No Gaji: 264
+NIP: 198612192019032007
+Nama: REIKHA RAHMASARI, S.Pt., M.Si.
+Kelahiran: KAB. KUDUS, 19 Desember 1986
+Jabatan: Pegawai
+
+No Gaji: 265
+NIP: 198612312019031025
+Nama: MUHAMMAD YUNUS, S.Kom., M.Kom.
+Kelahiran: KAB. LOMBOK BARAT, 31 Desember 1986
+Jabatan: Pegawai
+
+No Gaji: 266
+NIP: 198703072018032001
+Nama: Zora Olivia, S.Farm., Apt., M.Farm
+Kelahiran: Jember, 07 Maret 1987
+Jabatan: Pegawai
+
+No Gaji: 267
+NIP: 198704022019031009
+Nama: GULLIT TORNADO TAUFAN, S.Pd., M.Pd.
+Kelahiran: KAB. BANYUWANGI, 02 April 1987
+Jabatan: Pegawai
+
+No Gaji: 268
+NIP: 198705012019032019
+Nama: RINDHA RENTINA DARAH PERTAMI, S.P., M.Si.
+Kelahiran: Jakarta, 01 Mei 1987
+Jabatan: Pegawai
+
+No Gaji: 269
+NIP: 198706012019032010
+Nama: DINA FITRIYAH, S.Si., M.Si.
+Kelahiran: KAB. JEMBER, 01 Juni 1987
+Jabatan: Pegawai
+
+No Gaji: 270
+NIP: 198706172018032001
+Nama: Theo Mahiseta Syahniar, S.Pt., M.Si.
+Kelahiran: Probolinggo, 17 Juni 1987
+Jabatan: Pegawai
+
+No Gaji: 271
+NIP: 198707172019032016
+Nama: DYAH KUSUMA WARDANI, S.ST., M.M.
+Kelahiran: KAB. JEMBER, 17 Juli 1987
+Jabatan: Pegawai
+
+No Gaji: 272
+NIP: 198710192018031002
+Nama: Huda Oktafa, M.P
+Kelahiran: Banyuwangi, 19 Oktober 1987
+Jabatan: Pegawai
+
+No Gaji: 273
+NIP: 198801172019031008
+Nama: I GEDE WIRYAWAN. S.Kom., M.Kom.
+Kelahiran: KOTA SAMARINDA, 17 Januari 1988
+Jabatan: Pegawai
+
+No Gaji: 274
+NIP: 198801192018032001
+Nama: Dyah Laksito Rukmi, S.Pt., M.Si.
+Kelahiran: Boyolali, 19 Januari 1988
+Jabatan: Pegawai
+
+No Gaji: 275
+NIP: 198802102019032015
+Nama: MARIA 'AZIZAH, S.P., M.Si.
+Kelahiran: KAB. BANYUWANGI, 10 Februari 1988
+Jabatan: Pegawai
+
+No Gaji: 276
+NIP: 198804042019031013
+Nama: BAKHTIYAR HADI PRAKOSO, S.Kom., M.Kom.
+Kelahiran: KAB. BANYUWANGI, 04 April 1988
+Jabatan: Pegawai
+
+No Gaji: 277
+NIP: 198807022019031010
+Nama: HUSIN, S.Kom.,M.MT
+Kelahiran: Bondowoso, 02 Juli 1988
+Jabatan: Pegawai
+
+No Gaji: 278
+NIP: 198807242019031007
+Nama: SETYO ANDI NUGROHO, S.Pd., M.Si.
+Kelahiran: KAB. JEMBER, 24 Juli 1988
+Jabatan: Pegawai
+
+No Gaji: 279
+NIP: 198809222018032001
+Nama: Nodistya Septian Indrastana, SS., S.Pd., M.Pd.
+Kelahiran: Situbondo, 22 September 1988
+Jabatan: Pegawai
+
+No Gaji: 280
+NIP: 198810132018032001
+Nama: Ratih Putri Damayati, M.Si
+Kelahiran: Blitar, 13 Oktober 1988
+Jabatan: Pegawai
+
+No Gaji: 281
+NIP: 198811132018032001
+Nama: ANNA MARDIANA HANDAYANI, S.TP.,M.Sc
+Kelahiran: Bandar Lampung, 13 November 1988
+Jabatan: Pegawai
+
+No Gaji: 282
+NIP: 198901242019031009
+Nama: MUHAMMAD IQBAL, S.Gz.,M.P.H
+Kelahiran: Lumajang, 24 Januari 1989
+Jabatan: Pegawai
+
+No Gaji: 283
+NIP: 198902142018032002
+Nama: Risse Entikaria Rachmanita, M.Si.
+Kelahiran: Mojokerto, 14 Februari 1989
+Jabatan: Pegawai
+
+No Gaji: 284
+NIP: 198902172019032014
+Nama: CHRISTA DYAH UTAMI, S.P., M.P.
+Kelahiran: KOTA MALANG, 17 Februari 1989
+Jabatan: Pegawai
+
+No Gaji: 285
+NIP: 198902192019031011
+Nama: RUDI WARDANA, S.Pd.,M.Si
+Kelahiran: Probolinggo, 19 Februari 1989
+Jabatan: Pegawai
+
+No Gaji: 286
+NIP: 198902262019031005
+Nama: ARISONA AHMAD, S.E., M.S.A., Ak.
+Kelahiran: KAB. JEMBER, 26 Februari 1989
+Jabatan: Pegawai
+
+No Gaji: 287
+NIP: 198903162019032012
+Nama: GALIH PURNASARI, S.Gz.,M.Si
+Kelahiran: Jember, 16 Maret 1989
+Jabatan: Pegawai
+
+No Gaji: 288
+NIP: 198903282019032019
+Nama: MIFTAHUL JANNAH, S.Gz., M.Gz.
+Kelahiran: KAB. PURWOREJO, 28 Maret 1989
+Jabatan: Pegawai
+
+No Gaji: 289
+NIP: 198903292019031007
+Nama: TAUFIQ RIZALDI,S.ST.,M.T
+Kelahiran: Malang, 29 Maret 1989
+Jabatan: Pegawai
+
+No Gaji: 290
+NIP: 198905092019031010
+Nama: MUDAFIQ RIYAN PRATAMA. S.Kom., M.Kom.
+Kelahiran: KAB. JEMBER, 09 Mei 1989
+Jabatan: Pegawai
+
+No Gaji: 291
+NIP: 198905292019032015
+Nama: SURYA DEWI PUSPITA, S.ST., M.Kes.
+Kelahiran: KAB. JEMBER, 29 Mei 1989
+Jabatan: Pegawai
+
+No Gaji: 292
+NIP: 198905302018032001
+Nama: Ervina Rachmawati, MPH.
+Kelahiran: Kudus, 30 Mei 1989
+Jabatan: Pegawai
+
+No Gaji: 293
+NIP: 198906212018031001
+Nama: Rizza Wijaya, S.T P., M.Sc.
+Kelahiran: Probolinggo, 21 Juni 1989
+Jabatan: Pegawai
+
+No Gaji: 294
+NIP: 198906222018031001
+Nama: Dicky Adi Tyagita, S.T., M.T.
+Kelahiran: Jember, 22 Juni 1989
+Jabatan: Pegawai
+
+No Gaji: 295
+NIP: 198907102019031010
+Nama: ERY SETIYAWAN JULLEV ATMADJI, S.Kom.,M.Cs
+Kelahiran: Pasuruan, 10 Juli 1989
+Jabatan: Pegawai
+
+No Gaji: 296
+NIP: 198907252019031014
+Nama: JULIEN ARIEF WICAKSONO, S.Pd., M.Pd.
+Kelahiran: KAB. JEMBER, 25 Juli 1989
+Jabatan: Pegawai
+
+No Gaji: 297
+NIP: 198908252019031008
+Nama: AHMAD FAHRIANNUR, ST.,MT
+Kelahiran: Jember, 25 Agustus 1989
+Jabatan: Pegawai
+
+No Gaji: 298
+NIP: 198912022019032015
+Nama: NITA MARIA ROSIANA, S.TP.,M.Sc
+Kelahiran: Trenggalek, 02 Desember 1989
+Jabatan: Pegawai
+
+No Gaji: 299
+NIP: 199002202019032013
+Nama: AYU FEBRIYATNA, S.ST.,M.Gizi
+Kelahiran: Jember, 20 Februari 1990
+Jabatan: Pegawai
+
+No Gaji: 300
+NIP: 199002272018032001
+Nama: Trismayanti Dwi Puspitasari, S.Kom., M.Cs.
+Kelahiran: Bandung, 27 Februari 1990
+Jabatan: Pegawai
+
+No Gaji: 301
+NIP: 199002282019032018
+Nama: ANNI NURAISYAH, S.TP., M.Si.
+Kelahiran: KAB. PAMEKASAN, 28 Februari 1990
+Jabatan: Pegawai
+
+No Gaji: 302
+NIP: 199003122019031014
+Nama: MUHAMAD FARHAN, S.Par.,M.Sc
+Kelahiran: Bandung, 12 Maret 1990
+Jabatan: Pegawai
+
+No Gaji: 303
+NIP: 199003262018031001
+Nama: Refa Firgiyanto, M. Si.
+Kelahiran: Banyumas, 26 Maret 1990
+Jabatan: Pegawai
+
+No Gaji: 304
+NIP: 199004052018031001
+Nama: Gamasiano Alfiansyah, S.KM., M.Kes.
+Kelahiran: Kediri, 05 April 1990
+Jabatan: Pegawai
+
+No Gaji: 305
+NIP: 199004272019031014
+Nama: DAFIT ARI PRASETYO, S.T., M.T.
+Kelahiran: KAB. SITUBONDO, 27 April 1990
+Jabatan: Pegawai
+
+No Gaji: 306
+NIP: 199005152019031011
+Nama: HUDA AHMAD HUDORI, S.ST., M.ST.
+Kelahiran: KAB. LUMAJANG, 15 Mei 1990
+Jabatan: Pegawai
+
+No Gaji: 307
+NIP: 199005192018032001
+Nama: Renata Kenanga Rinda, S.Pd., M.Pd
+Kelahiran: Madiun, 19 Mei 1990
+Jabatan: Pegawai
+
+No Gaji: 308
+NIP: 199009172019032024
+Nama: ERNA SELVIYANTI, S.Pd., M.MSI.
+Kelahiran: KOTA CIMAHI, 17 September 1990
+Jabatan: Pegawai
+
+No Gaji: 309
+NIP: 199010182019031013
+Nama: M. RIZAL PERMADI, S.Gz.,M.Gz
+Kelahiran: Bangli, 18 Oktober 1990
+Jabatan: Pegawai
+
+No Gaji: 310
+NIP: 199010302019032013
+Nama: ORYZA ARDHIARISCA, SE.,S.Si.,M.ST
+Kelahiran: Jember, 30 Oktober 1990
+Jabatan: Pegawai
+
+No Gaji: 311
+NIP: 199011202019032025
+Nama: RAHMA RINA WIJAYANTI, S.E., M.Sc.
+Kelahiran: KAB. JEMBER, 20 November 1990
+Jabatan: Pegawai
+
+No Gaji: 312
+NIP: 199012252019031013
+Nama: SHOKHIRUL IMAM, S.Pt., M.Si.
+Kelahiran: KAB. DEMAK, 25 Desember 1990
+Jabatan: Pegawai
+
+No Gaji: 313
+NIP: 199012292019032026
+Nama: DESSYA PUTRI AYU U, S.KM., M.Kes.
+Kelahiran: KOTA MAKASSAR, 29 Desember 1990
+Jabatan: Pegawai
+
+No Gaji: 314
+NIP: 199101032019031010
+Nama: FREDY EKA ARDHI PRATAMA, S.ST., M.ST.
+Kelahiran: KAB. JEMBER, 03 Januari 1991
+Jabatan: Pegawai
+
+No Gaji: 315
+NIP: 199101282019031014
+Nama: M. ADHYATMA, S.Pt., M.Si.
+Kelahiran: KAB. PINRANG, 28 Januari 1991
+Jabatan: Pegawai
+
+No Gaji: 316
+NIP: 199103152019031009
+Nama: SYAMSIAR KAUTSAR, S.ST., M.T.
+Kelahiran: Probolinggo, 15 Maret 1991
+Jabatan: Pegawai
+
+No Gaji: 317
+NIP: 199104012019031010
+Nama: RAMADHAN TAUFIKA, S.Si., M.Sc.
+Kelahiran: KAB. JEMBER, 01 April 1991
+Jabatan: Pegawai
+
+No Gaji: 318
+NIP: 199104292019031011
+Nama: FAISAL LUTFI AFRIANSYAH, S.Kom.,M.T
+Kelahiran: Blitar, 29 April 1991
+Jabatan: Pegawai
+
+No Gaji: 319
+NIP: 199106022019032014
+Nama: IRMA HARLIANINGTYAS, S.Si.,M.Si
+Kelahiran: Blitar, 02 Juni 1991
+Jabatan: Pegawai
+
+No Gaji: 320
+NIP: 199106282019031007
+Nama: YOHAN YUANTA, S.ST., M.Gz
+Kelahiran: KAB. BANYUWANGI, 28 Juni 1991
+Jabatan: Pegawai
+
+No Gaji: 321
+NIP: 199107042019031016
+Nama: GAYUH SYAIKHULLAH, S.Pt., M.Si.
+Kelahiran: KAB. JEMBER, 04 Juli 1991
+Jabatan: Pegawai
+
+No Gaji: 322
+NIP: 199108032019032021
+Nama: RIA CHANDRA KARTIKA, S.KM., M.Kes.
+Kelahiran: KAB. BANYUWANGI, 03 Agustus 1991
+Jabatan: Pegawai
+
+No Gaji: 323
+NIP: 199109032019032024
+Nama: PUTRI SANTIKA, S.ST.,M.Sc
+Kelahiran: Bogor, 03 September 1991
+Jabatan: Pegawai
+
+No Gaji: 324
+NIP: 199109042019032016
+Nama: RADEN RORO LIA CHAIRINA, S.Ked.,M.M
+Kelahiran: Jember, 04 September 1991
+Jabatan: Pegawai
+
+No Gaji: 325
+NIP: 199110072019032019
+Nama: CAHYANING NUR KARIMAH, S.Pd., M.T.
+Kelahiran: KAB. JEMBER, 07 Oktober 1991
+Jabatan: Pegawai
+
+No Gaji: 326
+NIP: 199110202019031010
+Nama: SABRAN, S.KM., M.P.H.
+Kelahiran: KAB. WAJO, 20 Oktober 1991
+Jabatan: Pegawai
+
+No Gaji: 327
+NIP: 199110212019032017
+Nama: DATIK LESTARI, S.P., M.Si.
+Kelahiran: KAB. KUANTAN SINGINGI, 21 Oktober 1991
+Jabatan: Pegawai
+
+No Gaji: 328
+NIP: 199111022019032018
+Nama: IRENE RATRI ANDIA SASMITA, S.TP., M.P.
+Kelahiran: KOTA SURAKARTA, 02 November 1991
+Jabatan: Pegawai
+
+No Gaji: 329
+NIP: 199111302019031010
+Nama: HANIF FATUR ROHMAN, S.P., M.P.
+Kelahiran: KAB. GRESIK, 30 November 1991
+Jabatan: Pegawai
+
+No Gaji: 330
+NIP: 199112112018031001
+Nama: Khafidurrohman Agustianto, S.Pd., M.Eng.
+Kelahiran: Trenggalek, 11 Desember 1991
+Jabatan: Pegawai
+
+No Gaji: 331
+NIP: 199112182019031019
+Nama: NUR MUHAMAD, S.Pt., M.Sc.
+Kelahiran: KAB. OGAN KOMERING ILIR, 18 Desember 1991
+Jabatan: Pegawai
+
+No Gaji: 332
+NIP: 199203022018032001
+Nama: Zilvanhisna Emka Fitri, S.T., M.T.
+Kelahiran: Jember, 02 Maret 1992
+Jabatan: Pegawai
+
+No Gaji: 333
+NIP: 199203202019032016
+Nama: ARYANTI CANDRA DEWI, S.Pt., M.Sc.
+Kelahiran: KAB. BOYOLALI, 20 Maret 1992
+Jabatan: Pegawai
+
+No Gaji: 334
+NIP: 199205102019031013
+Nama: ANGGA RAHAGIYANTO, S.ST., M.T.
+Kelahiran: KAB. LUMAJANG, 10 Mei 1992
+Jabatan: Pegawai
+
+No Gaji: 335
+NIP: 199205152018032001
+Nama: Maya Weka Santi, S.KM., M.Kes.
+Kelahiran: Kediri, 15 Mei 1992
+Jabatan: Pegawai
+
+No Gaji: 336
+NIP: 199205262019032035
+Nama: PARAMITA ANDINI, S.ST., M.ST.
+Kelahiran: KAB. JEMBER, 26 Mei 1992
+Jabatan: Pegawai
+
+No Gaji: 337
+NIP: 199205282018032001
+Nama: Bety Etikasari, S.Pd., M.Pd.
+Kelahiran: Trenggalek, 28 Mei 1992
+Jabatan: Pegawai
+
+No Gaji: 338
+NIP: 199206022019031013
+Nama: SATRIA BUDI KUSUMA, S.Pt., M.Sc.
+Kelahiran: KAB. KLATEN, 02 Juni 1992
+Jabatan: Pegawai
+
+No Gaji: 339
+NIP: 199208152019032021
+Nama: NIATI NINGSIH, S.Pt., M.Sc.
+Kelahiran: KAB. LAMONGAN, 15 Agustus 1992
+Jabatan: Pegawai
+
+No Gaji: 340
+NIP: 199212032018031001
+Nama: Abdurrahman Salim, M.Si.
+Kelahiran: Mataram, 03 Desember 1992
+Jabatan: Pegawai
+
+No Gaji: 341
+NIP: 199212172019031011
+Nama: TIRTO WAHYU WIDODO, S.P., M.P.
+Kelahiran: KAB. JEMBER, 17 Desember 1992
+Jabatan: Pegawai
+
+No Gaji: 342
+NIP: 199310172019031009
+Nama: ALEX TAUFIQURROHMAN ZAIN, S.Si., M.T.
+Kelahiran: KAB. JOMBANG, 17 Oktober 1993
+Jabatan: Pegawai
+
+No Gaji: 343
+NIP: 199408122019031013
+Nama: MUKHAMAD ANGGA GUMILANG, S.Pd., M.Eng.
+Kelahiran: KAB. PASURUAN, 12 Agustus 1994
+Jabatan: Pegawai
+
+No Gaji: 344
+NIP: 199503312019032016
+Nama: DELTANINGTYAS TRI CAHYANINGRUM, S.T., M.T.
+Kelahiran: KAB. JEMBER, 31 Maret 1995
+Jabatan: Pegawai
+
+No Gaji: 345
+NIP: 199504122019031004
+Nama: MUSHTHOFA KAMAL, S.Par., M.Par.
+Kelahiran: JAKARTA, 12 April 1995
+Jabatan: Pegawai
+
+No Gaji: 346
+NIP: 199512132019032020
+Nama: RIZKI AMALIA NURFITRIANI, S.Pt., M.Si.
+Kelahiran: KAB. CIAMIS, 13 Desember 1995
+Jabatan: Pegawai
+
+No Gaji: 347
+NIP: 198509212020122006
+Nama: YANI SUBAKTILAH,S.TP,M.P.
+Kelahiran: Bondowoso, 21 September 1985
+Jabatan: Pegawai
+
+No Gaji: 348
+NIP: 198510012020122004
+Nama: HATMIYARNI TRI HANDAYANI, S.TP., M.Sc.
+Kelahiran: Surakarta, 01 Oktober 1985
+Jabatan: Pegawai
+
+No Gaji: 349
+NIP: 198701292020121004
+Nama: ILHAM MUHKLISIN, S.S.T., M.Sc.
+Kelahiran: Bandar Lampung, 29 Januari 1987
+Jabatan: Pegawai
+
+No Gaji: 350
+NIP: 198804042020122013
+Nama: PRAMUDHITA SHINTA DEWI PUSPITASARI, S.Kom., M.Kom.
+Kelahiran: Jember, 04 April 1988
+Jabatan: Pegawai
+
+No Gaji: 351
+NIP: 198804292020121007
+Nama: SATRIA INDRA KUSUMA, S.E., M.M.
+Kelahiran: Nganjuk, 29 April 1988
+Jabatan: Pegawai
+
+No Gaji: 352
+NIP: 198807242020121006
+Nama: MUHAMMAD DZULKIFLI, S.Pd., M.Sc
+Kelahiran: Jakarta Utara, 24 Juli 1988
+Jabatan: Pegawai
+
+No Gaji: 353
+NIP: 198912312019032017
+Nama: dr. ANINDITA PRAMADYASIWI
+Kelahiran: Jember, 31 Desember 1989
+Jabatan: Pegawai
+
+No Gaji: 354
+NIP: 199002262020122005
+Nama: NURWAHYUNINGSIH,S.TP,M.SI.
+Kelahiran: Pasuruan, 26 Februari 1990
+Jabatan: Pegawai
+
+No Gaji: 355
+NIP: 199202242020122011
+Nama: Dian Galuh Pratita,S.P,M.Sc
+Kelahiran: Jember, 24 Februari 1992
+Jabatan: Pegawai
+
+No Gaji: 356
+NIP: 199202272020122004
+Nama: PENI ARIANITA WARDANI, S.E., M.Sc.
+Kelahiran: Ngawi, 27 Februari 1992
+Jabatan: Pegawai
+
+No Gaji: 357
+NIP: 199209182020122007
+Nama: RIZKY NIRMALA KUSUMANINGTYAS,S.TP,M.Sc.
+Kelahiran: Magetan, 18 September 1992
+Jabatan: Pegawai
+
+No Gaji: 358
+NIP: 199303052020122003
+Nama: PUTU TESSA FADHILA, S.TP., M.Sc.
+Kelahiran: Dili, 05 Maret 1993
+Jabatan: Pegawai
+
+No Gaji: 359
+NIP: 199411232020122010
+Nama: LALITYA NINDITA SAHENDA, S.Pd., M.T.
+Kelahiran: Jember, 23 November 1994
+Jabatan: Pegawai
+
+No Gaji: 360
+NIP: 198804012019122001
+Nama: ZENI ULMA, SST, M.Eng.
+Kelahiran: JEPARA, 01 April 1988
+Jabatan: Pegawai
+
+No Gaji: 361
+NIP: 196702091999031001
+Nama: Junaidi Efendi, SE
+Kelahiran: Jember, 09 Februari 1967
+Jabatan: Pegawai
+
+No Gaji: 362
+NIP: 197505011999031003
+Nama: Mokhamad Fatoni K., S.Tp
+Kelahiran: Jember, 01 Mei 1975
+Jabatan: Pegawai
+
+No Gaji: 363
+NIP: 197010051989031001
+Nama: Joko Suyono, A. Md
+Kelahiran: Songgon, Banyuwangi, 05 Oktober 1970
+Jabatan: Pegawai
+
+No Gaji: 364
+NIP: 197103021990121001
+Nama: Satuman
+Kelahiran: Jember, 02 Maret 1971
+Jabatan: Pegawai
+
+No Gaji: 365
+NIP: 197102102002121001
+Nama: Abd. Rahman
+Kelahiran: Jember, 10 Februari 1971
+Jabatan: Pegawai
+
+No Gaji: 366
+NIP: 197209212003122001
+Nama: Suyik Binarkaheni, SPd
+Kelahiran: Jember, 21 September 1972
+Jabatan: Pegawai
+
+No Gaji: 367
+NIP: 197701212001121001
+Nama: Teguh Widodo, A.Md
+Kelahiran: Surabaya, 21 Januari 1977
+Jabatan: Pegawai
+
+No Gaji: 368
+NIP: 197402272005012002
+Nama: Titik Ismailia, SPd
+Kelahiran: Tulungagung, 27 Februari 1974
+Jabatan: Pegawai
+
+No Gaji: 369
+NIP: 197003122001121001
+Nama: Imam Maliki, A.Md
+Kelahiran: Tulungagung, 12 Maret 1970
+Jabatan: Pegawai
+
+No Gaji: 370
+NIP: 197409142001121002
+Nama: Herman Mulyantoro
+Kelahiran: Kediri, 14 September 1974
+Jabatan: Pegawai
+
+No Gaji: 371
+NIP: 197505082002121001
+Nama: Hadi Sariono
+Kelahiran: Jember, 08 Mei 1975
+Jabatan: Pegawai
+
+No Gaji: 372
+NIP: 197701192002121002
+Nama: Hengki Purwanto
+Kelahiran: Probolinggo, 19 Januari 1977
+Jabatan: Pegawai
+
+No Gaji: 373
+NIP: 197907052001121002
+Nama: Hartono
+Kelahiran: Muaradua, 05 Juli 1979
+Jabatan: Pegawai
+
+No Gaji: 374
+NIP: 198011252005011003
+Nama: Prayogo Utomo, S.Pt
+Kelahiran: Jember, 25 November 1980
+Jabatan: Pegawai
+
+No Gaji: 375
+NIP: 198112182010122002
+Nama: Muharomah, A.Md
+Kelahiran: Jember, 18 Desember 1981
+Jabatan: Pegawai
+
+No Gaji: 376
+NIP: 198102182002121001
+Nama: Alfin Sudiro
+Kelahiran: Jember, 18 Februari 1981
+Jabatan: Pegawai
+
+No Gaji: 377
+NIP: 197108302003122002
+Nama: Nawansih Agustini
+Kelahiran: Malang, 30 Agustus 1971
+Jabatan: Pegawai
+
+No Gaji: 378
+NIP: 198007172014092003
+Nama: Indriana Rahmawati
+Kelahiran: Jember, 17 Juli 1980
+Jabatan: Pegawai
+
+No Gaji: 379
+NIP: 198112162003121003
+Nama: Abubakar Amran
+Kelahiran: Lamahala, 16 Desember 1981
+Jabatan: Pegawai
+
+No Gaji: 380
+NIP: 197301012005012001
+Nama: Rahayu Fatmawati
+Kelahiran: Jember, 01 Januari 1973
+Jabatan: Pegawai
+
+No Gaji: 381
+NIP: 197311092005011002
+Nama: Moh. Zainuri
+Kelahiran: Jember, 09 November 1973
+Jabatan: Pegawai
+
+No Gaji: 382
+NIP: 197609272005012001
+Nama: Paula Henny Septiadewi
+Kelahiran: Tuban, 27 September 1976
+Jabatan: Pegawai
+
+No Gaji: 383
+NIP: 197811232005011011
+Nama: Endi Halim Dwi Sarjono
+Kelahiran: Jember, 23 November 1978
+Jabatan: Pegawai
+
+No Gaji: 384
+NIP: 197901242005012002
+Nama: Wiwit Hidayati
+Kelahiran: Banyuwangi, 24 Januari 1979
+Jabatan: Pegawai
+
+No Gaji: 385
+NIP: 197902102005012001
+Nama: Dini Wahyu Lusy
+Kelahiran: Jember, 10 Februari 1979
+Jabatan: Pegawai
+
+No Gaji: 386
+NIP: 197907052005011002
+Nama: Sugianto
+Kelahiran: Jember, 05 Juli 1979
+Jabatan: Pegawai
+
+No Gaji: 387
+NIP: 197908082003121002
+Nama: Teddy Setiawan
+Kelahiran: Jember, 08 Agustus 1979
+Jabatan: Pegawai
+
+No Gaji: 388
+NIP: 198405282005011001
+Nama: Faizal Lukman Amran
+Kelahiran: Kalimantan, 28 Mei 1984
+Jabatan: Pegawai
+
+No Gaji: 388
+NIP: 198405282005011001
+Nama: Faizal Lukman Amran
+Kelahiran: Kalimantan, 28 Mei 1984
+Jabatan: Pegawai
+
+No Gaji: 389
+NIP: 198305152009122002
+Nama: Wedha Gatra Kusumaningtyas, A.Md
+Kelahiran: Yogyakarta, 15 Mei 1983
+Jabatan: Pegawai
+
+No Gaji: 390
+NIP: 198407022009121003
+Nama: Suharianto, A.Md
+Kelahiran: Surabaya, 02 Juli 1984
+Jabatan: Pegawai
+
+No Gaji: 391
+NIP: 198409012009122003
+Nama: Rihaanatul Humaidah , A.Md. Gz
+Kelahiran: Tulungagung, 01 September 1984
+Jabatan: Pegawai
+
+No Gaji: 392
+NIP: 198006052009121002
+Nama: Andry Irdhiansyah, A.Md
+Kelahiran: Jember, 05 Juni 1980
+Jabatan: Pegawai
+
+No Gaji: 393
+NIP: 198206072010121005
+Nama: Sugiarto, A.Md
+Kelahiran: Jember, 07 Juni 1982
+Jabatan: Pegawai
+
+No Gaji: 394
+NIP: 198509222009122003
+Nama: Devina Septiyarini, A.Md
+Kelahiran: Jember, 22 September 1985
+Jabatan: Pegawai
+
+No Gaji: 395
+NIP: 198509232010122003
+Nama: Tri Pamungkas Ningtyas Ambarwati, A.Md.Kep
+Kelahiran: Jember, 23 September 1985
+Jabatan: Pegawai
+
+No Gaji: 396
+NIP: 198512202010121007
+Nama: Catur Wahyu Cornelis Putra, A.Md
+Kelahiran: Banyuwangi, 20 Desember 1985
+Jabatan: Pegawai
+
+No Gaji: 397
+NIP: 198707272010121006
+Nama: Slamet Yulianto, A.Md
+Kelahiran: Jember, 27 Juli 1987
+Jabatan: Pegawai
+
+No Gaji: 398
+NIP: 198712022010121007
+Nama: Satya Pradiska Kusuma Wijaya, A.Md
+Kelahiran: Probolinggo, 02 Desember 1987
+Jabatan: Pegawai
+
+No Gaji: 399
+NIP: 198805022010121003
+Nama: Yudistira, A.Md
+Kelahiran: Jember, 02 Mei 1988
+Jabatan: Pegawai
+
+No Gaji: 400
+NIP: 198805202010121008
+Nama: Bangkit Budi Utomo, A.Md
+Kelahiran: Jember, 20 Mei 1988
+Jabatan: Pegawai
+
+No Gaji: 401
+NIP: 198811142010122006
+Nama: Reta Pristya Dewi, A.Md, Kep
+Kelahiran: Jember, 14 November 1988
+Jabatan: Pegawai
+
+No Gaji: 402
+NIP: 198207172010122003
+Nama: Yuliatiningsih, A.Md
+Kelahiran: Jember, 17 Juli 1982
+Jabatan: Pegawai
+
+No Gaji: 403
+NIP: 198707232019032007
+Nama: MIRA ANDRIANI, S.Pt., M.P.
+Kelahiran: KAB. INDRAGIRI HILIR, 23 Juli 1987
+Jabatan: Pegawai
+
+No Gaji: 404
+NIP: 199108072019031008
+Nama: ANGGA HERVIONA IKHWANUDIN, S.TP.
+Kelahiran: KAB. GROBOGAN, 07 Agustus 1991
+Jabatan: Pegawai
+
+No Gaji: 405
+NIP: 199210192019032019
+Nama: MIRMA PRAMESWARI NARENDRO, S.Si.
+Kelahiran: KAB. JEMBER, 19 Oktober 1992
+Jabatan: Pegawai
+
+No Gaji: 406
+NIP: 198809152020121010
+Nama: ARDHIKA EKA PRATAMA,S.P.
+Kelahiran: Jember, 15 September 1988
+Jabatan: Pegawai
+
+No Gaji: 407
+NIP: 198902192020122013
+Nama: WIDYA RAHMAWATI, S.Si.
+Kelahiran: Jember, 19 Februari 1989
+Jabatan: Pegawai
+
+No Gaji: 408
+NIP: 199008082020122017
+Nama: SITI AISYAH,S.E.
+Kelahiran: Jember, 08 Agustus 1990
+Jabatan: Pegawai
+
+No Gaji: 409
+NIP: 199206232020121009
+Nama: ANDRE EKA NANDA,S.ST.
+Kelahiran: Lamongan, 23 Juni 1992
+Jabatan: Pegawai
+
+No Gaji: 410
+NIP: 199301112020122014
+Nama: WAHYU KARTIKA NURSUCI, S.ST.
+Kelahiran: Medan, 11 Januari 1993
+Jabatan: Pegawai
+
+No Gaji: 411
+NIP: 199309052020121010
+Nama: FAHMI JUHAN SYAH,S.ST.
+Kelahiran: Jember, 05 September 1993
+Jabatan: Pegawai
+
+No Gaji: 412
+NIP: 199403122020122013
+Nama: RIANI NINGSIH, S.ST.
+Kelahiran: Lamongan, 12 Maret 1994
+Jabatan: Pegawai
+
+No Gaji: 413
+NIP: 199410062020121013
+Nama: Herman Estu Eka Putra,S.ST.
+Kelahiran: Jember, 06 Oktober 1994
+Jabatan: Pegawai
+
+No Gaji: 414
+NIP: 199501022020121003
+Nama: Muhamad Andrianto, S.ST.
+Kelahiran: Lumajang, 02 Januari 1995
+Jabatan: Pegawai
+
+No Gaji: 415
+NIP: 199504062020121011
+Nama: Wahyu Setyaji Dwiantara,S.Si.
+Kelahiran: Karanganyar, 06 April 1995
+Jabatan: Pegawai
+
+No Gaji: 416
+NIP: 199510052020122019
+Nama: MIRTA DWI YATI, S.ST.
+Kelahiran: Jember, 05 Oktober 1995
+Jabatan: Pegawai
+
+No Gaji: 417
+NIP: 197103182001121001
+Nama: S a m a j i
+Kelahiran: Banyuwangi, 18 Maret 1971
+Jabatan: Pegawai
+
+No Gaji: 418
+NIP: 197702112002121001
+Nama: Bagus Winarah
+Kelahiran: Jember, 11 Februari 1977
+Jabatan: Pegawai
+
+No Gaji: 419
+NIP: 197509082006041001
+Nama: Maryadi
+Kelahiran: Jember, 08 September 1975
+Jabatan: Pegawai
+
+No Gaji: 420
+NIP: 197910172006041002
+Nama: Suwartono
+Kelahiran: Jember, 17 Oktober 1979
+Jabatan: Pegawai
+
+No Gaji: 421
+NIP: 198210252006041004
+Nama: Feri Widya Budi Ambodo
+Kelahiran: Lumajang, 25 Oktober 1982
+Jabatan: Pegawai
+
+No Gaji: 422
+NIP: 198411042008011005
+Nama: Mochamad Rizal Umami, A.Md
+Kelahiran: Gresik, 04 November 1984
+Jabatan: Pegawai
+
+No Gaji: 423
+NIP: 198703262006041002
+Nama: Adi Satriyo Pambudi
+Kelahiran: Blitar, 26 Maret 1987
+Jabatan: Pegawai
+
+No Gaji: 424
+NIP: 198705232010121006
+Nama: Afif Sugi Hendrianto, A.Md
+Kelahiran: Jember, 23 Mei 1987
+Jabatan: Pegawai
+
+No Gaji: 425
+NIP: 198212192014042002
+Nama: Avana Nourma Susyatut, A.Md.
+Kelahiran: Jember, 19 Desember 1982
+Jabatan: Pegawai
+
+No Gaji: 426
+NIP: 198307222014042001
+Nama: Ratna Anitasari, A.Md.
+Kelahiran: Jember, 22 Juli 1983
+Jabatan: Pegawai
+
+No Gaji: 427
+NIP: 198807102014041001
+Nama: Tri Wahyu Nurcahyo, A.Md.
+Kelahiran: Situbondo, 10 Juli 1988
+Jabatan: Pegawai
+
+No Gaji: 428
+NIP: 198909292009122001
+Nama: Indah Wahyu Pratiwi
+Kelahiran: Jember, 29 September 1989
+Jabatan: Pegawai
+
+No Gaji: 429
+NIP: 199504192019031007
+Nama: DIMAS SUJONO PUTRO, A.Md.
+Kelahiran: KAB. BONDOWOSO, 19 April 1995
+Jabatan: Pegawai
+
+No Gaji: 430
+NIP: 199607042019032017
+Nama: NURUL WIDADI, A.Md.T.
+Kelahiran: KAB. GRESIK, 04 Juli 1996
+Jabatan: Pegawai
+
+No Gaji: 431
+NIP: 197006072014091002
+Nama: Suprayitno
+Kelahiran: Jember, 07 Juni 1970
+Jabatan: Pegawai
+
+No Gaji: 432
+NIP: 197407172014091002
+Nama: Abdur Rohim
+Kelahiran: Jember, 17 Juli 1974
+Jabatan: Pegawai
+
+No Gaji: 433
+NIP: 197712232014092001
+Nama: Desi Susanti Andari
+Kelahiran: Jember, 23 Desember 1977
+Jabatan: Pegawai
+
+No Gaji: 434
+NIP: 198003072014091002
+Nama: Agus Sumaryono
+Kelahiran: Malang, 07 Maret 1980
+Jabatan: Pegawai
+
+No Gaji: 435
+NIP: 197803212014091001
+Nama: Slamet Junaedi
+Kelahiran: Jember, 21 Maret 1978
+Jabatan: Pegawai
+
+No Gaji: 436
+NIP: 197105072014091002
+Nama: Buadi Witarto
+Kelahiran: Jember, 07 Mei 1971
+Jabatan: Pegawai
+
+No Gaji: 437
+NIP: 196905052014091002
+Nama: Hemi Anton Hariyanto
+Kelahiran: Jember, 05 Mei 1969
+Jabatan: Pegawai
+
+No Gaji: 438
+NIP: 196911282014091002
+Nama: Abdul Rahman
+Kelahiran: Jember, 28 November 1969
+Jabatan: Pegawai
+
+No Gaji: 439
+NIP: 196812032014091001
+Nama: Fathurrahman
+Kelahiran: Jember, 03 Desember 1968
+Jabatan: Pegawai
+
+No Gaji: 440
+NIP: 197208042014091001
+Nama: Musta'in
+Kelahiran: Jember, 04 Agustus 1972
+Jabatan: Pegawai
+
+No Gaji: 441
+NIP: 198310102022031001
+Nama: Dr. Budi Utomo, S.Pt., M.P.
+Kelahiran: Jember, 10 Oktober 1983
+Jabatan: Pegawai
+
+No Gaji: 442
+NIP: 198708172022031005
+Nama: Agus Hadi Prayitno, S.Pt., M.Sc.
+Kelahiran: Bekasi, 17 Agustus 1987
+Jabatan: Pegawai
+
+No Gaji: 443
+NIP: 198905182022031007
+Nama: Nur Faizin, M.Si.
+Kelahiran: Banyuwangi, 18 Mei 1989
+Jabatan: Pegawai
+
+No Gaji: 444
+NIP: 199007172022032009
+Nama: Lintang Anis Bena Kinanti, S.M.B., M.M.
+Kelahiran: Jember, 17 Juli 1990
+Jabatan: Pegawai
+
+No Gaji: 445
+NIP: 199008102022032010
+Nama: Jumiatun, S.P., M.Si.
+Kelahiran: Ogan Komering Ulu Timur, 10 Agustus 1990
+Jabatan: Pegawai
+
+No Gaji: 446
+NIP: 199012082022032009
+Nama: Descha Giatri Cahyaningrum, S.P., M.P.
+Kelahiran: Kediri, 08 Desember 1990
+Jabatan: Pegawai
+
+No Gaji: 447
+NIP: 199104072022032007
+Nama: Annisa Lutfi Alwi, S.Pi., M.Sc.
+Kelahiran: Lima Puluh Kota, 07 April 1991
+Jabatan: Pegawai
+
+No Gaji: 448
+NIP: 199108242022032010
+Nama: Nuzula Afianah, S.Kom., M.Cs.
+Kelahiran: Lamongan, 24 Agustus 1991
+Jabatan: Pegawai
+
+No Gaji: 449
+NIP: 199204172022031006
+Nama: Faruq Avero Azhar, S.S.T., M.Eng.
+Kelahiran: Jember, 17 April 1992
+Jabatan: Pegawai
+
+No Gaji: 450
+NIP: 199204282022032016
+Nama: Adib Norma Respati, S.Pt., M.Sc.
+Kelahiran: Pacitan, 28 April 1992
+Jabatan: Pegawai
+
+No Gaji: 451
+NIP: 199207282022031005
+Nama: Fadil Rohman, S.P., M.Si.
+Kelahiran: Lumajang, 28 Juli 1992
+Jabatan: Pegawai
+
+No Gaji: 452
+NIP: 199211152022032010
+Nama: Amalia Dwi Marseva, S.E., M.Si.
+Kelahiran: Bogor, 15 November 1992
+Jabatan: Pegawai
+
+No Gaji: 453
+NIP: 199212172022032004
+Nama: Elly Daru Ika Wilujeng, S.P., M.Si.
+Kelahiran: Jombang, 17 Desember 1992
+Jabatan: Pegawai
+
+No Gaji: 454
+NIP: 199212272022031007
+Nama: Choirul Huda, S.Kom., M.Kom.
+Kelahiran: Jember, 27 Desember 1992
+Jabatan: Pegawai
+
+No Gaji: 455
+NIP: 199301102022032012
+Nama: Sumarlina, S.Pd., M.Sc.
+Kelahiran: Gresik, 10 Januari 1993
+Jabatan: Pegawai
+
+No Gaji: 456
+NIP: 199304142022032014
+Nama: Qanitah, S.S.T., M.T.
+Kelahiran: Pasuruan, 14 April 1993
+Jabatan: Pegawai
+
+No Gaji: 457
+NIP: 199310102022031008
+Nama: Andarula Galushasti, S.S.T., M.Tr.P.
+Kelahiran: Jember, 10 Oktober 1993
+Jabatan: Pegawai
+
+No Gaji: 458
+NIP: 199311112022032017
+Nama: Aulia Nadhirah, M.P.
+Kelahiran: Probolinggo, 11 November 1993
+Jabatan: Pegawai
+
+No Gaji: 459
+NIP: 199401032022032013
+Nama: Malinda Capri Nurul Satya, M.K.M.
+Kelahiran: Jember, 03 Januari 1994
+Jabatan: Pegawai
+
+No Gaji: 460
+NIP: 199403122022032016
+Nama: Fitri Krismiratsih, S.S.T., M.P.
+Kelahiran: Trenggalek, 12 Maret 1994
+Jabatan: Pegawai
+
+No Gaji: 461
+NIP: 199406102022031004
+Nama: Dinu Saadillah, S.T., M.MT.
+Kelahiran: Blitar, 10 Juni 1994
+Jabatan: Pegawai
+
+No Gaji: 462
+NIP: 199412162022032020
+Nama: Tia Sofiani Napitupulu, S.P., M.Si.
+Kelahiran: Pematangsiantar, 16 Desember 1994
+Jabatan: Pegawai
+
+No Gaji: 463
+NIP: 199505052022031010
+Nama: Fandyka yufriza Ali, M.P.
+Kelahiran: Tulungagung, 05 Mei 1995
+Jabatan: Pegawai
+
+No Gaji: 464
+NIP: 199510032022032017
+Nama: Dety Oktavia Sulistiono, S.Si., M.Si.
+Kelahiran: Samarinda, 03 Oktober 1995
+Jabatan: Pegawai
+
+No Gaji: 465
+NIP: 199510132022032017
+Nama: Intan Sulistyaningrum Sakkinah, S.Pd., M.Eng.
+Kelahiran: Balikpapan, 13 Oktober 1995
+Jabatan: Pegawai
+
+No Gaji: 466
+NIP: 199604302022031004
+Nama: Gallyndra Fatkhu Dinata, S.P., M.P.
+Kelahiran: Surabaya, 30 April 1996
+Jabatan: Pegawai
+
+No Gaji: 467
+NIP: 198804212022031003
+Nama: Slamet, A.Md.KA.
+Kelahiran: Tegal, 21 April 1988
+Jabatan: Pegawai
+
+No Gaji: 468
+NIP: 199406102022031003
+Nama: M. Chais Habibulloh, A.Md.
+Kelahiran: Jember, 10 Juni 1994
+Jabatan: Pegawai
+
+No Gaji: 469
+NIP: 199408152022032020
+Nama: Agustin Jaka Putri, A.Md.
+Kelahiran: Nganjuk, 15 Agustus 1994
+Jabatan: Pegawai
+
+No Gaji: 470
+NIP: 199509042022031011
+Nama: Yahya Ade Wahyu Prasetya, A.Md.
+Kelahiran: Jember, 04 September 1995
+Jabatan: Pegawai
+
+No Gaji: 471
+NIP: 199702032022031011
+Nama: Fathor Rosid, A.Md.
+Kelahiran: Jember, 03 Februari 1997
+Jabatan: Pegawai
+
+No Gaji: 472
+NIP: 199702102022032015
+Nama: Eva Veronica Cahya Ningrum, A.Md.
+Kelahiran: Madiun, 10 Februari 1997
+Jabatan: Pegawai
+
+No Gaji: 473
+NIP: 199805122022032018
+Nama: Frisilia Meidy Regiarnis, A.Md.P.
+Kelahiran: Bondowoso, 12 Mei 1998
+Jabatan: Pegawai
+
+No Gaji: 474
+NIP: 199904172022032012
+Nama: Diana Maulidiyyah, A.Md.Kom.
+Kelahiran: Jember, 17 April 1999
+Jabatan: Pegawai
+
+No Gaji: 475
+NIP: 198712042022032003
+Nama: RESTI PRANATA PUTRI, M.Sc.
+Kelahiran: Malang, 04 Desember 1987
+Jabatan: Pegawai
+
+No Gaji: 476
+NIP: 198812172022031003
+Nama: Dony Setiawan Hendyca Putra, S.Kep., Ns., M.Kes.
+Kelahiran: Jember, 17 Desember 1988
+Jabatan: Pegawai
+
+No Gaji: 477
+NIP: 198906022022032009
+Nama: LISUS SETYOWATI, S.S.T., M.Kes.
+Kelahiran: Jember, 02 Juni 1989
+Jabatan: Pegawai
+
+No Gaji: 478
+NIP: 199102222022031007
+Nama: RIZQI FEBRIAN PRAMUDITA, M.Pd.
+Kelahiran: Jember, 22 Februari 1991
+Jabatan: Pegawai
+
+No Gaji: 479
+NIP: 199103312022031008
+Nama: MOCHAMMAD CHOIRUR ROZIQIN, M.T.
+Kelahiran: Lumajang, 31 Maret 1991
+Jabatan: Pegawai
+
+No Gaji: 480
+NIP: 199107262022032010
+Nama: LELY DIAN UTAMI, M.Pd.
+Kelahiran: Ngawi, 26 Juli 1991
+Jabatan: Pegawai
+
+No Gaji: 481
+NIP: 199108022022032008
+Nama: NUR AFNI RACHMAN, S.I.Kom., M.Med.Kom.
+Kelahiran: Surabaya, 02 Agustus 1991
+Jabatan: Pegawai
+
+No Gaji: 482
+NIP: 199110072022031006
+Nama: ADITYA NIZAR AL ARDI, S.M.B., M.M.
+Kelahiran: Jember, 07 Oktober 1991
+Jabatan: Pegawai
+
+No Gaji: 483
+NIP: 199207272022032013
+Nama: FINDI CITRA KUSUMASARI, S.Pd., M.Si.
+Kelahiran: Jombang, 27 Juli 1992
+Jabatan: Pegawai
+
+No Gaji: 484
+NIP: 199301072022032012
+Nama: Dian Kartika Sari, S.S.T., M.T.
+Kelahiran: Lumajang, 07 Januari 1993
+Jabatan: Pegawai
+
+No Gaji: 485
+NIP: 199304252022032008
+Nama: Shabrina Choirunnisa, S.Kom., M.Kom.
+Kelahiran: Jember, 25 April 1993
+Jabatan: Pegawai
+
+No Gaji: 486
+NIP: 199305082022032013
+Nama: Dia Bitari Mei Yuana, S.S.T., M.Tr.Kom.
+Kelahiran: Banyuwangi, 08 Mei 1993
+Jabatan: Pegawai
+
+No Gaji: 487
+NIP: 199503082022032017
+Nama: UYSTKA HIKMATUL KAMILIYAH NH, M.Sc.
+Kelahiran: Situbondo, 08 Maret 1995
+Jabatan: Pegawai
+
+No Gaji: 488
+NIP: 199503302022031006
+Nama: Mohammad Mardiyanto, S.T.P., M.P.
+Kelahiran: Jember, 30 Maret 1995
+Jabatan: Pegawai
+
+No Gaji: 489
+NIP: 199507042022032014
+Nama: ANNISA'U CHOIRUN, S.T.P., M.T.
+Kelahiran: Lumajang, 04 Juli 1995
+Jabatan: Pegawai
+
+No Gaji: 490
+NIP: 199507082022031012
+Nama: IWAN ABDI SUANDANA, M.Kes.
+Kelahiran: Denpasar, 08 Juli 1995
+Jabatan: Pegawai
+
+No Gaji: 491
+NIP: 199508242022031015
+Nama: Adi Sucipto, M.Tr.T.
+Kelahiran: Nganjuk, 24 Agustus 1995
+Jabatan: Pegawai
+
+No Gaji: 492
+NIP: 199508312022032026
+Nama: STEPHANI NESYA RENAMASTIKA, S.Gz., M.Gz.
+Kelahiran: Jember, 31 Agustus 1995
+Jabatan: Pegawai
+
+No Gaji: 493
+NIP: 199601262022031009
+Nama: Dimas Triardianto, S.T., M.Sc.
+Kelahiran: Bandung, 26 Januari 1996
+Jabatan: Pegawai
+
+No Gaji: 494
+NIP: 198904272022031007
+Nama: Fani Wahyu Utomo, S.E.
+Kelahiran: Malang, 27 April 1989
+Jabatan: Pegawai
+
+No Gaji: 495
+NIP: 198810272022031003
+Nama: AHMAD ZAINAL ABIDIN, A.Md.
+Kelahiran: Jember, 27 Oktober 1988
+Jabatan: Pegawai
+
+No Gaji: 496
+NIP: 199007062022032007
+Nama: Ariyana, A.Md.
+Kelahiran: Jember, 06 Juli 1990
+Jabatan: Pegawai
+
+No Gaji: 497
+NIP: 199104162022031005
+Nama: AZAM ARFIYANTO, A.Md.
+Kelahiran: Bekasi, 16 April 1991
+Jabatan: Pegawai
+
+No Gaji: 498
+NIP: 199212232022032010
+Nama: Dwi Destya Nur Annissa, A.Md.
+Kelahiran: Jakarta, 23 Desember 1992
+Jabatan: Pegawai
+
+No Gaji: 499
+NIP: 199503082022032018
+Nama: DIAH RIZKI FITRIANI, A.Md.
+Kelahiran: Bandung, 08 Maret 1995
+Jabatan: Pegawai
+
+No Gaji: 500
+NIP: 199708072022032014
+Nama: Dini Wahyuningsih, A.Md.Li.
+Kelahiran: Banyuwangi, 07 Agustus 1997
+Jabatan: Pegawai
+
+No Gaji: 501
+NIP: 199901182022032006
+Nama: PARAHITA PARMA FITRI, A.Md.T.
+Kelahiran: Malang, 18 Januari 1999
+Jabatan: Pegawai
+
+No Gaji: 502
+NIP: 199109052022031011
+Nama: Noor Asrianto, S.Pt., M.Sc.
+Kelahiran: Gunung Kidul, 05 September 1991
+Jabatan: Pegawai
+
+No Gaji: 503
+NIP: 199305062022032010
+Nama: Meiga Rahmanita, M.Pd.
+Kelahiran: Banyuwangi, 06 Mei 1993
+Jabatan: Pegawai
+
+No Gaji: 504
+NIP: 199308102022032019
+Nama: Firda Agustin, S.Si., M.Si.
+Kelahiran: Jember, 10 Agustus 1993
+Jabatan: Pegawai
+
+No Gaji: 505
+NIP: 199308312022032009
+Nama: Nisa Budi Arifiana, S.S.T., M.P.
+Kelahiran: Banyuwangi, 31 Agustus 1993
+Jabatan: Pegawai
+
+No Gaji: 506
+NIP: 199403272022032015
+Nama: Milawaty, S.Hum., M.Hum.
+Kelahiran: Bojonegoro, 27 Maret 1994
+Jabatan: Pegawai
+
+No Gaji: 507
+NIP: 199507152022031015
+Nama: Moch Rosyadi Adnan, S.Si., M.Sc.
+Kelahiran: Jember, 15 Juli 1995
+Jabatan: Pegawai
+
+No Gaji: 508
+NIP: 199511242022032022
+Nama: Salsabila Liandra Putri, M.K.K.K.
+Kelahiran: Jakarta, 24 November 1995
+Jabatan: Pegawai
+
+No Gaji: 509
+NIP: 199706282022032018
+Nama: Ulfa Emi Rahmawati, S.Kom., M.Kom.
+Kelahiran: Nganjuk, 28 Juni 1997
+Jabatan: Pegawai
+
+No Gaji: 510
+NIP: 199707102022031011
+Nama: Adhima Adhamatika, S.T.P., M.T.P.
+Kelahiran: Probolinggo, 10 Juli 1997
+Jabatan: Pegawai
+
+No Gaji: 511
+NIP: 198809272022031007
+Nama: Ahmad Marzuq, S.Sos.
+Kelahiran: Bondowoso, 27 September 1988
+Jabatan: Pegawai
+
+Gaji: 512
+NIP: 199405082022031011
+Nama: Arif Fajar Ahadian, A.Md.
+Kelahiran: Surabaya, 08 Mei 1994
+Jabatan: Pegawai
+
+Gaji: 513
+NIP: 199606092022031008
+Nama: Riyadlus Sholihin, A.Md.
+Kelahiran: Jember, 09 Juni 1996
+Jabatan: Pegawai
+
+Gaji: 514
+NIP: 199702242022032012
+Nama: Audina Uffila Dewi, A.Md.
+Kelahiran: Jember, 24 Februari 1997
+Jabatan: Pegawai
+
+No Gaji: 515
+NIP: 199805132022031015
+Nama: Daniel Pugoh Wicaksono, A.Md.T.
+Kelahiran: Jember, 13 Mei 1998
+Jabatan: Pegawai
+
+No Gaji: 516
+NIP: 199303212022032017
+Nama: Fitriya Andriyani, S.Pd., M.Akun.
+Kelahiran: Sidoarjo, 21 Maret 1993
+Jabatan: Pegawai
+
+No Gaji: 517
+NIP: 198203122005012002
+Nama: Rani Purbaningtyas, S.Kom, MT
+Kelahiran: Jember, 12 Maret 1982
+Jabatan: Pegawai
+
+No Gaji: 518
+NIP: 198501032019032010
+Nama: Dr. Khomsatun Ni'mah, S.Pd., M.Pd
+Kelahiran: -, 01 Januari 1900
+Jabatan: Pegawai
+
