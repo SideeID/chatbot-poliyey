@@ -1,9 +1,9 @@
 import fs from 'fs/promises';
 import path from 'path';
 import cron from 'node-cron';
-import { scrapePolije } from '@/lib/web-loader';
-import { embedAndStoreDocs } from '@/lib/vector-store';
-import { getPineconeClient } from '@/lib/pinecone-client';
+import { scrapePolije } from '../lib/web-loader';
+import { embedAndStoreDocs } from '../lib/vector-store';
+import { getPineconeClient } from '../lib/pinecone-client';
 import { Pinecone } from '@pinecone-database/pinecone';
 
 const LOG_FILE = path.join(process.cwd(), 'scraping-logs.txt');
