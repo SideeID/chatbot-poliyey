@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jempol_app
+    restart: always
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - TZ=Asia/Jakarta
+      # Set to false since we'll use a dedicated cron service
+      - ENABLE_CRON=false
+    volumes:
+      - app_data:/app/scraped_docs
+    healthcheck:
+      test: ['CMD', 'wget', '-q', '--spider', 'http://localhost:3000']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+  # Dedicated cron service using the same image as the app
+  cron:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jempol_cron
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - TZ=Asia/Jakarta
+    volumes:
+      - app_data:/app/scraped_docs
+      - ./cron-entrypoint.sh:/app/cron-entrypoint.sh
+    entrypoint: ['/bin/sh', '/app/cron-entrypoint.sh']
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+
+volumes:
+  app_data:
+    name: jempol_app_data
