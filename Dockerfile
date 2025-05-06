@@ -22,6 +22,7 @@ ENV TZ=Asia/Jakarta
 # Create non-root user for security
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
+RUN chsh -s /bin/sh nextjs
 
 # Copy necessary files from builder stage
 COPY --from=builder /app/next.config.js ./
