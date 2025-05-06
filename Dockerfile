@@ -38,6 +38,10 @@ COPY --from=builder /app/src ./src
 RUN mkdir -p ./scraped_docs
 RUN chown -R nextjs:nodejs ./scraped_docs
 
+# Create log file and set permissions
+RUN touch /app/scraping-logs.txt
+RUN chown nextjs:nodejs /app/scraping-logs.txt
+
 USER nextjs
 
 EXPOSE 3000
