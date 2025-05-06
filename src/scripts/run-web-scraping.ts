@@ -1,4 +1,4 @@
-import { runScrapingJob } from '@/services/cron-service';
+import { runScrapingJob } from '../services/cron-service';
 
 (async () => {
   console.log('Starting manual web scraping job...');
