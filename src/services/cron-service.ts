@@ -6,7 +6,7 @@ import { embedAndStoreDocs } from '../lib/vector-store';
 import { getPineconeClient } from '../lib/pinecone-client';
 import { Pinecone } from '@pinecone-database/pinecone';
 
-const LOG_FILE = path.join(process.cwd(), 'scraping-logs.txt');
+const LOG_FILE = path.join(process.cwd(), 'scraped_docs', 'scraping-logs.txt');
 
 /**
  * Logs scraping activity with timestamp
