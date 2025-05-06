@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build:
@@ -14,7 +12,6 @@ services:
     environment:
       - NODE_ENV=production
       - TZ=Asia/Jakarta
-      # Set to false since we'll use a dedicated cron service
       - ENABLE_CRON=false
     volumes:
       - app_data:/app/scraped_docs
@@ -28,7 +25,6 @@ services:
         limits:
           memory: 4G
 
-  # Dedicated cron service using the same image as the app
   cron:
     build:
       context: .
@@ -44,6 +40,7 @@ services:
       - app_data:/app/scraped_docs
       - ./cron-entrypoint.sh:/app/cron-entrypoint.sh
     entrypoint: ['/bin/sh', '/app/cron-entrypoint.sh']
+    user: root
     deploy:
       resources:
         limits:
