@@ -1,25 +1,17 @@
 import fs from 'fs/promises';
 import path from 'path';
 import cron from 'node-cron';
-import { scrapePolije } from '@/lib/web-loader';
-import { embedAndStoreDocs } from '@/lib/vector-store';
-import { getPineconeClient } from '@/lib/pinecone-client';
+import { scrapePolije } from '../lib/web-loader';
+import { embedAndStoreDocs } from '../lib/vector-store';
+import { getPineconeClient } from '../lib/pinecone-client';
 import { Pinecone } from '@pinecone-database/pinecone';
 
-// Update the log file path to use logs directory
-const LOG_FILE = path.join(process.cwd(), 'logs', 'scraping-logs.txt');
+const LOG_FILE = path.join(process.cwd(), 'scraped_docs', 'scraping-logs.txt');
 
 /**
  * Logs scraping activity with timestamp
  */
 async function logScrapingActivity(message: string): Promise<void> {
-  // Create logs directory if it doesn't exist
-  try {
-    await fs.mkdir(path.join(process.cwd(), 'logs'), { recursive: true });
-  } catch (error) {
-    // Ignore if directory already exists
-  }
-
   const timestamp = new Date().toISOString();
   const logMessage = `[${timestamp}] ${message}\n`;
 
@@ -158,16 +150,24 @@ export async function runScrapingJob(): Promise<{
   }
 }
 
-// Initialize cron job to run every 2 days at 2 AM
+/**
+ * Initialize cron job to run every 2 days at 2 AM
+ */
 export function initCronJob(): void {
-  cron.schedule('0 2 */2 * *', async () => {
-    console.log('Running scheduled scraping job...');
-    await runScrapingJob();
-  });
+  const enableCron = process.env.ENABLE_CRON !== 'false';
 
-  console.log(
-    'Initialized cron job for web scraping (runs every 2 days at 2 AM)',
-  );
+  if (enableCron) {
+    cron.schedule('0 2 */2 * *', async () => {
+      console.log('Running scheduled scraping job...');
+      await runScrapingJob();
+    });
+
+    console.log(
+      'Initialized cron job for web scraping (runs every 2 days at 2 AM)',
+    );
+  } else {
+    console.log('Cron jobs are disabled via ENABLE_CRON environment variable');
+  }
 }
 
 export const scrapingService = {
