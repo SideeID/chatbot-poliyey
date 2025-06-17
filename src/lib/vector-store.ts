@@ -23,7 +23,7 @@ export async function embedAndStoreDocs(
     }));
 
     await PineconeStore.fromDocuments(processedDocs, embeddings, {
-      pineconeIndex: index,
+      pineconeIndex: index as any,
       textKey: 'text',
       namespace: 'polije-docs',
     });
@@ -39,7 +39,7 @@ export async function getVectorStore(client: Pinecone) {
     const index = client.Index(env.PINECONE_INDEX_NAME);
 
     const vectorStore = await PineconeStore.fromExistingIndex(embeddings, {
-      pineconeIndex: index,
+      pineconeIndex: index as any,
       textKey: 'text',
       namespace: 'polije-docs',
     });
