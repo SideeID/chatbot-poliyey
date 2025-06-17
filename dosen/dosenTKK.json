@@ -1,0 +1,208 @@
+{
+  "program_studi": {
+    "nama": "Teknik Komputer",
+    "kode": "TKK",
+    "jurusan": "Teknologi Informasi",
+    "institusi": "Politeknik Negeri Jember",
+    "website_dosen": "https://jti.polije.ac.id/dosen#collapse2",
+    "dosen": [
+      {
+        "nama": "Surateno, S.Kom., M.Kom",
+        "nip": "19790703 200312 1 001",
+        "nidn": "0003077902",
+        "jabatan_fungsional": "Lektor Kepala",
+        "status_kepegawaian": "PNS",
+        "tempat_tanggal_lahir": "Jember, 3 July 1979",
+        "alamat": "Jl. Hayam Wuruk XIX A-160A Jember",
+        "email": "ratno@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Agus Hariyanto, ST, M.Kom",
+        "nip": "19780817 200312 1 005",
+        "nidn": "0017087804",
+        "jabatan_fungsional": "Lektor Kepala",
+        "status_kepegawaian": "PNS",
+        "tempat_tanggal_lahir": "-, 17 August 1978",
+        "email": "agus_hariyanto@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Hariyono Rakhmad, S.Pd, M.Kom",
+        "nip": "19701128 200312 1 001",
+        "nidn": "0028117002",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "tempat_tanggal_lahir": "-, 28 November 1970",
+        "email": "hariyono_r@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Denny Wijanarko, ST, MT",
+        "nip": "19780908 200501 1 001",
+        "nidn": "0008097803",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "email": "dennywijanarko@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Yogiswara, ST, MT",
+        "nip": "19700929 200312 1 001",
+        "nidn": "0029097005",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "email": "yogipoltek@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Agus Purwadi, ST.MT",
+        "nip": "19730831 200801 1 003",
+        "nidn": "0031087306",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "tempat_tanggal_lahir": "-, 31 August 1973",
+        "alamat": "Dusun Krajan Timur RT.03 RW.09",
+        "email": "agus_purwadi@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Bekti Maryuni Susanto, S.Pd.T, M.Kom",
+        "nip": "19840625 201504 1 004",
+        "nidn": "0025068404",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Tingkat I / IIId",
+        "email": "bekti@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Victor Phoa, S.Si, M.Cs",
+        "nip": "19851031 201803 1 001",
+        "nidn": "0031108503",
+        "jabatan_fungsional": "Asisten Ahli",
+        "status_kepegawaian": "PNS",
+        "tempat_tanggal_lahir": "-, 31 October 1985",
+        "alamat": "JL. MASTRIP III/3",
+        "email": "victor_phoa@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "I Gede Wiryawan, S.Kom., M.Kom.",
+        "nip": "19880117 201903 1 008",
+        "nidn": "0017018808",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata / IIIc",
+        "email": "wiryawan@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Lalitya Nindita Sahenda, S.Pd., M.T.",
+        "nip": "199411232020122010",
+        "nidn": "0023119402",
+        "jabatan_fungsional": "Asisten Ahli",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_tanggal_lahir": "Jember, 23 November 1994",
+        "email": "lalitya.ns@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Shabrina Choirunnisa, S.Kom., M.Kom.",
+        "nip": "199304252022032008",
+        "nidn": "0025049303",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "tempat_tanggal_lahir": "Jember, 25 April 1993",
+        "alamat": "Perumahan Baratan Permai Blok F16",
+        "email": "shabrinacnisa@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Muhammad Hafidh Firmansyah, S.Tr.Kom., M.Sc.",
+        "nrp": "D19970214202109101",
+        "nidn": "0014029701",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PPNPN",
+        "tempat_tanggal_lahir": "Bondowoso, 8 August 2023",
+        "alamat": "Bondowoso",
+        "email": "hafidh@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Mujiono, S.Kom.,M.Sc",
+        "nip": "199006102024061001",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_tanggal_lahir": "Jember, 10 June 1990",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Khen Dedes, S.Tr.Kom., M.T.",
+        "nip": "199702102024062003",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_tanggal_lahir": "Banyuwangi, 10 February 1997",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      },
+      {
+        "nama": "Afis Asryullah Pratama, S.Tr.T., M.Tr.T.",
+        "nip": "199906042024061001",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_tanggal_lahir": "Sidoarjo, 4 June 1999",
+        "email": "afis_asryullah@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "TKK"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "program_studi": {
+    "nama": "Manajemen Informatika",
+    "kode": "MIF",
+    "jurusan": "Teknologi Informasi",
+    "intustisi": "Politeknik Negeri Jember",
+    "website_dosen": "https://jti.polije.ac.id/dosen#collapse1",
+    "dosen": [
+      {
+        "nama": "Wahyu Kurnia Dewanto",
+        "gelar": "S.Kom, MT",
+        "nip": "197104082001121003",
+        "nidn": "0008047103",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "email": "wahyu.k.dewanto@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Hendra Yufit Riskiawan",
+        "gelar": "S.Kom, M.Cs",
+        "nip": "198302032006041003",
+        "nidn": "0003028302",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Tingkat I / IIId",
+        "tempat_lahir": "Jember",
+        "tanggal_lahir": "1983-02-03",
+        "alamat": "Griya Permata Kampus B7",
+        "email": "yufit@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Ika Widiastuti",
+        "gelar": "S.ST, MT",
+        "nip": "197808192005012001",
+        "nidn": "0019087803",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "tempat_lahir": "Banyumas",
+        "tanggal_lahir": "1978-08-19",
+        "alamat": "Perum BTN Mastrip BB-1D",
+        "email": "ika_widiastuti@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Dwi Putro Sarwo Setyohadi",
+        "gelar": "S.Kom, M.Kom",
+        "nip": "198005172008121002",
+        "nidn": "0017058003",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "tempat_lahir": "Semarang",
+        "tanggal_lahir": "1980-05-17",
+        "alamat": "Perum PTP Kaliurang V3 Jember",
+        "email": "dwi.putro.sarwo.setyohadi@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Taufiq Rizaldi",
+        "gelar": "S.ST., MT",
+        "nip": "198903292019031007",
+        "nidn": "0029058906",
+        "jabatan_fungsional": "Asisten Ahli",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "email": "taufiq_r@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Husin",
+        "gelar": "S.Kom, M.MT",
+        "nip": "198807022019031010",
+        "nidn": "0002078803",
+        "jabatan_fungsional": "Asisten Ahli",
+        "status_kepegawaian": "PNS",
+        "tempat_lahir": "Bondowoso",
+        "tanggal_lahir": "1988-07-02",
+        "alamat": "Jl Mawar IV B no 8 Patrang, Jember",
+        "email": "husin@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Khafidurrohman Agustianto",
+        "gelar": "S.Pd, M.Eng",
+        "nip": "199112112018031001",
+        "nidn": "0011129102",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata / IIIc",
+        "tempat_lahir": "Trenggalek",
+        "tanggal_lahir": "1991-12-11",
+        "email": "khafid@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Faisal Lutfi Afriansyah",
+        "gelar": "S.Kom, M.T.",
+        "nip": "199104292019031011",
+        "nidn": "0029049102",
+        "jabatan_fungsional": "Lektor",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata / IIIc",
+        "email": "faisal.lutfi@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Pramuditha Shinta Dewi Puspitasari",
+        "gelar": "S.Kom., M.Kom.",
+        "nip": "198804042020122013",
+        "nidn": "0004039801",
+        "jabatan_fungsional": "Asisten Ahli",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "email": "pramuditha@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Ely Mulyadi",
+        "gelar": "SE, M.Kom",
+        "nipppk": "197306172023211006",
+        "nidn": "0017067306",
+        "jabatan_fungsional": "Asisten Ahli",
+        "status_kepegawaian": "PPPK",
+        "pangkat_golongan": "Golongan X (S2/P3K)",
+        "tempat_lahir": "Brebes",
+        "tanggal_lahir": "2018-01-01",
+        "alamat": "Perum Demang Mulia A16 Jember",
+        "email": "elymulyadi@polije.ac.id",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Mas'ud Hemansyah",
+        "gelar": "S.S.T., M.Kom",
+        "nip": "199511292024061001",
+        "nidn": "0729119501",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_lahir": "Jember",
+        "tanggal_lahir": "1995-11-29",
+        "email": "masudhermansyah@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Akas Bagus Setiawan",
+        "gelar": "S.Kom., M.MT",
+        "nip": "199107222024061004",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_lahir": "Malang",
+        "tanggal_lahir": "1991-07-22",
+        "email": "akas.setiawan@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      },
+      {
+        "nama": "Reza Putra Pradana",
+        "gelar": "S.Kom., M.T",
+        "nip": "199703102024061001",
+        "jabatan_fungsional": "Tenaga Pengajar",
+        "status_kepegawaian": "PNS",
+        "pangkat_golongan": "Penata Muda Tingkat I / IIIb",
+        "tempat_lahir": "Banyuwangi",
+        "tanggal_lahir": "1997-03-10",
+        "email": "rezapp.7615@gmail.com",
+        "metadata": {
+          "kategori": "dosen",
+          "prodi": "MIF",
+          "departemen": "JTI"
+        }
+      }
+    ]
+  }
+}
